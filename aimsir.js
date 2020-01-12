@@ -21,9 +21,9 @@ window.addEventListener('load', ()=> {
                     console.log(data);
                     const { temperature, summary, icon } = data.currently;
                     // Set DOM Elements from the API
-                    degree.textContent = temperature;
+                    degree.textContent = temperature  + " C";
                     currentSummary.textContent = summary;
-                    dailySummary.textContent = data.daily.summary + "C"
+                    dailySummary.textContent = data.daily.summary;
                     // Set icon
                     setIcons(icon, document.querySelector(".icon"));
 
