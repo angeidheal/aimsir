@@ -4,7 +4,13 @@ window.addEventListener('load', ()=> {
     let currentSummary = document.querySelector(".current-summary");
     let degree = document.querySelector(".degree");
     const temperatureSpan = document.querySelector('.temperature span');
-    const dailySummary = document.querySelector('.daily-summary');
+    const dailySummary1 = document.querySelector('.daily-summary-1');
+    const dailySummary2 = document.querySelector('.daily-summary-2');
+    const dailySummary3 = document.querySelector('.daily-summary-3');
+    const dailySummary4 = document.querySelector('.daily-summary-4');
+    const dailySummary5 = document.querySelector('.daily-summary-5');
+    const dailySummary6 = document.querySelector('.daily-summary-6');
+    const dailySummary7 = document.querySelector('.daily-summary-7');
 
     if (navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position => {
@@ -22,8 +28,13 @@ window.addEventListener('load', ()=> {
                     // Set DOM Elements from the API
                     degree.textContent = temperature  + " °C";
                     currentSummary.textContent = summary;
-                    dailySummary.textContent = data.daily.data[1].summary;
-                    setIcons(icon, document.querySelector(".daily-icon"));
+                    dailySummary1.textContent = data.daily.data[1].summary;
+                    dailySummary2.textContent = data.daily.data[2].summary;
+                    dailySummary3.textContent = data.daily.data[3].summary;
+                    dailySummary4.textContent = data.daily.data[4].summary;
+                    dailySummary5.textContent = data.daily.data[5].summary;
+                    dailySummary6.textContent = data.daily.data[6].summary;
+                    dailySummary7.textContent = data.daily.data[7].summary;
                     // Set icon
                     setIcons(icon, document.querySelector(".icon"));
 
