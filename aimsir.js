@@ -3,7 +3,6 @@ window.addEventListener('load', ()=> {
     let lat;
     let temperatureDescription = document.querySelector(".temperature-description");
     let temperatureDegree = document.querySelector(".temperature-degree");
-    let locationTimezone = document.querySelector(".location-timezone");
     let temperatureSection = document.querySelector(".temperature");
     const temperatureSpan = document.querySelector('.temperature span');
 
@@ -23,7 +22,6 @@ window.addEventListener('load', ()=> {
                     // Set DOM Elements from the API
                     temperatureDegree.textContent = temperature;
                     temperatureDescription.textContent = summary;
-                    locationTimezone.textContent = data.timezone;
                         // Formula for Celsius
                         let celsius = (temperature - 32) * (5 / 9);
                     // Set icon
