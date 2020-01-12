@@ -10,6 +10,12 @@ body {
   padding-top: 100px;
 }
 
+.daily-summary {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
 .current-summary h2, .degree h2 {
     font-size: 30px;
 }
