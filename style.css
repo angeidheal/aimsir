@@ -11,16 +11,6 @@ body {
     color: white;
 }
 
-.degree {
-    cursor: pointer;
-}
-
-.degree span {
-    margin: 10px;
+.current-summary h2, .degree h2 {
     font-size: 30px;
-}
-
-.degree h2 {
-    font-size: 30px;
-
 }
