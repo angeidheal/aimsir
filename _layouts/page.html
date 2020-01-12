@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="post">
+    <h3 class="post-title">{{ page.title }}</h3>
+
+    {% if page.image %}
+      <img src="{{ page.image }}" class="post-image"><br>
+    {% endif %}
+
+    {{ content }}
+
+  </div>
+</div>
