@@ -1,0 +1,47 @@
+---
+layout: default
+title: Dachaigh
+---
+
+<div class="container">
+
+  <div class="row">
+    <h1>Aimsir.uk</h1>
+    <p>Seo agaibh tuairmse air an t-sìde far a bheil sibh air ur suidheachadh an-dràsta.[^1]</p>
+  </div>
+
+  <div class="row now">
+    <h1>An-dràsta</h1>
+  </div>
+
+  <div class="row current-weather">
+    <div class="col-md-4">
+      <h2 class="degree">--</h2>
+    </div>
+    <div class="col-md-4">
+      <canvas class="icon" width="128" height="128"></canvas>
+    </div>
+    <div class="col-md-4">
+      <h2 class="current-summary">A' luchdachadh...</h2>
+    </div>
+  </div>
+
+  <div class="row future">
+    <h1>San àm ri teachd</h1>
+  </div>
+
+    <div class="row daily-summary day-1">A' luchdachadh...</div>
+    <div class="row daily-summary day-2">A' luchdachadh...</div>
+    <div class="row daily-summary day-3">A' luchdachadh...</div>
+    <div class="row daily-summary day-4">A' luchdachadh...</div>
+    <div class="row daily-summary day-5">A' luchdachadh...</div>
+    <div class="row daily-summary day-6">A' luchdachadh...</div>
+    <div class="row daily-summary day-7">A' luchdachadh...</div>
+
+
+  <div class="row footnote">
+    <h3>[^1]: Thoir an aire</h3><br/>
+    <p>Feumaidh sibh aontachadh ri ur suidheachadh ghnàthaichte a cho-roinneadh rinn mus faigh sibh tuairmse air an t-sìde.</p>
+  </div>
+
+</div>
