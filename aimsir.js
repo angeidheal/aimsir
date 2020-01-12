@@ -5,7 +5,7 @@ window.addEventListener('load', ()=> {
     let temperatureDegree = document.querySelector(".temperature-degree");
     let temperatureSection = document.querySelector(".temperature");
     const temperatureSpan = document.querySelector('.temperature span');
-    const dailySymmary = document.querySelector('.daily-summary');
+    const dailySummary = document.querySelector('.daily-summary');
 
     if (navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position => {
