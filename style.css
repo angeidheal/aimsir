@@ -26,16 +26,16 @@ body {
     flex-direction: column;
 }
 
-.degree-section {
+.degree {
     cursor: pointer;
 }
 
-.degree-section span {
+.degree span {
     margin: 10px;
     font-size: 30px;
 }
 
-.degree-section h2 {
+.degree h2 {
     font-size: 40px;
 
 }
