@@ -6,7 +6,7 @@ body {
     color: white;
 }
 
-.now, .future, .footnote {
+.now, .current-weather, .future, .footnote {
   padding-top: 100px;
 }
 
