@@ -1,9 +1,9 @@
 window.addEventListener('load', ()=> {
     let long;
     let lat;
-    let temperatureDescription = document.querySelector(".temperature-description");
-    let temperatureDegree = document.querySelector(".temperature-degree");
-    let temperatureSection = document.querySelector(".temperature");
+    let currentSummary = document.querySelector(".current-summary");
+    let degree = document.querySelector(".degree");
+    let temperature = document.querySelector(".temperature");
     const temperatureSpan = document.querySelector('.temperature span');
     const dailySummary = document.querySelector('.daily-summary');
 
@@ -21,8 +21,8 @@ window.addEventListener('load', ()=> {
                     console.log(data);
                     const { temperature, summary, icon } = data.currently;
                     // Set DOM Elements from the API
-                    temperatureDegree.textContent = temperature;
-                    temperatureDescription.textContent = summary;
+                    degree.textContent = temperature;
+                    currentSummary.textContent = summary;
                     dailySummary.textContent = data.daily.summary
                         // Formula for Celsius
                         let celsius = (temperature - 32) * (5 / 9);
@@ -30,7 +30,7 @@ window.addEventListener('load', ()=> {
                     setIcons(icon, document.querySelector(".icon"));
 
                     // Change temperature to Celsius/Farenheit
-                        temperatureSection.addEventListener('click', () => {
+                        temperature.addEventListener('click', () => {
                             if(temperatureSpan.textContent === "F"){
                                 temperatureSpan.textContent = "C";
                                 temperatureDegree.textContent = Math.floor(celsius);
