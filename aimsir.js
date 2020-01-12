@@ -4,13 +4,13 @@ window.addEventListener('load', ()=> {
     let currentSummary = document.querySelector(".current-summary");
     let degree = document.querySelector(".degree");
     const temperatureSpan = document.querySelector('.temperature span');
-    const dailySummary1 = document.querySelector('.daily-summary-1');
-    const dailySummary2 = document.querySelector('.daily-summary-2');
-    const dailySummary3 = document.querySelector('.daily-summary-3');
-    const dailySummary4 = document.querySelector('.daily-summary-4');
-    const dailySummary5 = document.querySelector('.daily-summary-5');
-    const dailySummary6 = document.querySelector('.daily-summary-6');
-    const dailySummary7 = document.querySelector('.daily-summary-7');
+    const dailySummary1 = document.querySelector('.day-1');
+    const dailySummary2 = document.querySelector('.day-2');
+    const dailySummary3 = document.querySelector('.day-3');
+    const dailySummary4 = document.querySelector('.day-4');
+    const dailySummary5 = document.querySelector('.day-5');
+    const dailySummary6 = document.querySelector('.day-6');
+    const dailySummary7 = document.querySelector('.day-7');
 
     if (navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position => {
