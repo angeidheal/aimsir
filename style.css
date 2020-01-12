@@ -6,7 +6,7 @@ body {
     text-align: center
 }
 
-.future {
+.now, .future {
   padding-top: 100px;
 }
 
