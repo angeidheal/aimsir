@@ -23,7 +23,7 @@ window.addEventListener('load', ()=> {
                     // Set DOM Elements from the API
                     degree.textContent = temperature;
                     currentSummary.textContent = summary;
-                    dailySummary.textContent = data.daily.summary
+                    dailySummary.textContent = data.daily.summary + "C"
                     // Set icon
                     setIcons(icon, document.querySelector(".icon"));
 
