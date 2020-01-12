@@ -3,7 +3,6 @@ window.addEventListener('load', ()=> {
     let lat;
     let currentSummary = document.querySelector(".current-summary");
     let degree = document.querySelector(".degree");
-    let temperature = document.querySelector(".temperature");
     const temperatureSpan = document.querySelector('.temperature span');
     const dailySummary = document.querySelector('.daily-summary');
 
