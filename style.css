@@ -11,13 +11,6 @@ body {
     color: white;
 }
 
-.intro,
-.temperature,
-.footnote {
-    height: 30vh;
-    width: 50%;
-}
-
 .degree {
     cursor: pointer;
 }
