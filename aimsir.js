@@ -23,7 +23,7 @@ window.addEventListener('load', ()=> {
                     // Set DOM Elements from the API
                     temperatureDegree.textContent = temperature;
                     temperatureDescription.textContent = summary;
-                    dailySummary.textContent = summary.data.daily
+                    dailySummary.textContent = data.daily.summary
                         // Formula for Celsius
                         let celsius = (temperature - 32) * (5 / 9);
                     // Set icon
