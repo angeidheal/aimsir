@@ -6,7 +6,7 @@ body {
     text-align: center
 }
 
-.now, .future {
+.now, .future, .footnote {
   padding-top: 100px;
 }
 
