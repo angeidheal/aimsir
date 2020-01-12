@@ -20,16 +20,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aimsir.uk" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:year/:month/:day/:title/
 
-# Pagination number
-plugins: [jekyll-paginate]
-paginate: 5
-paginate_path: /duilleag-:num/
-
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -45,6 +38,3 @@ plugins:
 
 # Sets the color of the header and page links
 featured-color: "#007bff"
-
-# Separator to mark end of post excerpt
-excerpt_separator: <!--more-->
