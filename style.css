@@ -3,6 +3,7 @@ body {
     background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
     font-family: sans-serif;
     color: white;
+    text-align: center
 }
 
 .current-summary h2, .degree h2 {
