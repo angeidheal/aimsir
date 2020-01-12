@@ -3,11 +3,14 @@ body {
     background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
     font-family: sans-serif;
     color: white;
-    text-align: center
 }
 
 .now, .future, .footnote {
   padding-top: 100px;
+}
+
+.current-weather{
+  text-align: center;
 }
 
 .daily-summary {
