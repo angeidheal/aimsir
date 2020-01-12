@@ -5,6 +5,7 @@ window.addEventListener('load', ()=> {
     let temperatureDegree = document.querySelector(".temperature-degree");
     let temperatureSection = document.querySelector(".temperature");
     const temperatureSpan = document.querySelector('.temperature span');
+    const dailySymmary = document.querySelector('.daily-summary');
 
     if (navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position => {
@@ -22,6 +23,7 @@ window.addEventListener('load', ()=> {
                     // Set DOM Elements from the API
                     temperatureDegree.textContent = temperature;
                     temperatureDescription.textContent = summary;
+                    dailySummary.textContent = summary.data.daily
                         // Formula for Celsius
                         let celsius = (temperature - 32) * (5 / 9);
                     // Set icon
