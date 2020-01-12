@@ -24,8 +24,6 @@ window.addEventListener('load', ()=> {
                     degree.textContent = temperature;
                     currentSummary.textContent = summary;
                     dailySummary.textContent = data.daily.summary
-                        // Formula for Celsius
-                        let celsius = (temperature - 32) * (5 / 9);
                     // Set icon
                     setIcons(icon, document.querySelector(".icon"));
 
