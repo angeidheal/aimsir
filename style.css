@@ -31,17 +31,3 @@ body {
   padding-bottom: 5px;
 
 }
-
-.current-weather h2, {
-    font-size: 25px;
-}
-
-.day-1-temp,
-.day-2-temp,
-.day-3-temp,
-.day-4-temp,
-.day-5-temp,
-.day-6-temp,
-.day-7-temp, {
-  text-align: right;
-}
