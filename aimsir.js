@@ -43,13 +43,13 @@ window.addEventListener('load', ()=> {
                     degree.textContent = temperature  + " °C";
                     currentSummary.textContent = summary;
 
-                    dailyTemp1.textContent = data.daily.data[1].temperature;
-                    dailyTemp2.textContent = data.daily.data[2].temperature;
-                    dailyTemp3.textContent = data.daily.data[3].temperature;
-                    dailyTemp4.textContent = data.daily.data[4].temperature;
-                    dailyTemp5.textContent = data.daily.data[5].temperature;
-                    dailyTemp6.textContent = data.daily.data[6].temperature;
-                    dailyTemp7.textContent = data.daily.data[7].temperature;
+                    dailyTemp1.textContent = data.daily.data[1].temperaturehigh;
+                    dailyTemp2.textContent = data.daily.data[2].temperaturehigh;
+                    dailyTemp3.textContent = data.daily.data[3].temperaturehigh;
+                    dailyTemp4.textContent = data.daily.data[4].temperaturehigh;
+                    dailyTemp5.textContent = data.daily.data[5].temperaturehigh;
+                    dailyTemp6.textContent = data.daily.data[6].temperaturehigh;
+                    dailyTemp7.textContent = data.daily.data[7].temperaturehigh;
 
                     dailySummary1.textContent = data.daily.data[1].summary;
                     dailySummary2.textContent = data.daily.data[2].summary;
