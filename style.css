@@ -19,6 +19,7 @@ body {
 
 .current-weather {
   text-align: center;
+  border: 1px whitesmoke solid;
 }
 
 .daily-summary {
