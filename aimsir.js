@@ -2,7 +2,8 @@ window.addEventListener('load', ()=> {
     let long;
     let lat;
     let currentSummary = document.querySelector(".current-summary");
-    let degree = document.querySelector(".degree");
+    let temp = document.querySelector(".temp");
+    let appTemp = document.querySelector(".app-temp");
     const temperatureSpan = document.querySelector('.temperature span');
     const windSpeed = document.querySelector(".wind");
     const humidity = document.querySelector(".humidity");
@@ -43,7 +44,8 @@ window.addEventListener('load', ()=> {
                     console.log(data);
                     const { temperature, summary, icon } = data.currently;
                     // Set DOM Elements from the API
-                    degree.textContent = temperature  + " °C";
+                    temp.textContent = temperature  + " °C";
+                    appTemp.textContent = apparentTemperature  + " °C";
                     currentSummary.textContent = summary;
                     windSpeed.textContent = "Gaoth: " + data.currently.windSpeed + " m.s.u.";
                     humidity.textContent = "Taiseachd: " + data.currently.humidity;
