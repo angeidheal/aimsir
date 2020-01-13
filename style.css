@@ -1,3 +1,37 @@
+---
+
+---
+
+/* Header Section */
+.header-brand {
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+  background-color: {{ site.featured-color }};
+}
+
+.site-description {
+  color: #ffffff;
+  text-align: center;
+}
+
+.navbar .navbar-brand{
+    color: #ffffff;
+}
+
+.navbar a{
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: #ffffff;
+}
+
+.dropdown-menu{
+	background-color: {{ site.featured-color }};
+}
+
 body {
     margin: 10px;
     height: 100vh;
