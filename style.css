@@ -2,6 +2,20 @@
 
 ---
 
+html {
+  font-size: 100%;
+}
+
+body {
+    margin: 10px;
+    height: 100vh;
+    font-family: sans-serif;
+    color: white;
+    background-image: linear-gradient(-20deg, #30cfd0 0%, #330867 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 /* Header Section */
 .header-brand {
   margin-bottom: 0px;
@@ -33,16 +47,6 @@
 	background-color: {{ site.featured-color }};
 }
 */
-
-body {
-    margin: 10px;
-    height: 100vh;
-    font-family: sans-serif;
-    color: white;
-    background-image: linear-gradient(-20deg, #30cfd0 0%, #330867 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
 .future h1, .now h1 {
   text-align: center;
