@@ -43,17 +43,14 @@ window.addEventListener('load', ()=> {
                     degree.textContent = temperature  + " °C";
                     currentSummary.textContent = summary;
 
-                    let unix_timestamp = time
-                          // Create a new JavaScript Date object based on the timestamp
-                          // multiplied by 1000 so that the argument is in milliseconds, not seconds.
-                          var date = new Date(unix_timestamp * 1000);
-                          // Day part from the timestamp
-                          var day = date.getDay();
 
-                    console.log(formattedTime);
-
-
-                    dailyDay1.textContent = data.daily.data[1].day;
+                    dailyDay1.textContent = data.daily.data[1].time;
+                    dailyDay2.textContent = data.daily.data[2].time;
+                    dailyDay3.textContent = data.daily.data[3].time;
+                    dailyDay4.textContent = data.daily.data[4].time;
+                    dailyDay5.textContent = data.daily.data[5].time;
+                    dailyDay6.textContent = data.daily.data[6].time;
+                    dailyDay7.textContent = data.daily.data[7].time;
 
                     dailyTemp1.textContent = data.daily.data[1].temperatureHigh  + " °C";
                     dailyTemp2.textContent = data.daily.data[2].temperatureHigh  + " °C";
