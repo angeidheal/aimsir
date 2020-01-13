@@ -29,6 +29,10 @@ a {
   color: white;
 }
 
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+}
+
 
 .future h1, .now h1 {
   text-align: center;
