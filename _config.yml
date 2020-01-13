@@ -15,9 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 title: Aimsir.uk
 email: chris@macmhicheil.uk
-description: Aimsir.uk
+description: Aimsir.info
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://aimsir.uk" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://aimsir.info" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:year/:month/:day/:title/
 
 # Build settings
