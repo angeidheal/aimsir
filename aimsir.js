@@ -37,23 +37,19 @@ window.addEventListener('load', ()=> {
                     return response.json();
                 })
                 .then(data => {
-                    /*console.log(data);*/
+                    console.log(data);
                     const { temperature, summary, icon } = data.currently;
                     // Set DOM Elements from the API
                     degree.textContent = temperature  + " °C";
                     currentSummary.textContent = summary;
 
-                    var formattedTime1 = new Date(data.daily.data[1].time * 1000);
-                    var day1 = date.getDay();
-                    console.log(day1);
-
-                    dailyDay1.textContent = day1;
-                    dailyDay2.textContent = data.daily.data[2].time;
-                    dailyDay3.textContent = data.daily.data[3].time;
-                    dailyDay4.textContent = data.daily.data[4].time;
-                    dailyDay5.textContent = data.daily.data[5].time;
-                    dailyDay6.textContent = data.daily.data[6].time;
-                    dailyDay7.textContent = data.daily.data[7].time;
+                    dailyDay1.textContent = "1";
+                    dailyDay2.textContent = "2";
+                    dailyDay3.textContent = "3";
+                    dailyDay4.textContent = "4";
+                    dailyDay5.textContent = "5";
+                    dailyDay6.textContent = "6";
+                    dailyDay7.textContent = "7";
 
                     dailyTemp1.textContent = data.daily.data[1].temperatureHigh  + " °C";
                     dailyTemp2.textContent = data.daily.data[2].temperatureHigh  + " °C";
