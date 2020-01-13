@@ -43,12 +43,11 @@ window.addEventListener('load', ()=> {
                     degree.textContent = temperature  + " °C";
                     currentSummary.textContent = summary;
 
-                    var formattedTime1 = new Date(data.daily.data[1].time * 1000)
-                    var day1 = date.getDay();
-                    var formattedTime1 = day1;
-                    console.log(formattedTime1);
+                    let formattedTime1 = (data.daily.data[1].time * 1000)
+                    var day1 = formattedTime1.getDay();
+                    console.log(day1);
 
-                    dailyDay1.textContent = formattedTime1;
+                    dailyDay1.textContent = day1;
                     dailyDay2.textContent = data.daily.data[2].time;
                     dailyDay3.textContent = data.daily.data[3].time;
                     dailyDay4.textContent = data.daily.data[4].time;
