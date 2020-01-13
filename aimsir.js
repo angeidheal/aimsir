@@ -45,7 +45,7 @@ window.addEventListener('load', ()=> {
                     const { temperature, summary, icon } = data.currently;
                     // Set DOM Elements from the API
                     temp.textContent = temperature  + " °C";
-                    appTemp.textContent = apparentTemperature  + " °C";
+                    appTemp.textContent = data.currently.apparentTemperature  + " °C";
                     currentSummary.textContent = summary;
                     windSpeed.textContent = "Gaoth: " + data.currently.windSpeed + " m.s.u.";
                     humidity.textContent = "Taiseachd: " + data.currently.humidity;
