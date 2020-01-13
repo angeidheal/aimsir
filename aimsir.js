@@ -41,13 +41,13 @@ window.addEventListener('load', ()=> {
                 })
                 .then(data => {
                     console.log(data);
-                    const { temperature, summary, icon, windSpeed, humidity, precipIntensity } = data.currently;
+                    const { temperature, summary, icon } = data.currently;
                     // Set DOM Elements from the API
                     degree.textContent = temperature  + " °C";
                     currentSummary.textContent = summary;
-                    windSpeed.textContent = windSpeed + "m/u";
-                    humidity.textContent = humidity;
-                    precip.textContent = precipIntensity + " mm/u";
+                    windSpeed.textContent = data.currently.windSpeed + "m/u";
+                    humidity.textContent = data.currently.humidity;
+                    precip.textContent = data.currently.precipIntensity + " mm/u";
 
                     dailyDay1.textContent = "1";
                     dailyDay2.textContent = "2";
