@@ -37,6 +37,9 @@ body {
   padding: 10px;
   text-align: center;
 }
+.navbar-brand a{
+  text-align: left;
+}
 
 .navbar-dark .navbar-nav .nav-link{
   color: #ffffff;
