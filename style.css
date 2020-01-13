@@ -13,7 +13,7 @@ body {
     color: white;
 }
 
-.future, .now {
+.future h1, .now h1 {
   text-align: center;
 }
 
