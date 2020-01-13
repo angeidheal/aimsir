@@ -36,21 +36,22 @@ window.addEventListener('load', ()=> {
                 .then(response =>{
                     return response.json();
                 })
-                .then(let unix_timestamp = time
-                      // Create a new JavaScript Date object based on the timestamp
-                      // multiplied by 1000 so that the argument is in milliseconds, not seconds.
-                      var date = new Date(unix_timestamp * 1000);
-                      // Day part from the timestamp
-                      var day = date.getDay();
-
-                      console.log(formattedTime);
-                    )
                 .then(data => {
                     console.log(data);
                     const { temperature, summary, icon } = data.currently;
                     // Set DOM Elements from the API
                     degree.textContent = temperature  + " °C";
                     currentSummary.textContent = summary;
+
+                    let unix_timestamp = time
+                          // Create a new JavaScript Date object based on the timestamp
+                          // multiplied by 1000 so that the argument is in milliseconds, not seconds.
+                          var date = new Date(unix_timestamp * 1000);
+                          // Day part from the timestamp
+                          var day = date.getDay();
+
+                    console.log(formattedTime);
+
 
                     dailyDay1.textContent = data.daily.data[1].day;
 
