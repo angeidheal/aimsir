@@ -4,13 +4,27 @@ window.addEventListener('load', ()=> {
     let currentSummary = document.querySelector(".current-summary");
     let degree = document.querySelector(".degree");
     const temperatureSpan = document.querySelector('.temperature span');
-    const dailySummary1 = document.querySelector('.day-1');
-    const dailySummary2 = document.querySelector('.day-2');
-    const dailySummary3 = document.querySelector('.day-3');
-    const dailySummary4 = document.querySelector('.day-4');
-    const dailySummary5 = document.querySelector('.day-5');
-    const dailySummary6 = document.querySelector('.day-6');
-    const dailySummary7 = document.querySelector('.day-7');
+    const dailyDay1 = document.querySelector('.day-1-day');
+    const dailyDay2 = document.querySelector('.day-2-day');
+    const dailyDay3 = document.querySelector('.day-3-day');
+    const dailyDay4 = document.querySelector('.day-4-day');
+    const dailyDay5 = document.querySelector('.day-5-day');
+    const dailyDay6 = document.querySelector('.day-6-day');
+    const dailyDay7 = document.querySelector('.day-7-day');
+    const dailyTemp1 = document.querySelector('.day-1-temp');
+    const dailyTemp2 = document.querySelector('.day-2-temp');
+    const dailyTemp3 = document.querySelector('.day-3-temp');
+    const dailyTemp4 = document.querySelector('.day-4-temp');
+    const dailyTemp5 = document.querySelector('.day-5-temp');
+    const dailyTemp6 = document.querySelector('.day-6-temp');
+    const dailyTemp7 = document.querySelector('.day-7-temp');
+    const dailySummary1 = document.querySelector('.day-1-summary');
+    const dailySummary2 = document.querySelector('.day-2-summary');
+    const dailySummary3 = document.querySelector('.day-3-summary');
+    const dailySummary4 = document.querySelector('.day-4-summary');
+    const dailySummary5 = document.querySelector('.day-5-summary');
+    const dailySummary6 = document.querySelector('.day-6-summary');
+    const dailySummary7 = document.querySelector('.day-7-summary');
 
     if (navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position => {
@@ -28,6 +42,15 @@ window.addEventListener('load', ()=> {
                     // Set DOM Elements from the API
                     degree.textContent = temperature  + " °C";
                     currentSummary.textContent = summary;
+
+                    dailyTemp1.textContent = data.daily.data[1].temperature;
+                    dailyTemp2.textContent = data.daily.data[2].temperature;
+                    dailyTemp3.textContent = data.daily.data[3].temperature;
+                    dailyTemp4.textContent = data.daily.data[4].temperature;
+                    dailyTemp5.textContent = data.daily.data[5].temperature;
+                    dailyTemp6.textContent = data.daily.data[6].temperature;
+                    dailyTemp7.textContent = data.daily.data[7].temperature;
+
                     dailySummary1.textContent = data.daily.data[1].summary;
                     dailySummary2.textContent = data.daily.data[2].summary;
                     dailySummary3.textContent = data.daily.data[3].summary;
