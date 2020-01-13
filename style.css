@@ -13,6 +13,10 @@ body {
     background-attachment: fixed;
 }
 
+a {
+  color: white;
+}
+
 /* Header Section */
 .header-brand {
   margin-bottom: 0px;
@@ -24,11 +28,6 @@ body {
   padding: 10px;
 }
 
-/*
-.dropdown-menu{
-	background-color: {{ site.featured-color }};
-}
-*/
 
 .future h1, .now h1 {
   text-align: center;
