@@ -6,7 +6,7 @@
 .header-brand {
   margin-bottom: 0px;
   padding-bottom: 15px;
-  background-color: {{ site.featured-color }};
+  background-color: transparent;
 }
 
 .site-description {
@@ -28,9 +28,11 @@
   color: #ffffff;
 }
 
+/*
 .dropdown-menu{
 	background-color: {{ site.featured-color }};
 }
+*/
 
 body {
     margin: 10px;
