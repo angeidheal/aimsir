@@ -44,8 +44,8 @@ window.addEventListener('load', ()=> {
                     console.log(data);
                     const { temperature, summary, icon } = data.currently;
                     // Set DOM Elements from the API
-                    temp.textContent = temperature  + " °C";
-                    appTemp.textContent = data.currently.apparentTemperature  + " °C";
+                    temp.textContent = "Teòthachd " + temperature  + " °C";
+                    appTemp.textContent = "Teòthachd a' faireachdainn mar " + data.currently.apparentTemperature  + " °C";
                     currentSummary.textContent = summary;
                     windSpeed.textContent = "Gaoth: " + data.currently.windSpeed + " m.s.u.";
                     humidity.textContent = "Taiseachd: " + data.currently.humidity;
