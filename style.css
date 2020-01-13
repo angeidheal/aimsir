@@ -187,7 +187,7 @@ a {
 
 /* Footer Section */
 .footer{
-    background-color:  {{ site.featured-color }};
+    background-color: transparent;
     color: #fff;
     text-align: center;
     width: 100%;
