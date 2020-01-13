@@ -4,6 +4,9 @@ window.addEventListener('load', ()=> {
     let currentSummary = document.querySelector(".current-summary");
     let degree = document.querySelector(".degree");
     const temperatureSpan = document.querySelector('.temperature span');
+    const windSpeed = document.querySelector(".wind");
+    const humidity = document.querySelector(".humidity");
+    const precip = document.querySelector(".precip");
     const dailyDay1 = document.querySelector('.day-1-day');
     const dailyDay2 = document.querySelector('.day-2-day');
     const dailyDay3 = document.querySelector('.day-3-day');
@@ -38,10 +41,13 @@ window.addEventListener('load', ()=> {
                 })
                 .then(data => {
                     console.log(data);
-                    const { temperature, summary, icon } = data.currently;
+                    const { temperature, summary, icon, windSpeed, humidity, precipIntensity } = data.currently;
                     // Set DOM Elements from the API
                     degree.textContent = temperature  + " °C";
                     currentSummary.textContent = summary;
+                    windSpeed.textContent = windSpeed;
+                    humidity.textContent = humidity;
+                    precip.textContent = precipIntensity;
 
                     dailyDay1.textContent = "1";
                     dailyDay2.textContent = "2";
