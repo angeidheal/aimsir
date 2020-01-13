@@ -2,37 +2,81 @@
 
 ---
 
-body {
-    margin: 10px;
-    width: 100%;
-    font-family: sans-serif;
-    font-size: 100%;
-    color: white;
-    background-image: linear-gradient(-20deg, #30cfd0 0%, #330867 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+html {
+  font-size: 100%;
 }
 
+/* Set Dark Mode's text, and background colors */
+html[data-theme="dark"] {
+  --dark-mode-text-color: #999999;
+  --dark-mode-background-color: #1a1a1a;
+}
+
+/* Check if user has dark mode enabled */
+@media (prefers-color-scheme: dark) {
+    html {
+      content: "dark";
+    }
+}
+
+/* Set Dark Mode background color */
+body {
+    background-color: var(--dark-mode-background-color);
+}
+
+/* Set Dark Mode text color */
+h1, h2, h3, h4, h5, h6, p, li {
+  color: var(--dark-mode-text-color);
+}
+
+/* Set hyperlink color to the site's featured color */
 a {
-  color: white;
+  color: {{ site.featured-color }};
 }
 
 /* Header Section */
 .header-brand {
   margin-bottom: 0px;
   padding-bottom: 15px;
-  background-color: transparent;
+  background-color: {{ site.featured-color }};
+}
+
+.site-description {
+  color: #ffffff;
+  text-align: center;
+}
+
+.navbar .navbar-brand{
+    color: #ffffff;
 }
 
 .navbar a{
+  color: #ffffff;
   padding: 10px;
-  color: white;
+  text-align: center;
 }
 
 .navbar-dark .navbar-nav .nav-link{
-  color: white;
+  color: #ffffff;
 }
 
+.dropdown-menu{
+	background-color: {{ site.featured-color }};
+}
+
+/* Content Section */
+
+.post-title{
+  margin: 10px 0px;
+}
+
+.page-content{
+  margin-top: 25px;
+}
+
+.post-date, .post-category-link {
+  margin-right: 8px;
+}
 
 .future h1, .now h1 {
   text-align: center;
@@ -52,16 +96,123 @@ a {
   padding-bottom: 5px;
 }
 
-* Footer Section */
+/* Section divider allowing for more flexible styling compared to an hr line */
+.section-divider {
+  background: #e0e0e0;
+  margin: 30px 0px;
+  width: 100%;
+  height: 1px;
+}
+
+.hidden-section-divider {
+  margin: 30px 0px;
+  width: 100%;
+}
+
+/* Images */
+.brand-image, .index-image, .post-image {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.index-image{
+  border: 1px whitesmoke solid;
+}
+
+.post-image{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* Events Category */
+.event-list-month{
+  margin: 25px 0px;
+}
+
+/* Related Posts */
+.related{
+  margin-top: 25px;
+}
+
+/* Jump to Top Button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: 1px solid white;
+  outline: none;
+  background-color: {{ site.featured-color }};
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* Index Pagination */
+.pagination a, .pagination span {
+    padding: 7px 18px;
+    border: 1px solid #eee;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: #ffffff;
+    display: inline-block;
+  }
+
+.pagination a {
+    &:hover {
+        background-color: #f1f1f1;
+        color: #333;
+    }
+ }
+
+.pagination {
+    text-align: center;
+ }
+
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+  text-align: right;
+}
+
+/* Footer Section */
 .footer{
-    background-color:  transparent;
+    background-color:  {{ site.featured-color }};
+    color: #fff;
     text-align: center;
     width: 100%;
     margin-top: 100px;
     padding: 5px 0px;
 }
 
+.footer a {
+    color: #fff;
+}
 
+.footer a:hover {
+    color: #f3f3f3;
+}
 
 @media (max-width: 767px){
   .mobile {
