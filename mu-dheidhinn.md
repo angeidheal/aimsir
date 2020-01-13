@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mum Dheidhinn
+title: Mu Dheidhinn
 permalink: /mu-dheidhinn/
 ---
 
