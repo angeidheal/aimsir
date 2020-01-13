@@ -4,9 +4,7 @@ window.addEventListener('load', ()=> {
     let currentSummary = document.querySelector(".current-summary");
     let temp = document.querySelector(".temp");
     let appTemp = document.querySelector(".app-temp");
-    const temperatureSpan = document.querySelector('.temperature span');
     const windSpeed = document.querySelector(".wind");
-    const humidity = document.querySelector(".humidity");
     const precip = document.querySelector(".precip");
     const dailyDay1 = document.querySelector('.day-1-day');
     const dailyDay2 = document.querySelector('.day-2-day');
@@ -48,7 +46,6 @@ window.addEventListener('load', ()=> {
                     appTemp.textContent = "Teòthachd a' faireachdainn mar " + data.currently.apparentTemperature  + " °C";
                     currentSummary.textContent = summary;
                     windSpeed.textContent = "Gaoth: " + data.currently.windSpeed + " m.s.u.";
-                    humidity.textContent = "Taiseachd: " + data.currently.humidity;
                     precip.textContent = "Sileadh: " + data.currently.precipIntensity + " mm.s.u.";
 
                     dailyDay1.textContent = "1";
