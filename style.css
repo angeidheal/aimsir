@@ -13,6 +13,10 @@ body {
     color: white;
 }
 
+.future, .now {
+  text-align: center;
+}
+
 .now, .current-weather, .future, .footnote {
   padding-top: 50px;
 }
