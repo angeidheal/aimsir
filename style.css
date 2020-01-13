@@ -4,13 +4,14 @@
 
 html {
   font-size: 100%;
+  color: #ffffff;
 }
 
 body {
     margin: 10px;
     width: 100%;
     font-family: sans-serif;
-    color: white;
+    /*color: white;*/
     background-image: linear-gradient(-20deg, #30cfd0 0%, #330867 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -23,19 +24,8 @@ body {
   background-color: transparent;
 }
 
-
-
-.navbar .navbar-brand{
-    color: #ffffff;
-}
-
 .navbar a{
-  color: #ffffff;
   padding: 10px;
-}
-
-.navbar-dark .navbar-nav .nav-link{
-  color: #ffffff;
 }
 
 /*
@@ -65,20 +55,13 @@ body {
 * Footer Section */
 .footer{
     background-color:  transparent;
-    color: #fff;
     text-align: center;
     width: 100%;
     margin-top: 100px;
     padding: 5px 0px;
 }
 
-.footer a {
-    color: #fff;
-}
 
-.footer a:hover {
-    color: #f3f3f3;
-}
 
 @media (max-width: 767px){
   .mobile {
