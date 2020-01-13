@@ -2,16 +2,12 @@
 
 ---
 
-html {
-  font-size: 100%;
-  color: #ffffff;
-}
-
 body {
     margin: 10px;
     width: 100%;
     font-family: sans-serif;
-    /*color: white;*/
+    font-size: 100%;
+    color: white;
     background-image: linear-gradient(-20deg, #30cfd0 0%, #330867 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
