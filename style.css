@@ -30,3 +30,39 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+* Footer Section */
+.footer{
+    background-color:  transparent;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+    padding: 5px 0px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #f3f3f3;
+}
+
+@media (max-width: 767px){
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px){
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+}
