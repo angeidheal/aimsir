@@ -1,5 +1,5 @@
 html {
-  background: -moz-linear-gradient(top, #fff, #000);
+  background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
   /* etc. */
 }
 
