@@ -6,19 +6,6 @@ html {
   font-size: 100%;
 }
 
-/* Set Dark Mode's text, and background colors */
-html[data-theme="dark"] {
-  --dark-mode-text-color: #999999;
-  --dark-mode-background-color: #1a1a1a;
-}
-
-/* Check if user has dark mode enabled */
-@media (prefers-color-scheme: dark) {
-    html {
-      content: "dark";
-    }
-}
-
 /* Set Dark Mode background color */
 body {
     margin: 10px;
