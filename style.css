@@ -10,7 +10,7 @@ body {
     height: 100vh;
     background-color: transparent;
     font-family: sans-serif;
-    color: #white;
+    color: white;
 }
 
 .now, .current-weather, .future, .footnote {
