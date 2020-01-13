@@ -14,7 +14,7 @@ body {
 }
 
 .now, .current-weather, .future, .footnote {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .current-weather {
@@ -28,7 +28,7 @@ body {
 }
 
 .current-summary h2, .degree h2 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .day-1-temp,
