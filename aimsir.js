@@ -45,8 +45,8 @@ window.addEventListener('load', ()=> {
                     // Set DOM Elements from the API
                     degree.textContent = temperature  + " °C";
                     currentSummary.textContent = summary;
-                    windSpeed.textContent = "Gaoth " + data.currently.windSpeed + " m/u";
-                    humidity.textContent = "Taiseachd " + data.currently.humidity;
+                    windSpeed.textContent = "Gaoth: " + data.currently.windSpeed + " m/u";
+                    humidity.textContent = "Taiseachd: " + data.currently.humidity;
                     precip.textContent = "Sileadh: " + data.currently.precipIntensity + " mm/u";
 
                     dailyDay1.textContent = "1";
