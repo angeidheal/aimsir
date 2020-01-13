@@ -7,8 +7,7 @@ html {
 }
 
 body {
-    /*margin: 10px;*/
-    height: 100vh;
+    margin: 10px;
     width: 100%;
     font-family: sans-serif;
     color: white;
