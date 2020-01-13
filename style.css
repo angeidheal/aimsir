@@ -1,9 +1,8 @@
 body {
     margin: 10px;
     height: 100vh;
-    background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
     font-family: sans-serif;
-    color: white;
+    color: #1E1E1E;
 }
 
 .now, .current-weather, .future, .footnote {
