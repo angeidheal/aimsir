@@ -4,7 +4,7 @@ title: Mu Dheidhinn
 permalink: /mu-dheidhinn/
 ---
 
-## Cèistean as Cumanta
+### Cèistean as Cumanta
 
 We use geocoder services to determine addresses. Generally speaking this should be close to accurate, but not always perfect. It should not affect your forecasts, however, since we use your coordinates and not street address to generate the forecast.
 
