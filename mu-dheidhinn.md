@@ -19,3 +19,10 @@ Bidh sinn a' faighinn an data againn bhon API Dark Sky. Faodaidh sibh barrachd f
 **Dè cho ùr sa tha an data?**
 
 Bidh data airson an ath uair air ùrachadh gach còig mionaidean. Bidh data airson ro-aithrisean làitheil air ùrachadh gach uair a thìde. Bidh rabhaidhean droch shìde air an ùrachadh sa bhad.
+
+
+#### Taing
+
+[Dark Sky](https://darksky.net/) airson an API air a bheil Aimsir.info steidheachadh
+
+[Skycons](https://darkskyapp.github.io/skycons/) airson na h-iomhaighean
