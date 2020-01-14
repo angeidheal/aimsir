@@ -21,10 +21,11 @@ body {
 /* Set hyperlink color */
 a {
   color: #ffffff;
+  text-decoration: underline;
 }
 
 a:hover {
-    color: #f3f3f3;
+    color: #000000;
 }
 /* Header Section */
 .header-brand {
