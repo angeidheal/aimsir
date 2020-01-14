@@ -18,11 +18,14 @@ body {
     background-attachment: fixed;
 }
 
-/* Set hyperlink color to the site's featured color */
+/* Set hyperlink color */
 a {
   color: #ffffff;
 }
 
+a:hover {
+    color: #f3f3f3;
+}
 /* Header Section */
 .header-brand {
   margin-bottom: 0px;
