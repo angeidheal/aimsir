@@ -75,7 +75,7 @@ a:hover {
   padding-top: 50px;
 }
 
-.current-weather, .future {
+.current-weather, ..center {
   text-align: center;
 }
 
