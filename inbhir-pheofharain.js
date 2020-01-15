@@ -28,10 +28,7 @@ window.addEventListener('load', ()=> {
     const dailySummary6 = document.querySelector('.day-6-summary');
     const dailySummary7 = document.querySelector('.day-7-summary');
 
-    if (navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(position => {
-            long = position.coords.longitude;
-            lat = position.coords.latitude;
+
             const proxy = 'https://cors-anywhere.herokuapp.com/';
             const api = `${proxy}https://api.darksky.net/forecast/9e00d522da20f32ddb9cc5f341b5338a/57.595461,-4.429233?lang=gd&units=uk2`;
             fetch(api)
@@ -75,8 +72,6 @@ window.addEventListener('load', ()=> {
                     setIcons(icon, document.querySelector(".icon"));
 
                 });
-        });
-    }
 
     function setIcons(icon, iconID) {
         const skycons = new Skycons({ color: "white" });
