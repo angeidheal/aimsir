@@ -75,9 +75,12 @@ a:hover {
   padding-top: 50px;
 }
 
-.current-weather, .center {
+.section-header {
   text-align: center;
+  padding-top: 20px;
 }
+
+
 
 .daily-summary {
   padding-top: 5px;
