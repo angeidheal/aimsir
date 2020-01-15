@@ -80,7 +80,7 @@ a:hover {
   padding-top: 20px;
 }
 
-.location {
+.location, .current-summary, .icon {
   text-align: center;
 }
 
