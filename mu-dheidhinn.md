@@ -4,7 +4,7 @@ title: Mu Dheidhinn
 permalink: /mu-dheidhinn/
 ---
 
-Bidh Aimsir.info a' toirt thugaibh tuairmse air an aimsir ge bith càite a bheil sibh air ur suidheachadh.
+Bidh Aimsir.info a' toirt thugaibh am fiosrachadh as ùire mun aimsir ge bith càite a bheil sibh.
 
 #### Cèistean as Cumanta
 
