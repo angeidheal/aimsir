@@ -71,8 +71,8 @@ a:hover {
   margin-right: 8px;
 }
 
-.now, .current-weather, .future, .footnote {
-  padding-top: 50px;
+.current-weather {
+  border: 1px solid white;
 }
 
 .section-header {
