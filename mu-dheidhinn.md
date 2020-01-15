@@ -6,7 +6,7 @@ permalink: /mu-dheidhinn/
 
 Bidh Aimsir.info a' toirt thugaibh am fiosrachadh as ùire mun aimsir ge bith càite a bheil sibh.
 
-#### Cèistean as Cumanta
+#### Cèistean Cumanta
 
 **Ciamar a tha e ag obair?**
 
