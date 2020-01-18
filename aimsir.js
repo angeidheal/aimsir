@@ -1,11 +1,13 @@
 window.addEventListener('load', ()=> {
-    let long;
-    let lat;
-    let currentSummary = document.querySelector(".current-summary");
-    let temp = document.querySelector(".temp");
-    let appTemp = document.querySelector(".app-temp");
+    const long;
+    const lat;
+    
+    const currentSummary = document.querySelector(".current-summary");
+    const temp = document.querySelector(".temp");
+    const appTemp = document.querySelector(".app-temp");
     const windSpeed = document.querySelector(".wind");
     const precip = document.querySelector(".precip");
+
     const dailyDay1 = document.querySelector('.day-1-day');
     const dailyDay2 = document.querySelector('.day-2-day');
     const dailyDay3 = document.querySelector('.day-3-day');
@@ -13,6 +15,7 @@ window.addEventListener('load', ()=> {
     const dailyDay5 = document.querySelector('.day-5-day');
     const dailyDay6 = document.querySelector('.day-6-day');
     const dailyDay7 = document.querySelector('.day-7-day');
+
     const dailyTemp1 = document.querySelector('.day-1-temp');
     const dailyTemp2 = document.querySelector('.day-2-temp');
     const dailyTemp3 = document.querySelector('.day-3-temp');
@@ -20,7 +23,7 @@ window.addEventListener('load', ()=> {
     const dailyTemp5 = document.querySelector('.day-5-temp');
     const dailyTemp6 = document.querySelector('.day-6-temp');
     const dailyTemp7 = document.querySelector('.day-7-temp');
-    const dailyIcon1 = document.querySelector('.day-1-icon');
+
     const dailySummary1 = document.querySelector('.day-1-summary');
     const dailySummary2 = document.querySelector('.day-2-summary');
     const dailySummary3 = document.querySelector('.day-3-summary');
@@ -109,8 +112,6 @@ window.addEventListener('load', ()=> {
                     dailyTemp5.textContent = data.daily.data[5].temperatureHigh  + " °C";
                     dailyTemp6.textContent = data.daily.data[6].temperatureHigh  + " °C";
                     dailyTemp7.textContent = data.daily.data[7].temperatureHigh  + " °C";
-
-                    dailyIcon1.textContent = data.daily.data[1].icon;
 
                     dailySummary1.textContent = data.daily.data[1].summary;
                     dailySummary2.textContent = data.daily.data[2].summary;
