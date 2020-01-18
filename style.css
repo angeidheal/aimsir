@@ -73,6 +73,7 @@ a:hover {
 
 .current-weather {
   padding: 20px 10px;
+  border-radius: 25px;
   border: 1px solid white;
   text-align: center;
 }
