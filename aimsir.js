@@ -43,6 +43,14 @@ window.addEventListener('load', ()=> {
                     const { temperature, summary, icon } = data.currently;
                     const { time } = data.daily;
                     // Set DOM Elements from the API
+
+                    let unix_timestamp = data.daily.data[1].time
+                    var date = new Date(unix_timestamp * 1000);
+                    var hours = date.getDay();
+                    var formattedTime1 = day;
+
+                    console.log(formattedTime1)
+
                     temp.textContent = temperature  + " °C";
                     appTemp.textContent = data.currently.apparentTemperature  + " °C";
                     currentSummary.textContent = summary;
@@ -77,12 +85,7 @@ window.addEventListener('load', ()=> {
         });
     }
 
-    let unix_timestamp = data.daily.data[1].time
-    var date = new Date(unix_timestamp * 1000);
-    var hours = date.getDay();
-    var formattedTime1 = day;
 
-    console.log(formattedTime1)
 
     function setIcons(icon, iconID) {
         const skycons = new Skycons({ color: "white" });
