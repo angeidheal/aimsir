@@ -32,7 +32,10 @@ window.addEventListener('load', ()=> {
     const dailySummary6 = document.querySelector('.day-6-summary');
     const dailySummary7 = document.querySelector('.day-7-summary');
 
-
+    if (navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(position => {
+            long = position.coords.longitude;
+            lat = position.coords.latitude;
             const proxy = 'https://cors-anywhere.herokuapp.com/';
             const api = `${proxy}https://api.darksky.net/forecast/9e00d522da20f32ddb9cc5f341b5338a/56.8198,5.1052?lang=gd&units=uk2`;
             fetch(api)
@@ -85,6 +88,8 @@ window.addEventListener('load', ()=> {
                     var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
                     var formattedDate7 = days[date.getDay()];
                     console.log(formattedDate7)
+
+
                     // Set DOM Elements from the API
                     temp.textContent = temperature  + " °C";
                     appTemp.textContent = data.currently.apparentTemperature  + " °C";
@@ -119,6 +124,8 @@ window.addEventListener('load', ()=> {
                     setIcons(icon, document.querySelector(".icon"));
 
                 });
+        });
+    }
 
     function setIcons(icon, iconID) {
         const skycons = new Skycons({ color: "white" });
