@@ -1,7 +1,7 @@
 window.addEventListener('load', ()=> {
-    const long;
-    const lat;
-    
+    let long;
+    let lat;
+
     const currentSummary = document.querySelector(".current-summary");
     const temp = document.querySelector(".temp");
     const appTemp = document.querySelector(".app-temp");
