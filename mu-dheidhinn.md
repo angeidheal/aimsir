@@ -24,10 +24,10 @@ Bidh data airson an ath uair air ùrachadh gach còig mionaidean. Bidh data airs
 
 Tha na aonadan-thìde a' co-fhreagairt ris na h-amannan na leanas:
 
-* _madainn_: 04:00 (4m) to 12:00 (12f)
-* _tràth san fheasgar_: 12:00 (12f) to 17:00 (5f)
-* _anmoch san fheasgar_: 17:00 (5f) to 22:00 (10f)
-* _a-nochd_: 22:00 (10f) to 04:00 (4m)
+* _madainn_: 04:00 (4m) gu 12:00 (12f)
+* _tràth san fheasgar_: 12:00 (12f) gu 17:00 (5f)
+* _anmoch san fheasgar_: 17:00 (5f) gu 22:00 (10f)
+* _a-nochd_: 22:00 (10f) gu 04:00 (4m)
 
 #### Taing
 
