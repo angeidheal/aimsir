@@ -46,8 +46,8 @@ window.addEventListener('load', ()=> {
 
                     let unix_timestamp = data.daily.data[1].time
                     var date = new Date(unix_timestamp * 1000);
-                    var days = "Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne";
-                    var date = date.getDay();
+                    var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
+                    var date = days[date.getDay()];
                     var formattedTime1 = day;
 
                     console.log(formattedTime1)
