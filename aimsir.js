@@ -48,7 +48,12 @@ window.addEventListener('load', ()=> {
                     var date = new Date(unix_timestamp * 1000);
                     var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
                     var formattedDate1 = days[date.getDay()];
+                    console.log(formattedDate1)
 
+                    let unix_timestamp = data.daily.data[2].time
+                    var date = new Date(unix_timestamp * 1000);
+                    var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
+                    var formattedDate1 = days[date.getDay()];
                     console.log(formattedDate1)
 
                     temp.textContent = temperature  + " °C";
@@ -58,7 +63,7 @@ window.addEventListener('load', ()=> {
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
 
                     dailyDay1.textContent = formattedDate1;
-                    dailyDay2.textContent = "2";
+                    dailyDay2.textContent = formattedDate2;
                     dailyDay3.textContent = "3";
                     dailyDay4.textContent = "4";
                     dailyDay5.textContent = "5";
