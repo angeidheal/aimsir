@@ -16,6 +16,8 @@ window.addEventListener('load', ()=> {
     const dailyDay6 = document.querySelector('.day-6-day');
     const dailyDay7 = document.querySelector('.day-7-day');
 
+    const dailyAppTemp1 = document.querySelector('.day-1-app-temp');
+
     const dailyTemp1 = document.querySelector('.day-1-temp');
     const dailyTemp2 = document.querySelector('.day-2-temp');
     const dailyTemp3 = document.querySelector('.day-3-temp');
@@ -112,6 +114,8 @@ window.addEventListener('load', ()=> {
                     dailyTemp5.textContent = data.daily.data[5].temperatureHigh  + " °C";
                     dailyTemp6.textContent = data.daily.data[6].temperatureHigh  + " °C";
                     dailyTemp7.textContent = data.daily.data[7].temperatureHigh  + " °C";
+
+                    dailyAppTemp1.textContent = data.daily.data[1].apparentTemperatureHigh  + " °C";
 
                     dailySummary1.textContent = data.daily.data[1].summary;
                     dailySummary2.textContent = data.daily.data[2].summary;
