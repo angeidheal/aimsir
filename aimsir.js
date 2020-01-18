@@ -46,7 +46,7 @@ window.addEventListener('load', ()=> {
 
                     let unix_timestamp = data.daily.data[1].time
                     var date = new Date(unix_timestamp * 1000);
-                    var hours = date.getDay();
+                    var day = date.getDay();
                     var formattedTime1 = day;
 
                     console.log(formattedTime1)
