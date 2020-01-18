@@ -92,6 +92,10 @@ a:hover {
   padding-bottom: 5px;
 }
 
+.day-1-day, .day-2-day, .day-3-day, .day-4-day, .day-5-day, .day-6-day, .day-7-day {
+  font-weight: bold;
+}
+
 /* Section divider allowing for more flexible styling compared to an hr line */
 .section-divider {
   background: #e0e0e0;
