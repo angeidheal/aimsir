@@ -44,17 +44,17 @@ window.addEventListener('load', ()=> {
                     const { time } = data.daily;
                     // Set DOM Elements from the API
 
-                    let unix_timestamp = data.daily.data[1].time
-                    var date = new Date(unix_timestamp * 1000);
+                    let unix_timestamp1 = data.daily.data[1].time
+                    var date = new Date(unix_timestamp1 * 1000);
                     var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
                     var formattedDate1 = days[date.getDay()];
                     console.log(formattedDate1)
 
-                    let unix_timestamp = data.daily.data[2].time
-                    var date = new Date(unix_timestamp * 1000);
+                    let unix_timestamp2 = data.daily.data[2].time
+                    var date = new Date(unix_timestamp2 * 1000);
                     var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
-                    var formattedDate1 = days[date.getDay()];
-                    console.log(formattedDate1)
+                    var formattedDate2 = days[date.getDay()];
+                    console.log(formattedDate2)
 
                     temp.textContent = temperature  + " °C";
                     appTemp.textContent = data.currently.apparentTemperature  + " °C";
