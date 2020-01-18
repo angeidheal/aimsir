@@ -20,6 +20,7 @@ window.addEventListener('load', ()=> {
     const dailyTemp5 = document.querySelector('.day-5-temp');
     const dailyTemp6 = document.querySelector('.day-6-temp');
     const dailyTemp7 = document.querySelector('.day-7-temp');
+    const dailyIcon1 = document.querySelector('.day-1-icon');
     const dailySummary1 = document.querySelector('.day-1-summary');
     const dailySummary2 = document.querySelector('.day-2-summary');
     const dailySummary3 = document.querySelector('.day-3-summary');
@@ -108,6 +109,8 @@ window.addEventListener('load', ()=> {
                     dailyTemp5.textContent = data.daily.data[5].temperatureHigh  + " °C";
                     dailyTemp6.textContent = data.daily.data[6].temperatureHigh  + " °C";
                     dailyTemp7.textContent = data.daily.data[7].temperatureHigh  + " °C";
+
+                    dailyIcon1.textContent = data.daily.data[1].icon;
 
                     dailySummary1.textContent = data.daily.data[1].summary;
                     dailySummary2.textContent = data.daily.data[2].summary;
