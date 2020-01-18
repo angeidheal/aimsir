@@ -20,6 +20,14 @@ Bidh sinn a' faighinn an data againn bhon API Dark Sky. Faodaidh sibh barrachd f
 
 Bidh data airson an ath uair air ùrachadh gach còig mionaidean. Bidh data airson ro-aithrisean làitheil air ùrachadh gach uair a thìde. Bidh rabhaidhean droch shìde air an ùrachadh sa bhad.
 
+**Aonadan-thìde**
+
+Tha na aonadan-thìde a' co-fhreagairt ris na h-amannan na leanas:
+
+* _madainn_: 04:00 (4m) to 12:00 (12f)
+* _tràth san fheasgar_: 12:00 (12f) to 17:00 (5f)
+* _anmoch san fheasgar_: 17:00 (5f) to 22:00 (10f)
+* _a-nochd_: 22:00 (10f) to 04:00 (4m)
 
 #### Taing
 
