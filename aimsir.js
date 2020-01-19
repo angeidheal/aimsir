@@ -33,7 +33,7 @@ window.addEventListener('load', ()=> {
     const dailyTemp7 = document.querySelector('.day-7-temp');
 
 
-    const dailyWind = document.querySelector('.day-1-wind');
+    const dailyWind1 = document.querySelector('.day-1-wind');
 
 
     const dailyPrecip1 = document.querySelector('.day-1-precip');
