@@ -16,14 +16,6 @@ window.addEventListener('load', ()=> {
     const dailyDay6 = document.querySelector('.day-6-day');
     const dailyDay7 = document.querySelector('.day-7-day');
 
-    const dailyAppTemp1 = document.querySelector('.day-1-app-temp');
-    const dailyAppTemp2 = document.querySelector('.day-2-app-temp');
-    const dailyAppTemp3 = document.querySelector('.day-3-app-temp');
-    const dailyAppTemp4 = document.querySelector('.day-4-app-temp');
-    const dailyAppTemp5 = document.querySelector('.day-5-app-temp');
-    const dailyAppTemp6 = document.querySelector('.day-6-app-temp');
-    const dailyAppTemp7 = document.querySelector('.day-7-app-temp');
-
     const dailyTemp1 = document.querySelector('.day-1-temp');
     const dailyTemp2 = document.querySelector('.day-2-temp');
     const dailyTemp3 = document.querySelector('.day-3-temp');
@@ -31,6 +23,14 @@ window.addEventListener('load', ()=> {
     const dailyTemp5 = document.querySelector('.day-5-temp');
     const dailyTemp6 = document.querySelector('.day-6-temp');
     const dailyTemp7 = document.querySelector('.day-7-temp');
+
+    const dailyAppTemp1 = document.querySelector('.day-1-app-temp');
+    const dailyAppTemp2 = document.querySelector('.day-2-app-temp');
+    const dailyAppTemp3 = document.querySelector('.day-3-app-temp');
+    const dailyAppTemp4 = document.querySelector('.day-4-app-temp');
+    const dailyAppTemp5 = document.querySelector('.day-5-app-temp');
+    const dailyAppTemp6 = document.querySelector('.day-6-app-temp');
+    const dailyAppTemp7 = document.querySelector('.day-7-app-temp');
 
     const dailyWind1 = document.querySelector('.day-1-wind');
     const dailyWind2 = document.querySelector('.day-2-wind');
