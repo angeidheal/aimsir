@@ -32,6 +32,12 @@ window.addEventListener('load', ()=> {
     const dailyTemp6 = document.querySelector('.day-6-temp');
     const dailyTemp7 = document.querySelector('.day-7-temp');
 
+
+    const dailyWind = document.querySelector('.day-1-wind');
+
+
+    const dailyPrecip1 = document.querySelector('.day-1-precip');
+
     const dailySummary1 = document.querySelector('.day-1-summary');
     const dailySummary2 = document.querySelector('.day-2-summary');
     const dailySummary3 = document.querySelector('.day-3-summary');
@@ -128,6 +134,10 @@ window.addEventListener('load', ()=> {
                     dailyAppTemp5.textContent = data.daily.data[5].apparentTemperatureHigh  + " °C";
                     dailyAppTemp6.textContent = data.daily.data[6].apparentTemperatureHigh  + " °C";
                     dailyAppTemp7.textContent = data.daily.data[7].apparentTemperatureHigh  + " °C";
+
+                    dailyWind1.textContent = data.daily.data[1].windSpeed + " m.s.u.";
+
+                    dailyPrecip1.textContent = data.daily.data[1].precipIntensity + " mm.s.u.";
 
                     dailySummary1.textContent = data.daily.data[1].summary;
                     dailySummary2.textContent = data.daily.data[2].summary;
