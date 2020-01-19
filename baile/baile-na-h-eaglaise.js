@@ -24,6 +24,30 @@ window.addEventListener('load', ()=> {
     const dailyTemp6 = document.querySelector('.day-6-temp');
     const dailyTemp7 = document.querySelector('.day-7-temp');
 
+    const dailyAppTemp1 = document.querySelector('.day-1-app-temp');
+    const dailyAppTemp2 = document.querySelector('.day-2-app-temp');
+    const dailyAppTemp3 = document.querySelector('.day-3-app-temp');
+    const dailyAppTemp4 = document.querySelector('.day-4-app-temp');
+    const dailyAppTemp5 = document.querySelector('.day-5-app-temp');
+    const dailyAppTemp6 = document.querySelector('.day-6-app-temp');
+    const dailyAppTemp7 = document.querySelector('.day-7-app-temp');
+
+    const dailyWind1 = document.querySelector('.day-1-wind');
+    const dailyWind2 = document.querySelector('.day-2-wind');
+    const dailyWind3 = document.querySelector('.day-3-wind');
+    const dailyWind4 = document.querySelector('.day-4-wind');
+    const dailyWind5 = document.querySelector('.day-5-wind');
+    const dailyWind6 = document.querySelector('.day-6-wind');
+    const dailyWind7 = document.querySelector('.day-7-wind');
+
+    const dailyPrecip1 = document.querySelector('.day-1-precip');
+    const dailyPrecip2 = document.querySelector('.day-2-precip');
+    const dailyPrecip3 = document.querySelector('.day-3-precip');
+    const dailyPrecip4 = document.querySelector('.day-4-precip');
+    const dailyPrecip5 = document.querySelector('.day-5-precip');
+    const dailyPrecip6 = document.querySelector('.day-6-precip');
+    const dailyPrecip7 = document.querySelector('.day-7-precip');
+
     const dailySummary1 = document.querySelector('.day-1-summary');
     const dailySummary2 = document.querySelector('.day-2-summary');
     const dailySummary3 = document.querySelector('.day-3-summary');
@@ -108,6 +132,30 @@ window.addEventListener('load', ()=> {
             dailyTemp5.textContent = data.daily.data[5].temperatureHigh  + " °C";
             dailyTemp6.textContent = data.daily.data[6].temperatureHigh  + " °C";
             dailyTemp7.textContent = data.daily.data[7].temperatureHigh  + " °C";
+
+            dailyAppTemp1.textContent = data.daily.data[1].apparentTemperatureHigh  + " °C";
+            dailyAppTemp2.textContent = data.daily.data[2].apparentTemperatureHigh  + " °C";
+            dailyAppTemp3.textContent = data.daily.data[3].apparentTemperatureHigh  + " °C";
+            dailyAppTemp4.textContent = data.daily.data[4].apparentTemperatureHigh  + " °C";
+            dailyAppTemp5.textContent = data.daily.data[5].apparentTemperatureHigh  + " °C";
+            dailyAppTemp6.textContent = data.daily.data[6].apparentTemperatureHigh  + " °C";
+            dailyAppTemp7.textContent = data.daily.data[7].apparentTemperatureHigh  + " °C";
+
+            dailyWind1.textContent = data.daily.data[1].windSpeed + " m.s.u.";
+            dailyWind2.textContent = data.daily.data[2].windSpeed + " m.s.u.";
+            dailyWind3.textContent = data.daily.data[3].windSpeed + " m.s.u.";
+            dailyWind4.textContent = data.daily.data[4].windSpeed + " m.s.u.";
+            dailyWind5.textContent = data.daily.data[5].windSpeed + " m.s.u.";
+            dailyWind6.textContent = data.daily.data[6].windSpeed + " m.s.u.";
+            dailyWind7.textContent = data.daily.data[7].windSpeed + " m.s.u.";
+
+            dailyPrecip1.textContent = data.daily.data[1].precipIntensity + " mm.s.u.";
+            dailyPrecip2.textContent = data.daily.data[2].precipIntensity + " mm.s.u.";
+            dailyPrecip3.textContent = data.daily.data[3].precipIntensity + " mm.s.u.";
+            dailyPrecip4.textContent = data.daily.data[4].precipIntensity + " mm.s.u.";
+            dailyPrecip5.textContent = data.daily.data[5].precipIntensity + " mm.s.u.";
+            dailyPrecip6.textContent = data.daily.data[6].precipIntensity + " mm.s.u.";
+            dailyPrecip7.textContent = data.daily.data[7].precipIntensity + " mm.s.u.";
 
             dailySummary1.textContent = data.daily.data[1].summary;
             dailySummary2.textContent = data.daily.data[2].summary;
