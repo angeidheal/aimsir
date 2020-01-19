@@ -96,6 +96,10 @@ a:hover {
   font-weight: bold;
 }
 
+.daily-forecast {
+  text-align: center;
+}
+
 /* Section divider allowing for more flexible styling compared to an hr line */
 .section-divider {
   background: #e0e0e0;
