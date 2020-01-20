@@ -6,7 +6,7 @@ permalink: /mu-dheidhinn/
 
 Bidh Aimsir.info a' toirt thugaibh am fiosrachadh as ùire mun aimsir ge bith càite a bheil sibh.
 
-#### Cèistean Cumanta
+### Cèistean Cumanta
 
 **Ciamar a tha e ag obair?**
 
@@ -29,7 +29,7 @@ Tha na aonadan-thìde a' co-fhreagairt ris na h-amannan na leanas:
 * _anmoch san fheasgar_: 17:00 (5f) gu 22:00 (10f);
 * _a-nochd_: 22:00 (10f) gu 04:00 (4m).
 
-#### Prìobhaideachd
+### Prìobhaideachd
 
 **User Provided Information**
 
@@ -55,12 +55,12 @@ We retain your information only as long as necessary to provide our services.
 
 You can stop all collection of information by the Service by uninstalling the Applications and ceasing all use of the Websites.
 
-#### Taing
+### Taing
 
 [Dark Sky](https://darksky.net/) airson an API air a bheil Aimsir.info steidheachadh
 
 [Skycons](https://darkskyapp.github.io/skycons/) airson na h-iomhaighean
 
-#### Cuir Fios
+### Cuir Fios
 
 Ma tha sibh airson fios a chur thugam 's urrainn dhuibh gam lorg air Twitter: [@MacMhicheil](https://www.twitter.com/MacMhicheil).
