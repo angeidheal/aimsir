@@ -12,15 +12,15 @@ Bidh Aimsir.info a' toirt thugaibh am fiosrachadh as ùire mun aimsir ge bith c�
 
 Bidh sinn a' cleachdadh seirbheisean geocoder gus na co-chomharraidhean agad a dhearbhadh. Ged nach eil seo an-còmhnaidh foirfe, bu chòir dha bhith gu math faisg air am fior suidheachadh agad.
 
-**Cò às a tha an data a' tighinn?**
+##### Cò às a tha an data a' tighinn?
 
 Bidh sinn a' faighinn an data againn bhon API Dark Sky. Faodaidh sibh barrachd fhiosrachaidh fhaighinn mu thùsan Dark Sky [an seo](https://darksky.net/dev/docs/sources).
 
-**Dè cho ùr sa tha an data?**
+##### Dè cho ùr sa tha an data?
 
 Bidh data airson an ath uair air ùrachadh gach còig mionaidean. Bidh data airson ro-aithrisean làitheil air ùrachadh gach uair a thìde. Bidh rabhaidhean droch shìde air an ùrachadh sa bhad.
 
-**Aonadan-thìde**
+##### Aonadan-thìde
 
 Tha na aonadan-thìde a' co-fhreagairt ris na h-amannan na leanas:
 
@@ -31,7 +31,7 @@ Tha na aonadan-thìde a' co-fhreagairt ris na h-amannan na leanas:
 
 ### Prìobhaideachd
 
-**User Provided Information**
+##### User Provided Information
 
 We collect information you provide to us. Example may include:
 
@@ -39,7 +39,7 @@ We collect information you provide to us. Example may include:
 
 * the contact information you provide when contacting us for support.
 
-**Use of Information**
+##### Use of Information
 
 We use the information we collect to provide, analyze, administer, enhance, and personalize the Service for you and others. For example, we may use the information we collect for purposes such as:
 
@@ -51,7 +51,7 @@ We use the information we collect to provide, analyze, administer, enhance, and 
 
 We retain your information only as long as necessary to provide our services.
 
-**Opt-out**
+##### Opt-out
 
 You can stop all collection of information by the Service by uninstalling the Applications and ceasing all use of the Websites.
 
