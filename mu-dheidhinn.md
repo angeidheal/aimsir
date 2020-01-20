@@ -29,6 +29,32 @@ Tha na aonadan-thìde a' co-fhreagairt ris na h-amannan na leanas:
 * _anmoch san fheasgar_: 17:00 (5f) gu 22:00 (10f);
 * _a-nochd_: 22:00 (10f) gu 04:00 (4m).
 
+#### Prìobhaideachd
+
+**User Provided Information**
+
+We collect information you provide to us. Example may include:
+
+* the location you provide when requesting a forecast;
+
+* the contact information you provide when contacting us for support.
+
+**Use of Information**
+
+We use the information we collect to provide, analyze, administer, enhance, and personalize the Service for you and others. For example, we may use the information we collect for purposes such as:
+
+* providing weather conditions and forecasts;
+
+* debugging errors in the Service; and
+
+* improving the functionality of the Service.
+
+We retain your information only as long as necessary to provide our services.
+
+**Opt-out**
+
+You can stop all collection of information by the Service by uninstalling the Applications and ceasing all use of the Websites.
+
 #### Taing
 
 [Dark Sky](https://darksky.net/) airson an API air a bheil Aimsir.info steidheachadh
