@@ -34,3 +34,7 @@ Tha na aonadan-thìde a' co-fhreagairt ris na h-amannan na leanas:
 [Dark Sky](https://darksky.net/) airson an API air a bheil Aimsir.info steidheachadh
 
 [Skycons](https://darkskyapp.github.io/skycons/) airson na h-iomhaighean
+
+#### Cuir Fios
+
+Ma tha sibh airson fios a chur thugam 's urrainn dhuibh gam lorg air Twitter: [@MacMhicheil](https://www.twitter.com/MacMhicheil).
