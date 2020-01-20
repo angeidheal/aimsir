@@ -8,7 +8,7 @@ Bidh Aimsir.info a' toirt thugaibh am fiosrachadh as ùire mun aimsir ge bith c�
 
 ### Cèistean Cumanta
 
-**Ciamar a tha e ag obair?**
+##### Ciamar a tha e ag obair?
 
 Bidh sinn a' cleachdadh seirbheisean geocoder gus na co-chomharraidhean agad a dhearbhadh. Ged nach eil seo an-còmhnaidh foirfe, bu chòir dha bhith gu math faisg air am fior suidheachadh agad.
 
