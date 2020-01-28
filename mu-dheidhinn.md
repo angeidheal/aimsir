@@ -10,7 +10,11 @@ Bidh Aimsir.info a' toirt thugaibh am fiosrachadh as ùire mun aimsir ge bith c�
 
 ##### Ciamar a tha e ag obair?
 
-Bidh sinn a' cleachdadh seirbheisean geocoder gus na co-chomharraidhean agad a dhearbhadh. Ged nach eil seo an-còmhnaidh foirfe, bu chòir dha bhith gu math faisg air am fior suidheachadh agad.
+Bidh sinn a' cleachdadh seirbheisean geocoder gus na co-chomharraidhean agad a dhearbhadh. Ged nach eil seo an-còmhnaidh foirfe, bu chòir dha bhith gu math faisg air am fior suidheachadh agad. Mura h-eil sibh airson na co-chomharraidhean agad a cho-roinneadh rinn, faodaidh sibh tuairmse fhaighinn air aimsir bailtean mòra na h-Alba le bhtih a' dèanamh brìog air na ceanglaichean aig bonn na prìomh dhuilleag.
+
+#### Carson nach urrainn dhomh tuairmse fhaighinn airson baile X?
+
+Bidh Dark Sky a' cleachdadh co-chomharraidhean airson bailtean a lorg. Tha mi a' lorg dòigh airson ainmean-àite eadar-theangachadh gu co-chomharraidhean, ach feumaidh an dòigh seo a bhith comasach air ainmean-àite Gàidhlig a thuigsinn.
 
 ##### Cò às a tha an data a' tighinn?
 
