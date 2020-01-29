@@ -121,7 +121,12 @@ window.addEventListener('load', ()=> {
                     currentSummary.textContent = data.hourly.data.summary;
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
-                    alerts.textContent = data.alerts.description;
+
+                    if data.alerts.description {
+                      alerts.textContent = data.alerts.description;
+                    } else{
+                      alerts.textContent = "Chan eil rabhadh aimsire anns an sgìre seo."
+                    }
 
                     dailyDay1.textContent = formattedDate1;
                     dailyDay2.textContent = formattedDate2;
