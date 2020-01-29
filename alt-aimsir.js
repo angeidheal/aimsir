@@ -125,7 +125,7 @@ window.addEventListener('load', ()=> {
                     let weatherAlert = data.alerts.description;
 
                     if (weatherAlert) {
-                      alerts.textContent = data.alerts.description;
+                      alerts.textContent = weatherAlert;
                     } else{
                       alerts.textContent = "Chan eil rabhadh aimsire anns an sgìre seo.";
                     }
