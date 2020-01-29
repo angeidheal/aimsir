@@ -117,7 +117,7 @@ window.addEventListener('load', ()=> {
                     if (data.alerts.description){
                       alerts.textContent = data.alerts.description
                     } else {
-                      alerts.textConent = "Chan eil rabhadh aimsire ann airson an sgìre seo."
+                      alerts.textContent = "Chan eil rabhadh aimsire ann airson an sgìre seo."
                     }
 
                     // Set DOM Elements from the API
