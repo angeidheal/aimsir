@@ -122,13 +122,13 @@ window.addEventListener('load', ()=> {
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
 
-                    let weatherAlert = data.alerts.description;
+                    //let weatherAlert = data.alerts.description;
 
-                    if (weatherAlert) {
-                      alerts.textContent = weatherAlert;
-                    } else{
-                      alerts.textContent = "Chan eil rabhadh aimsire anns an sgìre seo.";
-                    }
+                    //if (weatherAlert) {
+                  //    alerts.textContent = weatherAlert;
+                  //  } else{
+                  //    alerts.textContent = "Chan eil rabhadh aimsire anns an sgìre seo.";
+                    //}
 
                     dailyDay1.textContent = formattedDate1;
                     dailyDay2.textContent = formattedDate2;
