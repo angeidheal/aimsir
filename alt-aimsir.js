@@ -122,7 +122,7 @@ window.addEventListener('load', ()=> {
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
 
-                    if data.alerts.description {
+                    if (data.alerts.description) {
                       alerts.textContent = data.alerts.description;
                     } else{
                       alerts.textContent = "Chan eil rabhadh aimsire anns an sgìre seo."
