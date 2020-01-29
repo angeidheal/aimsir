@@ -114,10 +114,10 @@ window.addEventListener('load', ()=> {
                     var formattedDate7 = days[date.getDay()];
                     console.log(formattedDate7)
 
-                    if (data.alerts.description){
-                      alerts.textContent = data.alerts.description
+                    if (data.alerts.description !== undefined ){
+                      alerts.textContent = "Chan eil rabhadh aimsire ann airson an sgìre seo.";
                     } else {
-                      alerts.textContent = "Chan eil rabhadh aimsire ann airson an sgìre seo."
+                      alerts.textContent = data.alerts.description;
                     }
 
                     // Set DOM Elements from the API
