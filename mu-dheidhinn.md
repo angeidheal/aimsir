@@ -35,29 +35,29 @@ Tha na aonadan-thìde a' co-fhreagairt ris na h-amannan na leanas:
 
 ### Prìobhaideachd
 
-##### User Provided Information
+##### Fiosrachadh air a thoirt seachad leis a' chleachdaiche
 
-We collect information you provide to us. Example may include:
+Bidh sinn a' cruinneachadh am fiosrachadh na leanas bhuat:
 
-* the location you provide when requesting a forecast;
+* an àite a bheireas tu seachad nuair a dh'iarras tu tuairmse air an aimsir;
 
-* the contact information you provide when contacting us for support.
+* am fiosrachadh conaltraidh agad ma chuireas tu fios thugainn airson taic.
 
-##### Use of Information
+##### Cleachdadh Fiosrachaidh
 
-We use the information we collect to provide, analyze, administer, enhance, and personalize the Service for you and others. For example, we may use the information we collect for purposes such as:
+Bidh sinn a' cleachdadh am fiosrachadh seo airson:
 
-* providing weather conditions and forecasts;
+* tuairmsean a thabhann air an aimsir;
 
-* debugging errors in the Service; and
+* mearachdan a cheartachadh;
 
-* improving the functionality of the Service.
+* comas na seirbheis a leasachadh.
 
-We retain your information only as long as necessary to provide our services.
+Cha bhi sinn a' cruinneachadh am fiosrachadh seo airson adhbhar sam bith eile agus cha bhi sinn ga chumail na fhaide na bhios riatanach airson ar seirbheisean a sholarachadh dhut.
 
-##### Opt-out
+##### Ro-aonta
 
-You can stop all collection of information by the Service by uninstalling the Applications and ceasing all use of the Websites.
+Faodaidh tu taghadh stad a chur air a h-uile cruinneachadh fiosrachaidh le bhith a' sgur cleachdadh dhen làrach-lìn agus a' dì-stàladh an aplacaid bho na h-innealan agad.
 
 ### Taing
 
