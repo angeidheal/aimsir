@@ -4,8 +4,6 @@ title: Priobhaideachd
 permalink: /cuidheachadh/priobhaideachd/
 ---
 
-### Prìobhaideachd
-
 ##### Fiosrachadh air a thoirt seachad leis a' chleachdaiche
 
 Bidh sinn a' cruinneachadh am fiosrachadh na leanas bhuat:

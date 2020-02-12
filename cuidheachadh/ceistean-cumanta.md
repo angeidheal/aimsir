@@ -4,8 +4,6 @@ title: Cèistean Cumanta
 permalink: /cuidheachadh/ceistean-cumanta/
 ---
 
-### Cèistean Cumanta
-
 ##### Ciamar a tha e ag obair?
 
 Bidh sinn a' cleachdadh seirbheisean geocoder gus na co-chomharraidhean agad a dhearbhadh. Ged nach eil seo an-còmhnaidh foirfe, bu chòir dha bhith gu math faisg air am fior suidheachadh agad. Mura h-eil sibh airson na co-chomharraidhean agad a cho-roinneadh rinn, faodaidh sibh tuairmse fhaighinn air aimsir bailtean mòra na h-Alba le bhtih a' dèanamh brìog air na ceanglaichean aig bonn na prìomh dhuilleag.
@@ -30,39 +28,3 @@ Tha na aonadan-thìde a' co-fhreagairt ris na h-amannan na leanas:
 * _tràth san fheasgar_: 12:00 (12f) gu 17:00 (5f);
 * _anmoch san fheasgar_: 17:00 (5f) gu 22:00 (10f);
 * _a-nochd_: 22:00 (10f) gu 04:00 (4m).
-
-### Prìobhaideachd
-
-##### Fiosrachadh air a thoirt seachad leis a' chleachdaiche
-
-Bidh sinn a' cruinneachadh am fiosrachadh na leanas bhuat:
-
-* an àite a bheireas tu seachad nuair a dh'iarras tu tuairmse air an aimsir;
-
-* am fiosrachadh conaltraidh agad ma chuireas tu fios thugainn airson taic.
-
-##### Cleachdadh Fiosrachaidh
-
-Bidh sinn a' cleachdadh am fiosrachadh seo airson:
-
-* tuairmsean a thabhann air an aimsir;
-
-* mearachdan a cheartachadh;
-
-* comas na seirbheis a leasachadh.
-
-Cha bhi sinn a' cruinneachadh am fiosrachadh seo airson adhbhar sam bith eile agus cha bhi sinn ga chumail na fhaide na bhios riatanach airson ar seirbheisean a sholarachadh dhut.
-
-##### Ro-aonta
-
-Faodaidh tu taghadh stad a chur air a h-uile cruinneachadh fiosrachaidh le bhith a' sgur cleachdadh dhen làrach-lìn agus a' dì-stàladh an aplacaid bho na h-innealan agad.
-
-### Taing
-
-[Dark Sky](https://darksky.net/) airson an API air a bheil Aimsir.info steidheachadh
-
-[Skycons](https://darkskyapp.github.io/skycons/) airson na h-iomhaighean
-
-### Cuir Fios
-
-Ma tha sibh airson fios a chur thugam 's urrainn dhuibh gam lorg air Twitter: [@MacMhicheil](https://www.twitter.com/MacMhicheil).
