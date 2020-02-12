@@ -27,3 +27,5 @@ Cha bhi sinn a' cruinneachadh am fiosrachadh seo airson adhbhar sam bith eile ag
 ##### Ro-aonta
 
 Faodaidh tu taghadh stad a chur air a h-uile cruinneachadh fiosrachaidh le bhith a' sgur cleachdadh dhen làrach-lìn agus a' dì-stàladh an aplacaid bho na h-innealan agad.
+
+### [Air ais](/cuidheachadh)

@@ -15,3 +15,5 @@ Ma tha inneal-làimhe iOS agad, faodaidh tu Aimsir.info a chur ris an sgrìon-dh
 4. Chì thu an uair sin sgrìon far an urrainn dhut ainm an comharra-lìn atharrachadh. Tagh rudeigin goirid gus am faic thu gu lèir e. Nuair a tha thu deiseil thoirt gnogag air am putan "Cuir ris".
 
 5. Till ris an sgrìon-dhachaigh agad agus bu chòir dhut an comharra-lìn fhaicinn.
+
+<h3 style="text-align: center"><a href="/cuidheachadh" style="text-decoration: none"><i class="fas fa-arrow-circle-left"></i> Air Ais</a></h3>
