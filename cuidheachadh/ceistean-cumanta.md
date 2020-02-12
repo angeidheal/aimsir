@@ -29,4 +29,4 @@ Tha na aonadan-thìde a' co-fhreagairt ris na h-amannan na leanas:
 * _anmoch san fheasgar_: 17:00 (5f) gu 22:00 (10f);
 * _a-nochd_: 22:00 (10f) gu 04:00 (4m).
 
-### [Air ais](/cuidheachadh)
+<h3 style="text-align: center"><a href="/cuidheachadh" style="text-decoration: none"><i class="fas fa-arrow-circle-left"></i> Air Ais</a></h3>

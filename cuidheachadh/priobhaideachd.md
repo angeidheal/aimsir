@@ -28,4 +28,4 @@ Cha bhi sinn a' cruinneachadh am fiosrachadh seo airson adhbhar sam bith eile ag
 
 Faodaidh tu taghadh stad a chur air a h-uile cruinneachadh fiosrachaidh le bhith a' sgur cleachdadh dhen làrach-lìn agus a' dì-stàladh an aplacaid bho na h-innealan agad.
 
-### [Air ais](/cuidheachadh)
+<h3 style="text-align: center"><a href="/cuidheachadh" style="text-decoration: none"><i class="fas fa-arrow-circle-left"></i> Air Ais</a></h3>
