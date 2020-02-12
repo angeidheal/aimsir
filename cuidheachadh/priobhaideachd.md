@@ -16,13 +16,13 @@ Bidh sinn a' cruinneachadh am fiosrachadh na leanas bhuat:
 
 Bidh sinn a' cleachdadh am fiosrachadh seo airson:
 
-* tuairmsean a thabhann air an aimsir;
+* tuairmsean air an aimsir a thabhann;
 
 * mearachdan a cheartachadh;
 
 * comas na seirbheis a leasachadh.
 
-Cha bhi sinn a' cruinneachadh am fiosrachadh seo airson adhbhar sam bith eile agus cha bhi sinn ga chumail na fhaide na bhios riatanach airson ar seirbheisean a sholarachadh dhut.
+Cha bhi sinn a' cruinneachadh am fiosrachadh seo airson adhbhar sam bith eile agus cha bhi sinn ga chumail nas fhaide na bhios riatanach airson ar seirbheisean a sholarachadh dhut.
 
 ##### Ro-aonta
 
