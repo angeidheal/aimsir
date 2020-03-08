@@ -112,14 +112,6 @@ window.addEventListener('load', ()=> {
                     var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
                     var formattedDate7 = days[date.getDay()];
                     console.log(formattedDate7)
-
-
-                    const currentLocation = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&location_type=ROOFTOP&result_type=street_address&key=AIzaSyAvcFZLm-pJBxUliIdp0-Y2hmI8p02Wh1A';
-                      fetch(currentLocation)
-                        .then(city =>{
-                          console.log(city);
-                        }
-                        )
                     }
 
                     // Set DOM Elements from the API
