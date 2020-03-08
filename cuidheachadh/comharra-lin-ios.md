@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Comharra-lìn iOS
-permalink: /cuidheachadh/comharra-lin-ios/
+permalink: /cuideachadh/comharra-lin-ios/
 ---
 
 Ma tha inneal-làimhe iOS agad, faodaidh tu Aimsir.info a chur ris an sgrìn-dhachaigh agad le bhith a' dèanamh na leanas:-
@@ -16,4 +16,4 @@ Ma tha inneal-làimhe iOS agad, faodaidh tu Aimsir.info a chur ris an sgrìn-dha
 
 5. Till ris an sgrìn-dhachaigh agad agus bu chòir dhut an comharra-lìn fhaicinn.
 
-<h3 style="text-align: center"><a href="/cuidheachadh" style="text-decoration: none"><i class="fas fa-arrow-circle-left"></i> Air Ais</a></h3>
+<h3 style="text-align: center"><a href="/cuideachadh" style="text-decoration: none"><i class="fas fa-arrow-circle-left"></i> Air Ais</a></h3>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Comharra-lìn Android
-permalink: /cuidheachadh/comharra-lin-android/
+permalink: /cuideachadh/comharra-lin-android/
 ---
 
 Ma tha inneal-làimhe Android agad, faodaidh tu Aimsir.info a chur ris an sgrìn-dhachaigh agad le bhith a' dèanamh na leanas:-
@@ -40,4 +40,4 @@ Ma tha inneal-làimhe Android agad, faodaidh tu Aimsir.info a chur ris an sgrìn
 
 4. Till ris an sgrìn-dhachaigh agad agus bu chòir dhut an comharra-lìn fhaicinn.
 
-<h3 style="text-align: center"><a href="/cuidheachadh" style="text-decoration: none"><i class="fas fa-arrow-circle-left"></i> Air Ais</a></h3>
+<h3 style="text-align: center"><a href="/cuideachadh" style="text-decoration: none"><i class="fas fa-arrow-circle-left"></i> Air Ais</a></h3>

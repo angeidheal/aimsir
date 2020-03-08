@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cèistean Cumanta
-permalink: /cuidheachadh/ceistean-cumanta/
+permalink: /cuideachadh/ceistean-cumanta/
 ---
 
 ##### Ciamar a tha e ag obair?
@@ -29,4 +29,4 @@ Tha na aonadan-thìde a' co-fhreagairt ris na h-amannan na leanas:
 * _anmoch san fheasgar_: 17:00 (5f) gu 22:00 (10f);
 * _a-nochd_: 22:00 (10f) gu 04:00 (4m).
 
-<h3 style="text-align: center"><a href="/cuidheachadh" style="text-decoration: none"><i class="fas fa-arrow-circle-left"></i> Air Ais</a></h3>
+<h3 style="text-align: center"><a href="/cuideachadh" style="text-decoration: none"><i class="fas fa-arrow-circle-left"></i> Air Ais</a></h3>

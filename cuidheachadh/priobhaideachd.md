@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Priobhaideachd
-permalink: /cuidheachadh/priobhaideachd/
+permalink: /cuideachadh/priobhaideachd/
 ---
 
 ##### Fiosrachadh air a thoirt seachad leis a' chleachdaiche
@@ -28,4 +28,4 @@ Cha bhi sinn a' cruinneachadh am fiosrachadh seo airson adhbhar sam bith eile ag
 
 Faodaidh tu taghadh stad a chur air a h-uile cruinneachadh fiosrachaidh le bhith a' sgur cleachdadh dhen làrach-lìn agus a' dì-stàladh an aplacaid bho na h-innealan agad.
 
-<h3 style="text-align: center"><a href="/cuidheachadh" style="text-decoration: none"><i class="fas fa-arrow-circle-left"></i> Air Ais</a></h3>
+<h3 style="text-align: center"><a href="/cuideachadh" style="text-decoration: none"><i class="fas fa-arrow-circle-left"></i> Air Ais</a></h3>

@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Cuidheachadh
-permalink: /cuidheachadh/
+title: Cuideachadh
+permalink: /cuideachadh/
 ---
 
-[Cèistean Cumanta](/cuidheachadh/ceistean-cumanta/)
+[Cèistean Cumanta](/cuideachadh/ceistean-cumanta/)
 
-[Mar a chuireas tu comharra-lìn ris an sgrìn-dhachaigh agad (iOS)](/cuidheachadh/comharra-lin-ios/)
+[Mar a chuireas tu comharra-lìn ris an sgrìn-dhachaigh agad (iOS)](/cuideachadh/comharra-lin-ios/)
 
-[Mar a chuireas tu comharra-lìn ris an sgrìn-dhachaigh agad (Android)](/cuidheachadh/comharra-lin-android/)
+[Mar a chuireas tu comharra-lìn ris an sgrìn-dhachaigh agad (Android)](/cuideachadh/comharra-lin-android/)
 
-[Prìobhaideachd](/cuidheachadh/priobhaideachd/)
+[Prìobhaideachd](/cuideachadh/priobhaideachd/)
