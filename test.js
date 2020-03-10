@@ -122,8 +122,6 @@ window.addEventListener('load', ()=> {
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
                     humidityLevel.textContent = humidity;
 
-
-
                     dailyDay1.textContent = formattedDate1;
                     dailyDay2.textContent = formattedDate2;
                     dailyDay3.textContent = formattedDate3;
