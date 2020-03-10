@@ -6,7 +6,7 @@ window.addEventListener('load', ()=> {
     const temp = document.querySelector(".temp");
     const appTemp = document.querySelector(".app-temp");
     const windSpeed = document.querySelector(".wind");
-    const precip = document.querySelector(".precip");");
+    const precip = document.querySelector(".precip");
     const humidityLevel = document.querySelector(".humidityLevel");
     const pressure = document.querySelector(".pressure");
 
