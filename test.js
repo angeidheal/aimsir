@@ -120,7 +120,12 @@ window.addEventListener('load', ()=> {
                     currentSummary.textContent = summary;
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
-                    humidityLevel.textContent = (data.currently.humidity * 100) + "%";
+
+                    if (data.currently.humidity > 0.5) {
+                      humidityLevel.textContent = "Bogthaise ard";
+                    } else {
+                      humidityLevel.textContent = "Bogthaise íseal";
+                    };
 
                     dailyDay1.textContent = formattedDate1;
                     dailyDay2.textContent = formattedDate2;
