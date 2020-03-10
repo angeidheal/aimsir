@@ -7,6 +7,7 @@ window.addEventListener('load', ()=> {
     const appTemp = document.querySelector(".app-temp");
     const windSpeed = document.querySelector(".wind");
     const precip = document.querySelector(".precip");
+    const humidityLevel = document.querySelector(".humidityLevel");
 
     const dailyDay1 = document.querySelector('.day-1-day');
     const dailyDay2 = document.querySelector('.day-2-day');
@@ -119,7 +120,7 @@ window.addEventListener('load', ()=> {
                     currentSummary.textContent = summary;
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
-                    current-humidity.textContent = data.currently.humidity;
+                    humidityLevel.textContent = data.currently.humidity;
 
                     dailyDay1.textContent = formattedDate1;
                     dailyDay2.textContent = formattedDate2;
