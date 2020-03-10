@@ -60,7 +60,6 @@ window.addEventListener('load', ()=> {
         navigator.geolocation.getCurrentPosition(position => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
-            const currentLocation = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&location_type=ROOFTOP&result_type=street_address&key=AIzaSyAvcFZLm-pJBxUliIdp0-Y2hmI8p02Wh1A';
             const proxy = 'https://cors-anywhere.herokuapp.com/';
             const api = `${proxy}https://api.darksky.net/forecast/9e00d522da20f32ddb9cc5f341b5338a/${lat},${long}?lang=gd&units=uk2`;
             fetch(api)
@@ -113,7 +112,7 @@ window.addEventListener('load', ()=> {
                     var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
                     var formattedDate7 = days[date.getDay()];
                     console.log(formattedDate7)
-                    }
+
 
                     // Set DOM Elements from the API
                     temp.textContent = temperature  + " °C";
@@ -121,8 +120,6 @@ window.addEventListener('load', ()=> {
                     currentSummary.textContent = summary;
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
-
-                    city.textContent = city.locality;
 
                     dailyDay1.textContent = formattedDate1;
                     dailyDay2.textContent = formattedDate2;
