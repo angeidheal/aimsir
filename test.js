@@ -68,7 +68,7 @@ window.addEventListener('load', ()=> {
                 })
                 .then(data => {
                     console.log(data);
-                    const { temperature, summary, icon, humidity } = data.currently;
+                    const { temperature, summary, icon, } = data.currently;
                     const { time } = data.daily;
 
                     let unix_timestamp1 = data.daily.data[1].time
@@ -113,14 +113,13 @@ window.addEventListener('load', ()=> {
                     var formattedDate7 = days[date.getDay()];
                     console.log(formattedDate7)
 
-
                     // Set DOM Elements from the API
                     temp.textContent = temperature  + " °C";
                     appTemp.textContent = data.currently.apparentTemperature  + " °C";
                     currentSummary.textContent = summary;
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
-                    humidityLevel.textContent = humidity;
+                    humidityLevel.textContent = data.currently.humidity;
 
                     dailyDay1.textContent = formattedDate1;
                     dailyDay2.textContent = formattedDate2;
