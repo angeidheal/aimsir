@@ -9,6 +9,7 @@ window.addEventListener('load', ()=> {
     const precip = document.querySelector(".precip");
     const humidityLevel = document.querySelector(".humidityLevel");
     const pressure = document.querySelector(".pressure");
+    const visibility = document.querySelector(".visibility");
 
     const dailyDay1 = document.querySelector('.day-1-day');
     const dailyDay2 = document.querySelector('.day-2-day');
@@ -123,6 +124,7 @@ window.addEventListener('load', ()=> {
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
                     humidityLevel.textContent = (data.currently.humidity * 100) + "%";
                     pressure.textContent = data.currently.pressure + " hPA";
+                    visibility.textContent = data.currently.visibility + " km";
 
                     dailyDay1.textContent = formattedDate1;
                     dailyDay2.textContent = formattedDate2;
