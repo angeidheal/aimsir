@@ -120,7 +120,9 @@ window.addEventListener('load', ()=> {
                     currentSummary.textContent = summary;
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
-                    humidity.textContent = humidity;
+                    humidityLevel.textContent = humidity;
+
+
 
                     dailyDay1.textContent = formattedDate1;
                     dailyDay2.textContent = formattedDate2;
