@@ -68,7 +68,7 @@ window.addEventListener('load', ()=> {
                 })
                 .then(data => {
                     console.log(data);
-                    const { temperature, summary, icon } = data.currently;
+                    const { temperature, summary, icon, humidity } = data.currently;
                     const { time } = data.daily;
 
                     let unix_timestamp1 = data.daily.data[1].time
@@ -169,7 +169,7 @@ window.addEventListener('load', ()=> {
                     dailySummary6.textContent = data.daily.data[6].summary;
                     dailySummary7.textContent = data.daily.data[7].summary;
 
-                    if (data.currently.humidity > 0.5) {
+                    if (humidity > 0.5) {
                       humidity.textContent = "Bogthaise ard";
                     } else {
                       humidity.textContent = "Bogthaise íseal";
