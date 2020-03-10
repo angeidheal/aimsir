@@ -68,8 +68,12 @@ window.addEventListener('load', ()=> {
                 })
                 .then(data => {
                     console.log(data);
-                    const { temperature, summary, icon, humidity } = data.currently;
+                    const { temperature, summary, icon } = data.currently;
                     const { time } = data.daily;
+
+                    let humidity = data.currently.humidity;
+                    var humidityPercent = humidity * 100;
+                    console.log(humidityPercent)
 
                     let unix_timestamp1 = data.daily.data[1].time
                     var date = new Date(unix_timestamp1 * 1000);
@@ -120,6 +124,7 @@ window.addEventListener('load', ()=> {
                     currentSummary.textContent = summary;
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
+                    humidity.textContent = humidityPercent + "%";
 
                     dailyDay1.textContent = formattedDate1;
                     dailyDay2.textContent = formattedDate2;
@@ -168,14 +173,6 @@ window.addEventListener('load', ()=> {
                     dailySummary5.textContent = data.daily.data[5].summary;
                     dailySummary6.textContent = data.daily.data[6].summary;
                     dailySummary7.textContent = data.daily.data[7].summary;
-
-                    let currentHumidity = (humidity * 100)
-
-                    if (currentHumidity > 50) {
-                      humidity.textContent = "Bogthaise ard";
-                    } else {
-                      humidity.textContent = "Bogthaise íseal";
-                    };
 
                     // Set icon
                     setIcons(icon, document.querySelector(".icon"));
