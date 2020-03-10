@@ -169,7 +169,9 @@ window.addEventListener('load', ()=> {
                     dailySummary6.textContent = data.daily.data[6].summary;
                     dailySummary7.textContent = data.daily.data[7].summary;
 
-                    if (humidity > 0.5) {
+                    let currentHumidity = (humidity * 100)
+
+                    if (currentHumidity > 50) {
                       humidity.textContent = "Bogthaise ard";
                     } else {
                       humidity.textContent = "Bogthaise íseal";
