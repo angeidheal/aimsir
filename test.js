@@ -176,7 +176,7 @@ window.addEventListener('load', ()=> {
                       humidity.textContent = "Bogthaise ard";
                     } else {
                       humidity.textContent = "Bogthaise íseal";
-                    }
+                    };
 
                     // Set icon
                     setIcons(icon, document.querySelector(".icon"));
