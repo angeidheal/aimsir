@@ -15,8 +15,8 @@ function join_with_shared_prefix(a, b, joiner) {
 }
 
 module.exports = {
-  //"clear": "soilleir",
-  //"no-precipitation": "gun sileadh",
+  "clear": "glan",
+  "no-precipitation": "ní bheidh frasaíocht ann",
   "mixed-precipitation": "frasaíocht éagsúil",
   "possible-very-light-precipitation": "seans ar frasaíocht an-éadrom",
   "very-light-precipitation": "frasaíocht an-éadrom",
@@ -47,8 +47,8 @@ module.exports = {
   "light-wind": "laoithne éadrom",
   "medium-wind": "laoithne mheasarth",
   "heavy-wind": "laoithne láidir",
-  "low-humidity": "tiorim",
-  //"high-humidity": "tais",
+  "low-humidity": "bogthaise íseal",
+  "high-humidity": "bogthaise ard",
   "fog": "ceoch",
   "light-clouds": "scamaill bhána",
   "medium-clouds": "scamaill mheasartha",
@@ -58,7 +58,7 @@ module.exports = {
   "today-afternoon": "iarnóin inniu",
   "later-today-afternoon": "níos déanaí ar iarnóin inniu",
   "today-evening": "tráthnóna inniu",
-  "later-today-evening": "níos déanaí ar iarnóin inniu",
+  "later-today-evening": "níos déanaí ar tráthnóna inniu",
   "today-night": "anocht",
   "later-today-night": "níos déanaí anocht",
   "tomorrow-morning": "maidin amárach",
@@ -78,18 +78,18 @@ module.exports = {
   "thursday": "Déardaoin",
   "friday": "Dé hAoine",
   "saturday": "Dé Sathairn",
-//  "next-sunday": "Didòmhnaich an ath sheachdain",
-//  "next-monday": "Diluain an ath sheachdain",
-//  "next-tuesday": "Dimàirt an ath sheachdain",
-//  "next-wednesday": "Diciadain an ath sheachdain",
-//  "next-thursday": "Diardaoin an ath sheachdain",
-//  "next-friday": "Dihaoine an ath sheachdain",
-//  "next-saturday": "Disathairne an ath sheachdain",
-//  "minutes": "$1 mion.",
+  "next-sunday": "Dé Domhnaigh seo chugainn",
+  "next-monday": "Dé Luain seo chugainn",
+  "next-tuesday": "Dé Máirt seo chugainn",
+  "next-wednesday": "Dé Céadaoin seo chugainn",
+  "next-thursday": "Déardaoin seo chugainn",
+  "next-friday": "Dé hAoine seo chugainn",
+  "next-saturday": "Dé Sathairn seo chugainn",
+  "minutes": "$1 nóim.",
   "fahrenheit": "$1\u00B0F",
   "celsius": "$1\u00B0C",
-  "inches": "$1 orlach",
-  "centimeters": "$1 ceintiméadair",
+  "inches": "$1 orl.",
+  "centimeters": "$1 cm.",
   "less-than": "< $1",
   "and": function(a, b) {
     return join_with_shared_prefix(
@@ -98,8 +98,8 @@ module.exports = {
       a.indexOf(",") !== -1 ? ", agus " : " agus "
     );
   },
-//  "through": function(a, b) {
-//    return join_with_shared_prefix(a, b, " tro ");
+  "through": function(a, b) {
+    return join_with_shared_prefix(a, b, " ar feadh ");
   },
   "with": "$1, le $2",
   "range": "$1\u2013$2",
@@ -108,7 +108,7 @@ module.exports = {
   "starting-in": "$1 ag tosú i $2",
   "stopping-in": "$1 ag stopadh i $2",
   "starting-then-stopping-later": "$1 ag tosú i $2, ag stopadh i $3",
-  "stopping-then-starting-later": "$1 ag stopadh i $2, ag tosú i $3",
+  "stopping-then-starting-later": "$1 ag stopadh i $2, ag tosú arís i $3",
   "for-day": "$1 ar feadh an lae",
   "starting": "$1 ag tosú $2",
   "until": "$1 ag stopadh $2",
@@ -142,10 +142,10 @@ module.exports = {
 
     return str;
   },
-//  "next-hour-forecast-status": "chan eil ro-aithrisean an ath uair $1 air sgàth 's gu bheil $2",
-//  "unavailable": "ri fhaoitinn",
-//  "temporarily-unavailable": "ri fhaoitinn airson grèis",
-//  "partially-unavailable": "ri fhaoitinn gu h-iomlan",
-//  "station-offline": "gu bheil a h-uile stèisean-radar a tha faisg air làimh far loidhne",
-//  "station-incomplete": "beàrnan anns an fhiosrachadh bho na stèisean-radar a tha faisg air làimh",
+  "next-hour-forecast-status": "níl réamhaisnéise an uair seo chugainn $1 mar go bhfuil $2",
+  "unavailable": "ar fáil",
+  "temporarily-unavailable": "ar fáil i láthair na huaire",
+  "partially-unavailable": "ar fáil go hiomlán",
+  "station-offline": "gach stáisiún radair atá in aice láimhe as líne",
+  "station-incomplete": "bearnaí san fhaisnéis ó na stáisiúin radair atá in aice láimhe",
 };
