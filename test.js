@@ -8,6 +8,7 @@ window.addEventListener('load', ()=> {
     const windSpeed = document.querySelector(".wind");
     const precip = document.querySelector(".precip");
     const humidityLevel = document.querySelector(".humidityLevel");
+    const pressure = document.querySelector(".pressure");
 
     const dailyDay1 = document.querySelector('.day-1-day');
     const dailyDay2 = document.querySelector('.day-2-day');
@@ -120,12 +121,8 @@ window.addEventListener('load', ()=> {
                     currentSummary.textContent = summary;
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
-
-                    if (data.currently.humidity > 0.5) {
-                      humidityLevel.textContent = "Bogthaise ard";
-                    } else {
-                      humidityLevel.textContent = "Bogthaise íseal";
-                    };
+                    humidityLevel.textContent = (data.currently.humidity * 100) + "%";
+                    pressure.textContent = data.currently.pressure + " hPA";
 
                     dailyDay1.textContent = formattedDate1;
                     dailyDay2.textContent = formattedDate2;
