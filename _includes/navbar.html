@@ -27,14 +27,14 @@
   {% endfor %}
     </ul>
   <ul class="navbar-nav ml-auto">
-    <li class="nav-item">
-      <a href="{{ site.baseurl }}/" class="nav-link">Gàidhlig</a>
-    </li>
-      <li class="nav-item">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-globe"></i></a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a href="{{ site.baseurl }}/" class="nav-link">Gàidhlig</a>
         <a href="{{ site.baseurl }}/gaeilge" class="nav-link">Gaeilge</a>
-      </li>
-        <li class="nav-item">
-          <a href="{{ site.baseurl }}/gaelg" class="nav-link">Gaelg</a>
-        </li>
+        <a href="{{ site.baseurl }}/gaelg" class="nav-link">Gaelg</a>
+      </div>
+    </li>
+  </ul>
   </div>
 </nav>
