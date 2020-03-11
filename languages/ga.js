@@ -1,18 +1,18 @@
 "use strict";
 
-function join_with_shared_prefix(a, b, joiner) {
-  let i = 0;
+// function join_with_shared_prefix(a, b, joiner) {
+//  let i = 0;
 
-  while(i !== a.length &&
-        i !== b.length &&
-        a.charCodeAt(i) === b.charCodeAt(i))
-    ++i;
+//  while(i !== a.length &&
+//        i !== b.length &&
+//        a.charCodeAt(i) === b.charCodeAt(i))
+//   ++i;
 
-  while(i && a.charCodeAt(i - 1) !== 32)
-    --i;
+//  while(i && a.charCodeAt(i - 1) !== 32)
+//    --i;
 
-  return a + joiner + b.slice(i);
-}
+//  return a + joiner + b.slice(i);
+// }
 
 module.exports = {
   "clear": "glan",
@@ -91,16 +91,8 @@ module.exports = {
   "inches": "$1 orl.",
   "centimeters": "$1 cm.",
   "less-than": "< $1",
-  "and": function(a, b) {
-    return join_with_shared_prefix(
-      a,
-      b,
-      a.indexOf(",") !== -1 ? ", agus " : " agus "
-    );
-  },
-  "through": function(a, b) {
-    return join_with_shared_prefix(a, b, " ar feadh ");
-  },
+  "and": "$1 agus $2",
+  "through": "$1 go dtí $2",
   "with": "$1, le $2",
   "range": "$1\u2013$2",
   "parenthetical": "$1 ($2)",
@@ -121,9 +113,9 @@ module.exports = {
   "temperatures-rising": "an teteocht dul chomh hard le $1 $2",
   "temperatures-valleying": "an teocht dul chomh íseal le $1 $2",
   "temperatures-falling": "an teocht dul chomh íseal le $1 $2",
-  //Capitalize the first letter of every word, except if that word is
-  //"and". (This is a very crude bastardization of proper English titling
-  //rules, but it is adequate for the purposes of this module.)
+  // Capitalize the first letter of every word, except if that word is
+  // "and". (This is a very crude bastardization of proper English titling
+  // rules, but it is adequate for the purposes of this module.)
   "title": function(str) {
     return str.replace(/\S+/g, function(word) {
       return word === "Agus" ?
