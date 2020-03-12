@@ -128,11 +128,23 @@ window.addEventListener('load', ()=> {
                     pressure.textContent = data.currently.pressure + " hPA";
                     visibility.textContent = data.currently.visibility + " km";
 
-                    if (data.currently.windBearing > 67.5 && data.currently.windBearing < 192.5) {
-                      windBearing.textContent = "Bhon Ear";
-                    } else {
-                      windBearing.textContent = data.currently.windBearing;
-                    }
+                    if (data.currently.windBearing < 22.5 || data.currently.windBearing > 337.5) {
+                    windBearing.textContent = "Tuath";
+                    } else if (data.currently.windBearing > 22.5 && data.currently.windBearing < 67.5){
+                      windBearing.textContent = "Ear-thuath";
+                    } else if (data.currently.windBearing > 67.5 && data.currently.windBearing < 112.5) {
+                      windBearing.textContent = "Ear";
+                    } else if (data.currently.windBearing > 112.5 && data.currently.windBearing < 157.5){
+                      windBearing.textContent = "Ear-dheas";
+                    } else if (data.currently.windBearing > 157.5 && data.currently.windBearing < 202.5){
+                      windBearing.textContent = "Deas";
+                    } else if (data.currently.windBearing > 202.5 && data.currently.windBearing < 247.5){
+                      windBearing.textContent = "Iar-dheas";
+                    } else if (data.currently.windBearing > 247.5 && data.currently.windBearing < 292.5){
+                      windBearing.textContent = "Iar";
+                    } else if (data.currently.windBearing > 292.5 && data.currently.windBearing < 337.5){
+                      windBearing.textContent = "Iar-thuath";
+                    };
 
                     dailyDay1.textContent = formattedDate1;
                     dailyDay2.textContent = formattedDate2;
