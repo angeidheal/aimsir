@@ -27,6 +27,12 @@ a {
 a:hover {
     color: #000000;
 }
+
+#nav a.selected:link, a.selected:visited{
+ text-transform: uppercase;
+ text-decoration: none;
+}
+
 /* Header Section */
 .header-brand {
   margin-bottom: 0px;
