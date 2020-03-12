@@ -60,7 +60,7 @@ a:hover {
 }
 
 .dropdown-menu{
-	background-color: {{ site.featured-color }};
+	background-color: inherit;
 }
 
 /* Content Section */
