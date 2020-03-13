@@ -198,6 +198,8 @@ window.addEventListener('load', ()=> {
 
                 });
         });
+    } else {
+      window.alert("Cha b' urrainnear d' àite a lorg! Dèan cinnteach gu bheil thu air Location Services an inneil agad a chur air agus gu bheil thu air cead a thoirt dhuinn gus d' àite fhaicinn.");
     }
 
     function setIcons(icon, iconID) {
