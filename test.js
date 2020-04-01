@@ -233,7 +233,113 @@ window.addEventListener('load', ()=> {
                       dailyWindBearing1.textContent = "Iar-thuath";
                     };
 
+                    if (data.daily.data[2].windBearing < 22.5 || data.daily.data[2].windBearing > 337.5) {
+                    dailyWindBearing2.textContent = "Tuath";
+                    } else if (data.daily.data[2].windBearing > 22.5 && data.daily.data[2].windBearing < 67.5){
+                      dailyWindBearing2.textContent = "Ear-thuath";
+                    } else if (data.daily.data[2].windBearing > 67.5 && data.daily.data[2].windBearing < 112.5) {
+                      dailyWindBearing2.textContent = "Ear";
+                    } else if (data.daily.data[2].windBearing > 112.5 && data.daily.data[2].windBearing < 157.5){
+                      dailyWindBearing2.textContent = "Ear-dheas";
+                    } else if (data.daily.data[2].windBearing > 157.5 && data.daily.data[2].windBearing < 202.5){
+                      dailyWindBearing2.textContent = "Deas";
+                    } else if (data.daily.data[2].windBearing > 202.5 && data.daily.data[2].windBearing < 247.5){
+                      dailyWindBearing2.textContent = "Iar-dheas";
+                    } else if (data.daily.data[2].windBearing > 247.5 && data.daily.data[2].windBearing < 292.5){
+                      dailyWindBearing2.textContent = "Iar";
+                    } else if (data.daily.data[2].windBearing > 292.5 && data.daily.data[2].windBearing < 337.5){
+                      dailyWindBearing2.textContent = "Iar-thuath";
+                    };
 
+                    if (data.daily.data[3].windBearing < 22.5 || data.daily.data[3].windBearing > 337.5) {
+                    dailyWindBearing3.textContent = "Tuath";
+                    } else if (data.daily.data[3].windBearing > 22.5 && data.daily.data[3].windBearing < 67.5){
+                      dailyWindBearing3.textContent = "Ear-thuath";
+                    } else if (data.daily.data[3].windBearing > 67.5 && data.daily.data[3].windBearing < 112.5) {
+                      dailyWindBearing3.textContent = "Ear";
+                    } else if (data.daily.data[3].windBearing > 112.5 && data.daily.data[3].windBearing < 157.5){
+                      dailyWindBearing3.textContent = "Ear-dheas";
+                    } else if (data.daily.data[3].windBearing > 157.5 && data.daily.data[3].windBearing < 202.5){
+                      dailyWindBearing3.textContent = "Deas";
+                    } else if (data.daily.data[3].windBearing > 202.5 && data.daily.data[3].windBearing < 247.5){
+                      dailyWindBearing3.textContent = "Iar-dheas";
+                    } else if (data.daily.data[3].windBearing > 247.5 && data.daily.data[3].windBearing < 292.5){
+                      dailyWindBearing3.textContent = "Iar";
+                    } else if (data.daily.data[3].windBearing > 292.5 && data.daily.data[3].windBearing < 337.5){
+                      dailyWindBearing3.textContent = "Iar-thuath";
+                    };
+
+                    if (data.daily.data[4].windBearing < 22.5 || data.daily.data[4].windBearing > 337.5) {
+                    dailyWindBearing4.textContent = "Tuath";
+                    } else if (data.daily.data[4].windBearing > 22.5 && data.daily.data[4].windBearing < 67.5){
+                      dailyWindBearing4.textContent = "Ear-thuath";
+                    } else if (data.daily.data[4].windBearing > 67.5 && data.daily.data[4].windBearing < 112.5) {
+                      dailyWindBearing4.textContent = "Ear";
+                    } else if (data.daily.data[4].windBearing > 112.5 && data.daily.data[4].windBearing < 157.5){
+                      dailyWindBearing4.textContent = "Ear-dheas";
+                    } else if (data.daily.data[4].windBearing > 157.5 && data.daily.data[4].windBearing < 202.5){
+                      dailyWindBearing4.textContent = "Deas";
+                    } else if (data.daily.data[4].windBearing > 202.5 && data.daily.data[4].windBearing < 247.5){
+                      dailyWindBearing4.textContent = "Iar-dheas";
+                    } else if (data.daily.data[4].windBearing > 247.5 && data.daily.data[4].windBearing < 292.5){
+                      dailyWindBearing4.textContent = "Iar";
+                    } else if (data.daily.data[4].windBearing > 292.5 && data.daily.data[4].windBearing < 337.5){
+                      dailyWindBearing4.textContent = "Iar-thuath";
+                    };
+
+                    if (data.daily.data[5].windBearing < 22.5 || data.daily.data[5].windBearing > 337.5) {
+                    dailyWindBearing5.textContent = "Tuath";
+                    } else if (data.daily.data[5].windBearing > 22.5 && data.daily.data[5].windBearing < 67.5){
+                      dailyWindBearing5.textContent = "Ear-thuath";
+                    } else if (data.daily.data[5].windBearing > 67.5 && data.daily.data[5].windBearing < 112.5) {
+                      dailyWindBearing5.textContent = "Ear";
+                    } else if (data.daily.data[5].windBearing > 112.5 && data.daily.data[5].windBearing < 157.5){
+                      dailyWindBearing5.textContent = "Ear-dheas";
+                    } else if (data.daily.data[5].windBearing > 157.5 && data.daily.data[5].windBearing < 202.5){
+                      dailyWindBearing5.textContent = "Deas";
+                    } else if (data.daily.data[5].windBearing > 202.5 && data.daily.data[5].windBearing < 247.5){
+                      dailyWindBearing5.textContent = "Iar-dheas";
+                    } else if (data.daily.data[5].windBearing > 247.5 && data.daily.data[5].windBearing < 292.5){
+                      dailyWindBearing5.textContent = "Iar";
+                    } else if (data.daily.data[].windBearing > 292.5 && data.daily.data[5].windBearing < 337.5){
+                      dailyWindBearing5.textContent = "Iar-thuath";
+                    };
+
+                    if (data.daily.data[6].windBearing < 22.5 || data.daily.data[6].windBearing > 337.5) {
+                    dailyWindBearing6.textContent = "Tuath";
+                    } else if (data.daily.data[6].windBearing > 22.5 && data.daily.data[6].windBearing < 67.5){
+                      dailyWindBearing6.textContent = "Ear-thuath";
+                    } else if (data.daily.data[6].windBearing > 67.5 && data.daily.data[6].windBearing < 112.5) {
+                      dailyWindBearing6.textContent = "Ear";
+                    } else if (data.daily.data[6].windBearing > 112.5 && data.daily.data[6].windBearing < 157.5){
+                      dailyWindBearing6.textContent = "Ear-dheas";
+                    } else if (data.daily.data[6].windBearing > 157.5 && data.daily.data[6].windBearing < 202.5){
+                      dailyWindBearing6.textContent = "Deas";
+                    } else if (data.daily.data[6].windBearing > 202.5 && data.daily.data[6].windBearing < 247.5){
+                      dailyWindBearing6.textContent = "Iar-dheas";
+                    } else if (data.daily.data[6].windBearing > 247.5 && data.daily.data[6].windBearing < 292.5){
+                      dailyWindBearing6.textContent = "Iar";
+                    } else if (data.daily.data[6].windBearing > 292.5 && data.daily.data[6].windBearing < 337.5){
+                      dailyWindBearing6.textContent = "Iar-thuath";
+                    };
+
+                    if (data.daily.data[7].windBearing < 22.5 || data.daily.data[7].windBearing > 337.5) {
+                    dailyWindBearing7.textContent = "Tuath";
+                    } else if (data.daily.data[7].windBearing > 22.5 && data.daily.data[7].windBearing < 67.5){
+                      dailyWindBearing7.textContent = "Ear-thuath";
+                    } else if (data.daily.data[7].windBearing > 67.5 && data.daily.data[7].windBearing < 112.5) {
+                      dailyWindBearing7.textContent = "Ear";
+                    } else if (data.daily.data[7].windBearing > 112.5 && data.daily.data[7].windBearing < 157.5){
+                      dailyWindBearing7.textContent = "Ear-dheas";
+                    } else if (data.daily.data[7].windBearing > 157.5 && data.daily.data[7].windBearing < 202.5){
+                      dailyWindBearing7.textContent = "Deas";
+                    } else if (data.daily.data[7].windBearing > 202.5 && data.daily.data[7].windBearing < 247.5){
+                      dailyWindBearing7.textContent = "Iar-dheas";
+                    } else if (data.daily.data[7].windBearing > 247.5 && data.daily.data[7].windBearing < 292.5){
+                      dailyWindBearing7.textContent = "Iar";
+                    } else if (data.daily.data[7].windBearing > 292.5 && data.daily.data[7].windBearing < 337.5){
+                      dailyWindBearing7.textContent = "Iar-thuath";
+                    };
 
                     dailyPrecip1.textContent = data.daily.data[1].precipIntensity + " mm.s.u.";
                     dailyPrecip2.textContent = data.daily.data[2].precipIntensity + " mm.s.u.";
@@ -250,6 +356,22 @@ window.addEventListener('load', ()=> {
                     dailyHumidtyLevel5.textContent = (data.daily.data[5].humidity * 100) + "%";
                     dailyHumidtyLevel6.textContent = (data.daily.data[6].humidity * 100) + "%";
                     dailyHumidtyLevel7.textContent = (data.daily.data[7].humidity * 100) + "%";
+
+                    dailyPressure1.textContent = data.daily.data[1].pressure + " hPA";
+                    dailyPressure2.textContent = data.daily.data[2].pressure + " hPA";
+                    dailyPressure3.textContent = data.daily.data[3].pressure + " hPA";
+                    dailyPressure4.textContent = data.daily.data[4].pressure + " hPA";
+                    dailyPressure5.textContent = data.daily.data[5].pressure + " hPA";
+                    dailyPressure6.textContent = data.daily.data[6].pressure + " hPA";
+                    dailyPressure7.textContent = data.daily.data[7].pressure + " hPA";
+
+                    dailyvisibility1.textContent = data.daily.data[1].pressure + " km";
+                    dailyvisibility2.textContent = data.daily.data[2].pressure + " km";
+                    dailyvisibility3.textContent = data.daily.data[3].pressure + " km";
+                    dailyvisibility4.textContent = data.daily.data[4].pressure + " km";
+                    dailyvisibility5.textContent = data.daily.data[5].pressure + " km";
+                    dailyvisibility6.textContent = data.daily.data[6].pressure + " km";
+                    dailyvisibility7.textContent = data.daily.data[7].pressure + " km";
 
                     dailySummary1.textContent = data.daily.data[1].summary;
                     dailySummary2.textContent = data.daily.data[2].summary;
