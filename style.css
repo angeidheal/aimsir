@@ -72,6 +72,10 @@ a:hover {
   margin-right: 8px;
 }
 
+.btn-link {
+  color: #ffffff;
+}
+
 .card {
   background: transparent;
 }
