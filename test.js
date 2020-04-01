@@ -365,13 +365,13 @@ window.addEventListener('load', ()=> {
                     dailyPressure6.textContent = data.daily.data[6].pressure + " hPA";
                     dailyPressure7.textContent = data.daily.data[7].pressure + " hPA";
 
-                    dailyvisibility1.textContent = data.daily.data[1].pressure + " km";
-                    dailyvisibility2.textContent = data.daily.data[2].pressure + " km";
-                    dailyvisibility3.textContent = data.daily.data[3].pressure + " km";
-                    dailyvisibility4.textContent = data.daily.data[4].pressure + " km";
-                    dailyvisibility5.textContent = data.daily.data[5].pressure + " km";
-                    dailyvisibility6.textContent = data.daily.data[6].pressure + " km";
-                    dailyvisibility7.textContent = data.daily.data[7].pressure + " km";
+                    dailyvisibility1.textContent = data.daily.data[1].visibility + " km";
+                    dailyvisibility2.textContent = data.daily.data[2].visibility + " km";
+                    dailyvisibility3.textContent = data.daily.data[3].visibility + " km";
+                    dailyvisibility4.textContent = data.daily.data[4].visibility + " km";
+                    dailyvisibility5.textContent = data.daily.data[5].visibility + " km";
+                    dailyvisibility6.textContent = data.daily.data[6].visibility + " km";
+                    dailyvisibility7.textContent = data.daily.data[7].visibility + " km";
 
                     dailySummary1.textContent = data.daily.data[1].summary;
                     dailySummary2.textContent = data.daily.data[2].summary;
