@@ -301,7 +301,7 @@ window.addEventListener('load', ()=> {
                       dailyWindBearing5.textContent = "Iar-dheas";
                     } else if (data.daily.data[5].windBearing > 247.5 && data.daily.data[5].windBearing < 292.5){
                       dailyWindBearing5.textContent = "Iar";
-                    } else if (data.daily.data[].windBearing > 292.5 && data.daily.data[5].windBearing < 337.5){
+                    } else if (data.daily.data[5].windBearing > 292.5 && data.daily.data[5].windBearing < 337.5){
                       dailyWindBearing5.textContent = "Iar-thuath";
                     };
 
