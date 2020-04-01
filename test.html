@@ -71,19 +71,41 @@ title: Aimsir.info (Gàidhlig)
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
         <div class="row">
-          <div class="col-md-7 day-1-summary">
-            Ga luchdadh...
+          <div class="col-md-12 weather-icon">
+            <canvas class="icon" width="128" height="128"></canvas>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 offset-md-2">
-            <p class="daily-forecast"><strong><i class="fas fa-temperature-high"></i></strong> <span class="day-1-temp">--</span> a' faireachdainn mar <span class="day-1-app-temp">--</span></p>
+          <div class="col-md-12">
+            <p class="current-summary"><strong>Ga luchdadh...</strong></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <p><i class="wi wi-thermometer"></i> Teòthachd<br/><span class="temp">--<span></p>
           </div>
           <div class="col-md-3">
-            <p class="daily-forecast"><strong><i class="fas fa-wind"></i></strong> <span class="day-1-wind">--</span></p>
+            <p><i class="wi wi-thermometer-exterior"></i> Teòthachd a' faireachdainn mar<br/><span class="app-temp">--</span></p>
           </div>
           <div class="col-md-3">
-            <p class="daily-forecast"><strong><i class="fas fa-tint"></i></strong> <span class="day-1-precip">--</span></p>
+            <p><i class="wi wi-strong-wind"></i> Astar na Gaoithe<br/><span class="wind">--</span></p>
+          </div>
+          <div class="col-md-3">
+            <p><i class="wi wi-wind-direction"></i> Àird na Gaoithe<br/><span class="wind-bearing">--</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <p><i class="wi wi-raindrops"></i> Sileadh<br/><span class="precip">--</span></p>
+          </div>
+          <div class="col-md-3">
+            <p><i class="wi wi-humidity"></i> Taiseachd<br/><span class="humidityLevel">--<span></p>
+          </div>
+          <div class="col-md-3">
+            <p><i class="wi wi-barometer"></i> Bruthadh<br/><span class="pressure">--<span></p>
+          </div>
+          <div class="col-md-3">
+            <p><i class="wi wi-fog"></i> Faicsinneachd<br/><span class="visibility">--<span></p>
           </div>
         </div>
       </div>
