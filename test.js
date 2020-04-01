@@ -380,6 +380,7 @@ window.addEventListener('load', ()=> {
                     dailySummary5.textContent = data.daily.data[5].summary;
                     dailySummary6.textContent = data.daily.data[6].summary;
                     dailySummary7.textContent = data.daily.data[7].summary;
+
                     // Set icon
                     setIcons(icon, document.querySelector(".icon"));
 
