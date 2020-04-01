@@ -101,7 +101,7 @@ window.addEventListener('load', ()=> {
                 })
                 .then(data => {
                     console.log(data);
-                    const { temperature, summary, icon } = data.currently;
+                    const { icon } = data.currently;
                     const { time } = data.daily;
 
                     let unix_timestamp1 = data.daily.data[1].time
@@ -152,8 +152,8 @@ window.addEventListener('load', ()=> {
                     // Current Weather
                     // Set icon
                     setIcons(icon, document.querySelector(".icon"));
-                    currentSummary.textContent = summary;
-                    temp.textContent = temperature  + " °C";
+                    currentSummary.textContent = data.currently.summary;
+                    temp.textContent = data.currently.temperature  + " °C";
                     appTemp.textContent = data.currently.apparentTemperature  + " °C";
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     if (data.currently.windBearing < 22.5 || data.currently.windBearing > 337.5) {
