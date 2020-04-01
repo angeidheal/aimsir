@@ -78,7 +78,6 @@ window.addEventListener('load', ()=> {
     const dailyPressure6 = document.querySelector('.day-6-pressure');
     const dailyVisibility6 = document.querySelector('.day-6-visibility');
 
-
     const dailyDay7 = document.querySelector('.day-7-day');
     const dailySummary7 = document.querySelector('.day-7-summary');
     const dailyTemp7 = document.querySelector('.day-7-temp');
