@@ -72,6 +72,10 @@ a:hover {
   margin-right: 8px;
 }
 
+.myaccordion .card-header {
+  background: transparent;
+}
+
 .current-weather {
   padding: 20px 10px;
   border-radius: 25px;
