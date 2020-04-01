@@ -6,6 +6,7 @@ window.addEventListener('load', ()=> {
     const temp = document.querySelector(".temp");
     const appTemp = document.querySelector(".app-temp");
     const windSpeed = document.querySelector(".wind");
+    const windBearing = document.querySelector(".wind-bearing");
     const precip = document.querySelector(".precip");
     const humidityLevel = document.querySelector(".humidityLevel");
     const pressure = document.querySelector(".pressure");
@@ -71,7 +72,7 @@ window.addEventListener('load', ()=> {
                 })
                 .then(data => {
                     console.log(data);
-                    const { temperature, summary, icon, } = data.currently;
+                    const { temperature, summary, icon } = data.currently;
                     const { time } = data.daily;
 
                     let unix_timestamp1 = data.daily.data[1].time
@@ -116,6 +117,7 @@ window.addEventListener('load', ()=> {
                     var formattedDate7 = days[date.getDay()];
                     console.log(formattedDate7)
 
+
                     // Set DOM Elements from the API
                     temp.textContent = temperature  + " °C";
                     appTemp.textContent = data.currently.apparentTemperature  + " °C";
@@ -125,6 +127,24 @@ window.addEventListener('load', ()=> {
                     humidityLevel.textContent = (data.currently.humidity * 100) + "%";
                     pressure.textContent = data.currently.pressure + " hPA";
                     visibility.textContent = data.currently.visibility + " km";
+
+                    if (data.currently.windBearing < 22.5 || data.currently.windBearing > 337.5) {
+                    windBearing.textContent = "Tuath";
+                    } else if (data.currently.windBearing > 22.5 && data.currently.windBearing < 67.5){
+                      windBearing.textContent = "Ear-thuath";
+                    } else if (data.currently.windBearing > 67.5 && data.currently.windBearing < 112.5) {
+                      windBearing.textContent = "Ear";
+                    } else if (data.currently.windBearing > 112.5 && data.currently.windBearing < 157.5){
+                      windBearing.textContent = "Ear-dheas";
+                    } else if (data.currently.windBearing > 157.5 && data.currently.windBearing < 202.5){
+                      windBearing.textContent = "Deas";
+                    } else if (data.currently.windBearing > 202.5 && data.currently.windBearing < 247.5){
+                      windBearing.textContent = "Iar-dheas";
+                    } else if (data.currently.windBearing > 247.5 && data.currently.windBearing < 292.5){
+                      windBearing.textContent = "Iar";
+                    } else if (data.currently.windBearing > 292.5 && data.currently.windBearing < 337.5){
+                      windBearing.textContent = "Iar-thuath";
+                    };
 
                     dailyDay1.textContent = formattedDate1;
                     dailyDay2.textContent = formattedDate2;
@@ -173,12 +193,13 @@ window.addEventListener('load', ()=> {
                     dailySummary5.textContent = data.daily.data[5].summary;
                     dailySummary6.textContent = data.daily.data[6].summary;
                     dailySummary7.textContent = data.daily.data[7].summary;
-
                     // Set icon
                     setIcons(icon, document.querySelector(".icon"));
 
                 });
         });
+    } else {
+      window.alert("Cha b' urrainnear d' àite a lorg! Dèan cinnteach gu bheil thu air Location Services an inneil agad a chur air agus gu bheil thu air cead a thoirt dhuinn gus d' àite fhaicinn.");
     }
 
     function setIcons(icon, iconID) {
