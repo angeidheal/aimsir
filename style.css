@@ -74,6 +74,11 @@ a:hover {
 
 .btn-link {
   color: #ffffff;
+  text-decoration: underline;
+}
+
+.btn-link:hover {
+    color: #000000;
 }
 
 .card {
