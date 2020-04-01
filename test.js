@@ -13,52 +13,83 @@ window.addEventListener('load', ()=> {
     const visibility = document.querySelector(".visibility");
 
     const dailyDay1 = document.querySelector('.day-1-day');
-    const dailyDay2 = document.querySelector('.day-2-day');
-    const dailyDay3 = document.querySelector('.day-3-day');
-    const dailyDay4 = document.querySelector('.day-4-day');
-    const dailyDay5 = document.querySelector('.day-5-day');
-    const dailyDay6 = document.querySelector('.day-6-day');
-    const dailyDay7 = document.querySelector('.day-7-day');
-
-    const dailyTemp1 = document.querySelector('.day-1-temp');
-    const dailyTemp2 = document.querySelector('.day-2-temp');
-    const dailyTemp3 = document.querySelector('.day-3-temp');
-    const dailyTemp4 = document.querySelector('.day-4-temp');
-    const dailyTemp5 = document.querySelector('.day-5-temp');
-    const dailyTemp6 = document.querySelector('.day-6-temp');
-    const dailyTemp7 = document.querySelector('.day-7-temp');
-
-    const dailyAppTemp1 = document.querySelector('.day-1-app-temp');
-    const dailyAppTemp2 = document.querySelector('.day-2-app-temp');
-    const dailyAppTemp3 = document.querySelector('.day-3-app-temp');
-    const dailyAppTemp4 = document.querySelector('.day-4-app-temp');
-    const dailyAppTemp5 = document.querySelector('.day-5-app-temp');
-    const dailyAppTemp6 = document.querySelector('.day-6-app-temp');
-    const dailyAppTemp7 = document.querySelector('.day-7-app-temp');
-
-    const dailyWind1 = document.querySelector('.day-1-wind');
-    const dailyWind2 = document.querySelector('.day-2-wind');
-    const dailyWind3 = document.querySelector('.day-3-wind');
-    const dailyWind4 = document.querySelector('.day-4-wind');
-    const dailyWind5 = document.querySelector('.day-5-wind');
-    const dailyWind6 = document.querySelector('.day-6-wind');
-    const dailyWind7 = document.querySelector('.day-7-wind');
-
-    const dailyPrecip1 = document.querySelector('.day-1-precip');
-    const dailyPrecip2 = document.querySelector('.day-2-precip');
-    const dailyPrecip3 = document.querySelector('.day-3-precip');
-    const dailyPrecip4 = document.querySelector('.day-4-precip');
-    const dailyPrecip5 = document.querySelector('.day-5-precip');
-    const dailyPrecip6 = document.querySelector('.day-6-precip');
-    const dailyPrecip7 = document.querySelector('.day-7-precip');
-
     const dailySummary1 = document.querySelector('.day-1-summary');
+    const dailyTemp1 = document.querySelector('.day-1-temp');
+    const dailyAppTemp1 = document.querySelector('.day-1-app-temp');
+    const dailyWind1 = document.querySelector('.day-1-wind');
+    const dailyWindBearing1 = document.querySelector('.day-1-wind-bearing');
+    const dailyPrecip1 = document.querySelector('.day-1-precip');
+    const dailyHumidtyLevel1 = document.querySelector('.day-1-humidityLevel');
+    const dailyPressure1 = document.querySelector('.day-1-pressure');
+    const dailyVisibility1 = document.querySelector('.day-1-visibility');
+
+    const dailyDay2 = document.querySelector('.day-2-day');
     const dailySummary2 = document.querySelector('.day-2-summary');
-    const dailySummary3 = document.querySelector('.day-3-summary');
-    const dailySummary4 = document.querySelector('.day-4-summary');
-    const dailySummary5 = document.querySelector('.day-5-summary');
-    const dailySummary6 = document.querySelector('.day-6-summary');
-    const dailySummary7 = document.querySelector('.day-7-summary');
+    const dailyTemp2 = document.querySelector('.day-2-temp');
+    const dailyAppTemp2 = document.querySelector('.day-2-app-temp');
+    const dailyWind2 = document.querySelector('.day-2-wind');
+    const dailyWindBearing2 = document.querySelector('.day-2-wind-bearing');
+    const dailyPrecip2 = document.querySelector('.day-2-precip');
+    const dailyHumidtyLevel2 = document.querySelector('.day-2-humidityLevel');
+    const dailyPressure2 = document.querySelector('.day-2-pressure');
+    const dailyVisibility2 = document.querySelector('.day-2-visibility');
+
+    const dailyDay2 = document.querySelector('.day-2-day');
+    const dailySummary2 = document.querySelector('.day-2-summary');
+    const dailyTemp2 = document.querySelector('.day-2-temp');
+    const dailyAppTemp2 = document.querySelector('.day-2-app-temp');
+    const dailyWind2 = document.querySelector('.day-2-wind');
+    const dailyWindBearing2 = document.querySelector('.day-2-wind-bearing');
+    const dailyPrecip2 = document.querySelector('.day-2-precip');
+    const dailyHumidtyLevel2 = document.querySelector('.day-2-humidityLevel');
+    const dailyPressure2 = document.querySelector('.day-2-pressure');
+    const dailyVisibility2 = document.querySelector('.day-2-visibility');
+
+    const dailyDay2 = document.querySelector('.day-2-day');
+    const dailySummary2 = document.querySelector('.day-2-summary');
+    const dailyTemp2 = document.querySelector('.day-2-temp');
+    const dailyAppTemp2 = document.querySelector('.day-2-app-temp');
+    const dailyWind2 = document.querySelector('.day-2-wind');
+    const dailyWindBearing2 = document.querySelector('.day-2-wind-bearing');
+    const dailyPrecip2 = document.querySelector('.day-2-precip');
+    const dailyHumidtyLevel2 = document.querySelector('.day-2-humidityLevel');
+    const dailyPressure2 = document.querySelector('.day-2-pressure');
+    const dailyVisibility2 = document.querySelector('.day-2-visibility');
+
+    const dailyDay2 = document.querySelector('.day-2-day');
+    const dailySummary2 = document.querySelector('.day-2-summary');
+    const dailyTemp2 = document.querySelector('.day-2-temp');
+    const dailyAppTemp2 = document.querySelector('.day-2-app-temp');
+    const dailyWind2 = document.querySelector('.day-2-wind');
+    const dailyWindBearing2 = document.querySelector('.day-2-wind-bearing');
+    const dailyPrecip2 = document.querySelector('.day-2-precip');
+    const dailyHumidtyLevel2 = document.querySelector('.day-2-humidityLevel');
+    const dailyPressure2 = document.querySelector('.day-2-pressure');
+    const dailyVisibility2 = document.querySelector('.day-2-visibility');
+
+
+    const dailyDay2 = document.querySelector('.day-2-day');
+    const dailySummary2 = document.querySelector('.day-2-summary');
+    const dailyTemp2 = document.querySelector('.day-2-temp');
+    const dailyAppTemp2 = document.querySelector('.day-2-app-temp');
+    const dailyWind2 = document.querySelector('.day-2-wind');
+    const dailyWindBearing2 = document.querySelector('.day-2-wind-bearing');
+    const dailyPrecip2 = document.querySelector('.day-2-precip');
+    const dailyHumidtyLevel2 = document.querySelector('.day-2-humidityLevel');
+    const dailyPressure2 = document.querySelector('.day-2-pressure');
+    const dailyVisibility2 = document.querySelector('.day-2-visibility');
+
+
+    const dailyDay2 = document.querySelector('.day-2-day');
+    const dailySummary2 = document.querySelector('.day-2-summary');
+    const dailyTemp2 = document.querySelector('.day-2-temp');
+    const dailyAppTemp2 = document.querySelector('.day-2-app-temp');
+    const dailyWind2 = document.querySelector('.day-2-wind');
+    const dailyWindBearing2 = document.querySelector('.day-2-wind-bearing');
+    const dailyPrecip2 = document.querySelector('.day-2-precip');
+    const dailyHumidtyLevel2 = document.querySelector('.day-2-humidityLevel');
+    const dailyPressure2 = document.querySelector('.day-2-pressure');
+    const dailyVisibility2 = document.querySelector('.day-2-visibility');
 
     if (navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position => {
@@ -177,6 +208,34 @@ window.addEventListener('load', ()=> {
                     dailyWind5.textContent = data.daily.data[5].windSpeed + " m.s.u.";
                     dailyWind6.textContent = data.daily.data[6].windSpeed + " m.s.u.";
                     dailyWind7.textContent = data.daily.data[7].windSpeed + " m.s.u.";
+
+                    dailyWindBearing1.textContent = data.daily.data[1].windBearing + " m.s.u.";
+                    dailyWindBearing2.textContent = data.daily.data[2].windBearing + " m.s.u.";
+                    dailyWindBearing3.textContent = data.daily.data[3].windBearing + " m.s.u.";
+                    dailyWindBearing4.textContent = data.daily.data[4].windBearing + " m.s.u.";
+                    dailyWindBearing5.textContent = data.daily.data[5].windBearing + " m.s.u.";
+                    dailyWindBearing6.textContent = data.daily.data[6].windBearing + " m.s.u.";
+                    dailyWindBearing7.textContent = data.daily.data[7].windBearing + " m.s.u.";
+
+                    if (data.daily.data[1].windBearing < 22.5 || data.daily.data[1].windBearing > 337.5) {
+                    dailyWindBearing1.textContent = "Tuath";
+                    } else if (data.daily.data[1].windBearing > 22.5 && data.daily.data[1].windBearing < 67.5){
+                      dailyWindBearing1.textContent = "Ear-thuath";
+                    } else if (data.daily.data[1].windBearing > 67.5 && data.daily.data[1].windBearing < 112.5) {
+                      dailyWindBearing1.textContent = "Ear";
+                    } else if (data.daily.data[1].windBearing > 112.5 && data.daily.data[1].windBearing < 157.5){
+                      dailyWindBearing1.textContent = "Ear-dheas";
+                    } else if (data.daily.data[1].windBearing > 157.5 && data.daily.data[1].windBearing < 202.5){
+                      dailyWindBearing1.textContent = "Deas";
+                    } else if (data.daily.data[1].windBearing > 202.5 && data.daily.data[1].windBearing < 247.5){
+                      dailyWindBearing1.textContent = "Iar-dheas";
+                    } else if (data.daily.data[1].windBearing > 247.5 && data.daily.data[1].windBearing < 292.5){
+                      dailyWindBearing1.textContent = "Iar";
+                    } else if (data.daily.data[1].windBearing > 292.5 && data.daily.data[1].windBearing < 337.5){
+                      dailyWindBearing1.textContent = "Iar-thuath";
+                    };
+
+
 
                     dailyPrecip1.textContent = data.daily.data[1].precipIntensity + " mm.s.u.";
                     dailyPrecip2.textContent = data.daily.data[2].precipIntensity + " mm.s.u.";
