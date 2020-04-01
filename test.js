@@ -148,15 +148,14 @@ window.addEventListener('load', ()=> {
 
 
                     // Set DOM Elements from the API
+                    
+                    // Current Weather
+                    // Set icon
+                    setIcons(icon, document.querySelector(".icon"));
+                    currentSummary.textContent = summary;
                     temp.textContent = temperature  + " °C";
                     appTemp.textContent = data.currently.apparentTemperature  + " °C";
-                    currentSummary.textContent = summary;
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
-                    precip.textContent = data.currently.precipIntensity + " mm.s.u.";
-                    humidityLevel.textContent = (data.currently.humidity * 100) + "%";
-                    pressure.textContent = data.currently.pressure + " hPA";
-                    visibility.textContent = data.currently.visibility + " km";
-
                     if (data.currently.windBearing < 22.5 || data.currently.windBearing > 337.5) {
                     windBearing.textContent = "Tuath";
                     } else if (data.currently.windBearing > 22.5 && data.currently.windBearing < 67.5){
@@ -174,47 +173,17 @@ window.addEventListener('load', ()=> {
                     } else if (data.currently.windBearing > 292.5 && data.currently.windBearing < 337.5){
                       windBearing.textContent = "Iar-thuath";
                     };
+                    precip.textContent = data.currently.precipIntensity + " mm.s.u.";
+                    humidityLevel.textContent = (data.currently.humidity * 100) + "%";
+                    pressure.textContent = data.currently.pressure + " hPA";
+                    visibility.textContent = data.currently.visibility + " km";
 
+                    // Day 1 Forecast
                     dailyDay1.textContent = formattedDate1;
-                    dailyDay2.textContent = formattedDate2;
-                    dailyDay3.textContent = formattedDate3;
-                    dailyDay4.textContent = formattedDate4;
-                    dailyDay5.textContent = formattedDate5;
-                    dailyDay6.textContent = formattedDate6;
-                    dailyDay7.textContent = formattedDate7;
-
+                    dailySummary1.textContent = data.daily.data[1].summary;
                     dailyTemp1.textContent = data.daily.data[1].temperatureHigh  + " °C";
-                    dailyTemp2.textContent = data.daily.data[2].temperatureHigh  + " °C";
-                    dailyTemp3.textContent = data.daily.data[3].temperatureHigh  + " °C";
-                    dailyTemp4.textContent = data.daily.data[4].temperatureHigh  + " °C";
-                    dailyTemp5.textContent = data.daily.data[5].temperatureHigh  + " °C";
-                    dailyTemp6.textContent = data.daily.data[6].temperatureHigh  + " °C";
-                    dailyTemp7.textContent = data.daily.data[7].temperatureHigh  + " °C";
-
                     dailyAppTemp1.textContent = data.daily.data[1].apparentTemperatureHigh  + " °C";
-                    dailyAppTemp2.textContent = data.daily.data[2].apparentTemperatureHigh  + " °C";
-                    dailyAppTemp3.textContent = data.daily.data[3].apparentTemperatureHigh  + " °C";
-                    dailyAppTemp4.textContent = data.daily.data[4].apparentTemperatureHigh  + " °C";
-                    dailyAppTemp5.textContent = data.daily.data[5].apparentTemperatureHigh  + " °C";
-                    dailyAppTemp6.textContent = data.daily.data[6].apparentTemperatureHigh  + " °C";
-                    dailyAppTemp7.textContent = data.daily.data[7].apparentTemperatureHigh  + " °C";
-
                     dailyWind1.textContent = data.daily.data[1].windSpeed + " m.s.u.";
-                    dailyWind2.textContent = data.daily.data[2].windSpeed + " m.s.u.";
-                    dailyWind3.textContent = data.daily.data[3].windSpeed + " m.s.u.";
-                    dailyWind4.textContent = data.daily.data[4].windSpeed + " m.s.u.";
-                    dailyWind5.textContent = data.daily.data[5].windSpeed + " m.s.u.";
-                    dailyWind6.textContent = data.daily.data[6].windSpeed + " m.s.u.";
-                    dailyWind7.textContent = data.daily.data[7].windSpeed + " m.s.u.";
-
-                    dailyWindBearing1.textContent = data.daily.data[1].windBearing + " m.s.u.";
-                    dailyWindBearing2.textContent = data.daily.data[2].windBearing + " m.s.u.";
-                    dailyWindBearing3.textContent = data.daily.data[3].windBearing + " m.s.u.";
-                    dailyWindBearing4.textContent = data.daily.data[4].windBearing + " m.s.u.";
-                    dailyWindBearing5.textContent = data.daily.data[5].windBearing + " m.s.u.";
-                    dailyWindBearing6.textContent = data.daily.data[6].windBearing + " m.s.u.";
-                    dailyWindBearing7.textContent = data.daily.data[7].windBearing + " m.s.u.";
-
                     if (data.daily.data[1].windBearing < 22.5 || data.daily.data[1].windBearing > 337.5) {
                     dailyWindBearing1.textContent = "Tuath";
                     } else if (data.daily.data[1].windBearing > 22.5 && data.daily.data[1].windBearing < 67.5){
@@ -232,7 +201,17 @@ window.addEventListener('load', ()=> {
                     } else if (data.daily.data[1].windBearing > 292.5 && data.daily.data[1].windBearing < 337.5){
                       dailyWindBearing1.textContent = "Iar-thuath";
                     };
+                    dailyPrecip1.textContent = data.daily.data[1].precipIntensity + " mm.s.u.";
+                    dailyHumidtyLevel1.textContent = (data.daily.data[1].humidity * 100) + "%";
+                    dailyPressure1.textContent = data.daily.data[1].pressure + " hPA";
+                    dailyVisibility1.textContent = data.daily.data[1].visibility + " km";
 
+                    // Day 2 Forecast
+                    dailyDay2.textContent = formattedDate2;
+                    dailySummary2.textContent = data.daily.data[2].summary;
+                    dailyTemp2.textContent = data.daily.data[2].temperatureHigh  + " °C";
+                    dailyAppTemp2.textContent = data.daily.data[2].apparentTemperatureHigh  + " °C";
+                    dailyWind2.textContent = data.daily.data[2].windSpeed + " m.s.u.";
                     if (data.daily.data[2].windBearing < 22.5 || data.daily.data[2].windBearing > 337.5) {
                     dailyWindBearing2.textContent = "Tuath";
                     } else if (data.daily.data[2].windBearing > 22.5 && data.daily.data[2].windBearing < 67.5){
@@ -250,7 +229,17 @@ window.addEventListener('load', ()=> {
                     } else if (data.daily.data[2].windBearing > 292.5 && data.daily.data[2].windBearing < 337.5){
                       dailyWindBearing2.textContent = "Iar-thuath";
                     };
+                    dailyPrecip2.textContent = data.daily.data[2].precipIntensity + " mm.s.u.";
+                    dailyHumidtyLevel2.textContent = (data.daily.data[2].humidity * 100) + "%";
+                    dailyPressure2.textContent = data.daily.data[2].pressure + " hPA";
+                    dailyVisibility2.textContent = data.daily.data[2].visibility + " km";
 
+                    // Day 3 Forecast
+                    dailyDay3.textContent = formattedDate3;
+                    dailySummary3.textContent = data.daily.data[3].summary;
+                    dailyTemp3.textContent = data.daily.data[3].temperatureHigh  + " °C";
+                    dailyAppTemp3.textContent = data.daily.data[3].apparentTemperatureHigh  + " °C";
+                    dailyWind3.textContent = data.daily.data[3].windSpeed + " m.s.u.";
                     if (data.daily.data[3].windBearing < 22.5 || data.daily.data[3].windBearing > 337.5) {
                     dailyWindBearing3.textContent = "Tuath";
                     } else if (data.daily.data[3].windBearing > 22.5 && data.daily.data[3].windBearing < 67.5){
@@ -268,7 +257,17 @@ window.addEventListener('load', ()=> {
                     } else if (data.daily.data[3].windBearing > 292.5 && data.daily.data[3].windBearing < 337.5){
                       dailyWindBearing3.textContent = "Iar-thuath";
                     };
+                    dailyPrecip3.textContent = data.daily.data[3].precipIntensity + " mm.s.u.";
+                    dailyHumidtyLevel3.textContent = (data.daily.data[3].humidity * 100) + "%";
+                    dailyPressure3.textContent = data.daily.data[3].pressure + " hPA";
+                    dailyVisibility3.textContent = data.daily.data[3].visibility + " km";
 
+                    // Day 4 Forecast
+                    dailyDay4.textContent = formattedDate4;
+                    dailySummary4.textContent = data.daily.data[4].summary;
+                    dailyTemp4.textContent = data.daily.data[4].temperatureHigh  + " °C";
+                    dailyAppTemp4.textContent = data.daily.data[4].apparentTemperatureHigh  + " °C";
+                    dailyWind4.textContent = data.daily.data[4].windSpeed + " m.s.u.";
                     if (data.daily.data[4].windBearing < 22.5 || data.daily.data[4].windBearing > 337.5) {
                     dailyWindBearing4.textContent = "Tuath";
                     } else if (data.daily.data[4].windBearing > 22.5 && data.daily.data[4].windBearing < 67.5){
@@ -286,7 +285,17 @@ window.addEventListener('load', ()=> {
                     } else if (data.daily.data[4].windBearing > 292.5 && data.daily.data[4].windBearing < 337.5){
                       dailyWindBearing4.textContent = "Iar-thuath";
                     };
+                    dailyPrecip4.textContent = data.daily.data[4].precipIntensity + " mm.s.u.";
+                    dailyHumidtyLevel4.textContent = (data.daily.data[4].humidity * 100) + "%";
+                    dailyPressure4.textContent = data.daily.data[4].pressure + " hPA";
+                    dailyVisibility4.textContent = data.daily.data[4].visibility + " km";
 
+                    // Day 5 Forecast
+                    dailyDay5.textContent = formattedDate5;
+                    dailySummary5.textContent = data.daily.data[5].summary;
+                    dailyTemp5.textContent = data.daily.data[5].temperatureHigh  + " °C";
+                    dailyAppTemp5.textContent = data.daily.data[5].apparentTemperatureHigh  + " °C";
+                    dailyWind5.textContent = data.daily.data[5].windSpeed + " m.s.u.";
                     if (data.daily.data[5].windBearing < 22.5 || data.daily.data[5].windBearing > 337.5) {
                     dailyWindBearing5.textContent = "Tuath";
                     } else if (data.daily.data[5].windBearing > 22.5 && data.daily.data[5].windBearing < 67.5){
@@ -304,7 +313,17 @@ window.addEventListener('load', ()=> {
                     } else if (data.daily.data[5].windBearing > 292.5 && data.daily.data[5].windBearing < 337.5){
                       dailyWindBearing5.textContent = "Iar-thuath";
                     };
+                    dailyPrecip5.textContent = data.daily.data[5].precipIntensity + " mm.s.u.";
+                    dailyHumidtyLevel5.textContent = (data.daily.data[5].humidity * 100) + "%";
+                    dailyPressure5.textContent = data.daily.data[5].pressure + " hPA";
+                    dailyVisibility5.textContent = data.daily.data[5].visibility + " km";
 
+                    // Day 6 Forecast
+                    dailyDay6.textContent = formattedDate6;
+                    dailySummary6.textContent = data.daily.data[6].summary;
+                    dailyTemp6.textContent = data.daily.data[6].temperatureHigh  + " °C";
+                    dailyAppTemp6.textContent = data.daily.data[6].apparentTemperatureHigh  + " °C";
+                    dailyWind6.textContent = data.daily.data[6].windSpeed + " m.s.u.";
                     if (data.daily.data[6].windBearing < 22.5 || data.daily.data[6].windBearing > 337.5) {
                     dailyWindBearing6.textContent = "Tuath";
                     } else if (data.daily.data[6].windBearing > 22.5 && data.daily.data[6].windBearing < 67.5){
@@ -322,7 +341,17 @@ window.addEventListener('load', ()=> {
                     } else if (data.daily.data[6].windBearing > 292.5 && data.daily.data[6].windBearing < 337.5){
                       dailyWindBearing6.textContent = "Iar-thuath";
                     };
+                    dailyPrecip6.textContent = data.daily.data[6].precipIntensity + " mm.s.u.";
+                    dailyHumidtyLevel6.textContent = (data.daily.data[6].humidity * 100) + "%";
+                    dailyPressure6.textContent = data.daily.data[6].pressure + " hPA";
+                    dailyVisibility6.textContent = data.daily.data[6].visibility + " km";
 
+                    // Day 7 Forecast
+                    dailyDay7.textContent = formattedDate7;
+                    dailySummary7.textContent = data.daily.data[7].summary;
+                    dailyTemp7.textContent = data.daily.data[7].temperatureHigh  + " °C";
+                    dailyAppTemp7.textContent = data.daily.data[7].apparentTemperatureHigh  + " °C";
+                    dailyWind7.textContent = data.daily.data[7].windSpeed + " m.s.u.";
                     if (data.daily.data[7].windBearing < 22.5 || data.daily.data[7].windBearing > 337.5) {
                     dailyWindBearing7.textContent = "Tuath";
                     } else if (data.daily.data[7].windBearing > 22.5 && data.daily.data[7].windBearing < 67.5){
@@ -340,49 +369,10 @@ window.addEventListener('load', ()=> {
                     } else if (data.daily.data[7].windBearing > 292.5 && data.daily.data[7].windBearing < 337.5){
                       dailyWindBearing7.textContent = "Iar-thuath";
                     };
-
-                    dailyPrecip1.textContent = data.daily.data[1].precipIntensity + " mm.s.u.";
-                    dailyPrecip2.textContent = data.daily.data[2].precipIntensity + " mm.s.u.";
-                    dailyPrecip3.textContent = data.daily.data[3].precipIntensity + " mm.s.u.";
-                    dailyPrecip4.textContent = data.daily.data[4].precipIntensity + " mm.s.u.";
-                    dailyPrecip5.textContent = data.daily.data[5].precipIntensity + " mm.s.u.";
-                    dailyPrecip6.textContent = data.daily.data[6].precipIntensity + " mm.s.u.";
                     dailyPrecip7.textContent = data.daily.data[7].precipIntensity + " mm.s.u.";
-
-                    dailyHumidtyLevel1.textContent = (data.daily.data[1].humidity * 100) + "%";
-                    dailyHumidtyLevel2.textContent = (data.daily.data[2].humidity * 100) + "%";
-                    dailyHumidtyLevel3.textContent = (data.daily.data[3].humidity * 100) + "%";
-                    dailyHumidtyLevel4.textContent = (data.daily.data[4].humidity * 100) + "%";
-                    dailyHumidtyLevel5.textContent = (data.daily.data[5].humidity * 100) + "%";
-                    dailyHumidtyLevel6.textContent = (data.daily.data[6].humidity * 100) + "%";
                     dailyHumidtyLevel7.textContent = (data.daily.data[7].humidity * 100) + "%";
-
-                    dailyPressure1.textContent = data.daily.data[1].pressure + " hPA";
-                    dailyPressure2.textContent = data.daily.data[2].pressure + " hPA";
-                    dailyPressure3.textContent = data.daily.data[3].pressure + " hPA";
-                    dailyPressure4.textContent = data.daily.data[4].pressure + " hPA";
-                    dailyPressure5.textContent = data.daily.data[5].pressure + " hPA";
-                    dailyPressure6.textContent = data.daily.data[6].pressure + " hPA";
                     dailyPressure7.textContent = data.daily.data[7].pressure + " hPA";
-
-                    dailyVisibility1.textContent = data.daily.data[1].visibility + " km";
-                    dailyVisibility2.textContent = data.daily.data[2].visibility + " km";
-                    dailyVisibility3.textContent = data.daily.data[3].visibility + " km";
-                    dailyVisibility4.textContent = data.daily.data[4].visibility + " km";
-                    dailyVisibility5.textContent = data.daily.data[5].visibility + " km";
-                    dailyVisibility6.textContent = data.daily.data[6].visibility + " km";
                     dailyVisibility7.textContent = data.daily.data[7].visibility + " km";
-
-                    dailySummary1.textContent = data.daily.data[1].summary;
-                    dailySummary2.textContent = data.daily.data[2].summary;
-                    dailySummary3.textContent = data.daily.data[3].summary;
-                    dailySummary4.textContent = data.daily.data[4].summary;
-                    dailySummary5.textContent = data.daily.data[5].summary;
-                    dailySummary6.textContent = data.daily.data[6].summary;
-                    dailySummary7.textContent = data.daily.data[7].summary;
-
-                    // Set icon
-                    setIcons(icon, document.querySelector(".icon"));
 
                 });
         });
