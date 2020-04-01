@@ -245,6 +245,14 @@ window.addEventListener('load', ()=> {
                     dailyPrecip6.textContent = data.daily.data[6].precipIntensity + " mm.s.u.";
                     dailyPrecip7.textContent = data.daily.data[7].precipIntensity + " mm.s.u.";
 
+                    dailyHumidtyLevel1.textContent = (data.daily.data[1].humidity * 100) + "%";
+                    dailyHumidtyLevel2.textContent = (data.daily.data[2].humidity * 100) + "%";
+                    dailyHumidtyLevel3.textContent = (data.daily.data[3].humidity * 100) + "%";
+                    dailyHumidtyLevel4.textContent = (data.daily.data[4].humidity * 100) + "%";
+                    dailyHumidtyLevel5.textContent = (data.daily.data[5].humidity * 100) + "%";
+                    dailyHumidtyLevel6.textContent = (data.daily.data[6].humidity * 100) + "%";
+                    dailyHumidtyLevel7.textContent = (data.daily.data[7].humidity * 100) + "%";
+
                     dailySummary1.textContent = data.daily.data[1].summary;
                     dailySummary2.textContent = data.daily.data[2].summary;
                     dailySummary3.textContent = data.daily.data[3].summary;
