@@ -94,7 +94,7 @@ window.addEventListener('load', ()=> {
             long = position.coords.longitude;
             lat = position.coords.latitude;
             const proxy = 'http://gobetween.oklabs.org/';
-            const api = `http://gobetween.oklabs.org/https://api.darksky.net/forecast/9e00d522da20f32ddb9cc5f341b5338a/${lat},${long}?lang=ga&units=uk2`;
+            const api = `http://www.whateverorigin.org/get?url=https://api.darksky.net/forecast/9e00d522da20f32ddb9cc5f341b5338a/${lat},${long}?lang=ga&units=uk2`;
             fetch(api)
                 .then(response =>{
                     return response.json();
