@@ -152,9 +152,9 @@ window.addEventListener('load', ()=> {
                     // Current Weather
                     // Set icon
                     setIcons(icon, document.querySelector(".icon"));
-                    currentSummary.textContent = data.currently.summary;
-                    temp.textContent = data.currently.temperature  + " °C";
-                    appTemp.textContent = data.currently.apparentTemperature  + " °C";
+                    currentSummary.textContent = summary;
+                    temp.textContent = ((temperature - 32) / 1.8).toFixed(2)  + " °C";
+                    appTemp.textContent = ((data.currently.apparentTemperature - 32) / 1.8).toFixed(2)  + " °C";
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     if (data.currently.windBearing < 22.5 || data.currently.windBearing > 337.5) {
                     windBearing.textContent = "Tuath";
@@ -181,8 +181,8 @@ window.addEventListener('load', ()=> {
                     // Day 1 Forecast
                     dailyDay1.textContent = formattedDate1;
                     dailySummary1.textContent = data.daily.data[1].summary;
-                    dailyTemp1.textContent = data.daily.data[1].temperatureHigh  + " °C";
-                    dailyAppTemp1.textContent = data.daily.data[1].apparentTemperatureHigh  + " °C";
+                    dailyTemp1.textContent = ((data.daily.data[1].temperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
+                    dailyAppTemp1.textContent = ((data.daily.data[1].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind1.textContent = data.daily.data[1].windSpeed + " m.s.u.";
                     if (data.daily.data[1].windBearing < 22.5 || data.daily.data[1].windBearing > 337.5) {
                     dailyWindBearing1.textContent = "Tuath";
@@ -209,8 +209,8 @@ window.addEventListener('load', ()=> {
                     // Day 2 Forecast
                     dailyDay2.textContent = formattedDate2;
                     dailySummary2.textContent = data.daily.data[2].summary;
-                    dailyTemp2.textContent = data.daily.data[2].temperatureHigh  + " °C";
-                    dailyAppTemp2.textContent = data.daily.data[2].apparentTemperatureHigh  + " °C";
+                    dailyTemp2.textContent = ((data.daily.data[2].temperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
+                    dailyAppTemp2.textContent = ((data.daily.data[2].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind2.textContent = data.daily.data[2].windSpeed + " m.s.u.";
                     if (data.daily.data[2].windBearing < 22.5 || data.daily.data[2].windBearing > 337.5) {
                     dailyWindBearing2.textContent = "Tuath";
@@ -237,8 +237,8 @@ window.addEventListener('load', ()=> {
                     // Day 3 Forecast
                     dailyDay3.textContent = formattedDate3;
                     dailySummary3.textContent = data.daily.data[3].summary;
-                    dailyTemp3.textContent = data.daily.data[3].temperatureHigh  + " °C";
-                    dailyAppTemp3.textContent = data.daily.data[3].apparentTemperatureHigh  + " °C";
+                    dailyTemp3.textContent = ((data.daily.data[3].temperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
+                    dailyAppTemp3.textContent = ((data.daily.data[3].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind3.textContent = data.daily.data[3].windSpeed + " m.s.u.";
                     if (data.daily.data[3].windBearing < 22.5 || data.daily.data[3].windBearing > 337.5) {
                     dailyWindBearing3.textContent = "Tuath";
@@ -265,8 +265,8 @@ window.addEventListener('load', ()=> {
                     // Day 4 Forecast
                     dailyDay4.textContent = formattedDate4;
                     dailySummary4.textContent = data.daily.data[4].summary;
-                    dailyTemp4.textContent = data.daily.data[4].temperatureHigh  + " °C";
-                    dailyAppTemp4.textContent = data.daily.data[4].apparentTemperatureHigh  + " °C";
+                    dailyTemp4.textContent = ((data.daily.data[4].temperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
+                    dailyAppTemp4.textContent = ((data.daily.data[4].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind4.textContent = data.daily.data[4].windSpeed + " m.s.u.";
                     if (data.daily.data[4].windBearing < 22.5 || data.daily.data[4].windBearing > 337.5) {
                     dailyWindBearing4.textContent = "Tuath";
@@ -293,8 +293,8 @@ window.addEventListener('load', ()=> {
                     // Day 5 Forecast
                     dailyDay5.textContent = formattedDate5;
                     dailySummary5.textContent = data.daily.data[5].summary;
-                    dailyTemp5.textContent = data.daily.data[5].temperatureHigh  + " °C";
-                    dailyAppTemp5.textContent = data.daily.data[5].apparentTemperatureHigh  + " °C";
+                    dailyTemp5.textContent = ((data.daily.data[5].temperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
+                    dailyAppTemp5.textContent = ((data.daily.data[5].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind5.textContent = data.daily.data[5].windSpeed + " m.s.u.";
                     if (data.daily.data[5].windBearing < 22.5 || data.daily.data[5].windBearing > 337.5) {
                     dailyWindBearing5.textContent = "Tuath";
@@ -321,8 +321,8 @@ window.addEventListener('load', ()=> {
                     // Day 6 Forecast
                     dailyDay6.textContent = formattedDate6;
                     dailySummary6.textContent = data.daily.data[6].summary;
-                    dailyTemp6.textContent = data.daily.data[6].temperatureHigh  + " °C";
-                    dailyAppTemp6.textContent = data.daily.data[6].apparentTemperatureHigh  + " °C";
+                    dailyTemp6.textContent = ((data.daily.data[6].temperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
+                    dailyAppTemp6.textContent = ((data.daily.data[6].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind6.textContent = data.daily.data[6].windSpeed + " m.s.u.";
                     if (data.daily.data[6].windBearing < 22.5 || data.daily.data[6].windBearing > 337.5) {
                     dailyWindBearing6.textContent = "Tuath";
@@ -349,8 +349,8 @@ window.addEventListener('load', ()=> {
                     // Day 7 Forecast
                     dailyDay7.textContent = formattedDate7;
                     dailySummary7.textContent = data.daily.data[7].summary;
-                    dailyTemp7.textContent = data.daily.data[7].temperatureHigh  + " °C";
-                    dailyAppTemp7.textContent = data.daily.data[7].apparentTemperatureHigh  + " °C";
+                    dailyTemp7.textContent = ((data.daily.data[7].temperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
+                    dailyAppTemp7.textContent = ((data.daily.data[7].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind7.textContent = data.daily.data[7].windSpeed + " m.s.u.";
                     if (data.daily.data[7].windBearing < 22.5 || data.daily.data[7].windBearing > 337.5) {
                     dailyWindBearing7.textContent = "Tuath";
