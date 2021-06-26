@@ -64,7 +64,7 @@ window.addEventListener('load', ()=> {
         navigator.geolocation.getCurrentPosition(position => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
-            const proxy = 'https://cors-anywhere.herokuapp.com/';
+            const proxy = 'https://api.allorigins.win/raw?url=';
             const api = `${proxy}https://api.darksky.net/forecast/9e00d522da20f32ddb9cc5f341b5338a/${lat},${long}?lang=ga&units=uk2`;
             fetch(api)
                 .then(response =>{
