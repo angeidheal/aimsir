@@ -93,8 +93,8 @@ window.addEventListener('load', ()=> {
         navigator.geolocation.getCurrentPosition(position => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
-            
-            fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://api.darksky.net/forecast/9e00d522da20f32ddb9cc5f341b5338a/57.5953,4.4284?lang=gd&units=uk2')}`)
+            const api = `https://api.allorigins.win/raw?url=https://api.darksky.net/forecast/9e00d522da20f32ddb9cc5f341b5338a/57.5953,4.4284?lang=gd&units=uk2`;
+            fetch(api)
                 .then(response =>{
                     return response.json();
                 })
