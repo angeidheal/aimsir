@@ -93,9 +93,8 @@ window.addEventListener('load', ()=> {
         navigator.geolocation.getCurrentPosition(position => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
-            const proxy = 'http://gobetween.oklabs.org/';
-            const api = `${proxy}https://api.darksky.net/forecast/9e00d522da20f32ddb9cc5f341b5338a/57.5953,4.4284?lang=gd&units=uk2`;
-            fetch(api)
+            
+            fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://api.darksky.net/forecast/9e00d522da20f32ddb9cc5f341b5338a/57.5953,4.4284?lang=gd&units=uk2')}`)
                 .then(response =>{
                     return response.json();
                 })
