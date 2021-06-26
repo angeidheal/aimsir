@@ -154,7 +154,7 @@ window.addEventListener('load', ()=> {
                     setIcons(icon, document.querySelector(".icon"));
                     currentSummary.textContent = summary;
                     temp.textContent = temperature  + " °C";
-                    appTemp.textContent = ((data.currently.apparentTemperature - 32) / 1.8)   + " °C";
+                    appTemp.textContent = data.currently.apparentTemperature  + " °C";
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     if (data.currently.windBearing < 22.5 || data.currently.windBearing > 337.5) {
                     windBearing.textContent = "Tuath";
