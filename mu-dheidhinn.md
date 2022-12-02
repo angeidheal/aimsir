@@ -16,4 +16,4 @@ Bidh Aimsir.info a' toirt thugaibh am fiosrachadh as √πire mun aimsir ge bith c√
 
 ### Cuir Fios
 
-Ma tha sibh airson fios a chur thugam 's urrainn dhuibh gam lorg air Twitter: [@MacMhicheil](https://www.twitter.com/MacMhicheil).
+Ma tha sibh airson fios a chur thugam 's urrainn dhuibh gam lorg air (<a rel="me" href="https://mastodon.scot/@angeidheal">Mastodon</a>).
