@@ -1,0 +1,477 @@
+---
+layout: default
+title: Aimsir.scot (Beta)
+---
+
+<div class="container">
+  <div class="current-weather">
+    <h5 class="section-header"><i class="fas fa-location-arrow"></i> An-dràsta</h5>
+    <div class="row">
+      <div class="col-md-12 weather-icon">
+        <canvas class="icon" width="128" height="128"></canvas>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="current-summary"><strong>Ga luchdadh...</strong></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <p><i class="wi wi-thermometer"></i> Teòthachd<br/><span class="temp">--<span></p>
+      </div>
+      <div class="col-md-3">
+        <p><i class="wi wi-thermometer-exterior"></i> Teòthachd a' faireachdainn mar<br/><span class="app-temp">--</span></p>
+      </div>
+      <div class="col-md-3">
+        <p><i class="wi wi-strong-wind"></i> Astar na Gaoithe<br/><span class="wind">--</span></p>
+      </div>
+      <div class="col-md-3">
+        <p><i class="wi wi-wind-direction"></i> Àird na Gaoithe<br/><span class="wind-bearing">--</span></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <p><i class="wi wi-raindrops"></i> Sileadh<br/><span class="precip">--</span></p>
+      </div>
+      <div class="col-md-3">
+        <p><i class="wi wi-humidity"></i> Taiseachd<br/><span class="humidityLevel">--<span></p>
+      </div>
+      <div class="col-md-3">
+        <p><i class="wi wi-barometer"></i> Bruthadh<br/><span class="pressure">--<span></p>
+      </div>
+      <div class="col-md-3">
+        <p><i class="wi wi-fog"></i> Faicsinneachd<br/><span class="visibility">--<span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="section-header">Ro-aithris 7 Latha</h3>
+    </div>
+  </div>
+
+
+
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <div class="row daily-summary day-1">
+              <div class="col-md-12">
+                <h6><span class="day-1-day">--</span></h6>
+              </div>
+            </div>
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="day-1-summary"><strong>Ga luchdadh...</strong></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <p><i class="wi wi-thermometer"></i> Teòthachd<br/><span class="day-1-temp">--<span></p>
+            </div>
+            <div class="col-md-3">
+              <p><i class="wi wi-thermometer-exterior"></i> Teòthachd a' faireachdainn mar<br/><span class="day-1-app-temp">--</span></p>
+            </div>
+            <div class="col-md-3">
+              <p><i class="wi wi-strong-wind"></i> Astar na Gaoithe<br/><span class="day-1-wind">--</span></p>
+            </div>
+            <div class="col-md-3">
+              <p><i class="wi wi-wind-direction"></i> Àird na Gaoithe<br/><span class="day-1-wind-bearing">--</span></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <p><i class="wi wi-raindrops"></i> Sileadh<br/><span class="day-1-precip">--</span></p>
+            </div>
+            <div class="col-md-3">
+              <p><i class="wi wi-humidity"></i> Taiseachd<br/><span class="day-1-humidityLevel">--<span></p>
+            </div>
+            <div class="col-md-3">
+              <p><i class="wi wi-barometer"></i> Bruthadh<br/><span class="day-1-pressure">--<span></p>
+            </div>
+            <div class="col-md-3">
+              <p><i class="wi wi-fog"></i> Faicsinneachd<br/><span class="day-1-visibility">--<span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <div class="row daily-summary day-2">
+              <div class="col-md-12">
+                <h6><span class="day-2-day">--</span></h6>
+              </div>
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="day-2-summary"><strong>Ga luchdadh...</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p><i class="wi wi-thermometer"></i> Teòthachd<br/><span class="day-2-temp">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-thermometer-exterior"></i> Teòthachd a' faireachdainn mar<br/><span class="day-2-app-temp">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-strong-wind"></i> Astar na Gaoithe<br/><span class="day-2-wind">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-wind-direction"></i> Àird na Gaoithe<br/><span class="day-2-wind-bearing">--</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p><i class="wi wi-raindrops"></i> Sileadh<br/><span class="day-2-precip">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-humidity"></i> Taiseachd<br/><span class="day-2-humidityLevel">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-barometer"></i> Bruthadh<br/><span class="day-2-pressure">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-fog"></i> Faicsinneachd<br/><span class="day-2-visibility">--<span></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <div class="row daily-summary day-3">
+              <div class="col-md-12">
+                <h6><span class="day-3-day">--</span></h6>
+              </div>
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="day-3-summary"><strong>Ga luchdadh...</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p><i class="wi wi-thermometer"></i> Teòthachd<br/><span class="day-3-temp">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-thermometer-exterior"></i> Teòthachd a' faireachdainn mar<br/><span class="day-3-app-temp">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-strong-wind"></i> Astar na Gaoithe<br/><span class="day-3-wind">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-wind-direction"></i> Àird na Gaoithe<br/><span class="day-3-wind-bearing">--</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p><i class="wi wi-raindrops"></i> Sileadh<br/><span class="day-3-precip">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-humidity"></i> Taiseachd<br/><span class="day-3-humidityLevel">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-barometer"></i> Bruthadh<br/><span class="day-3-pressure">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-fog"></i> Faicsinneachd<br/><span class="day-3-visibility">--<span></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingFour">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <div class="row daily-summary day-4">
+              <div class="col-md-12">
+                <h6><span class="day-4-day">--</span></h6>
+              </div>
+          </button>
+        </h5>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="day-4-summary"><strong>Ga luchdadh...</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p><i class="wi wi-thermometer"></i> Teòthachd<br/><span class="day-4-temp">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-thermometer-exterior"></i> Teòthachd a' faireachdainn mar<br/><span class="day-4-app-temp">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-strong-wind"></i> Astar na Gaoithe<br/><span class="day-4-wind">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-wind-direction"></i> Àird na Gaoithe<br/><span class="day-4-wind-bearing">--</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p><i class="wi wi-raindrops"></i> Sileadh<br/><span class="day-4-precip">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-humidity"></i> Taiseachd<br/><span class="day-4-humidityLevel">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-barometer"></i> Bruthadh<br/><span class="day-4-pressure">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-fog"></i> Faicsinneachd<br/><span class="day-4-visibility">--<span></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingFive">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <div class="row daily-summary day-5">
+              <div class="col-md-12">
+                <h6><span class="day-5-day">--</span></h6>
+              </div>
+          </button>
+        </h5>
+      </div>
+      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="day-5-summary"><strong>Ga luchdadh...</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p><i class="wi wi-thermometer"></i> Teòthachd<br/><span class="day-5-temp">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-thermometer-exterior"></i> Teòthachd a' faireachdainn mar<br/><span class="day-5-app-temp">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-strong-wind"></i> Astar na Gaoithe<br/><span class="day-5-wind">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-wind-direction"></i> Àird na Gaoithe<br/><span class="day-5-wind-bearing">--</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p><i class="wi wi-raindrops"></i> Sileadh<br/><span class="day-5-precip">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-humidity"></i> Taiseachd<br/><span class="day-5-humidityLevel">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-barometer"></i> Bruthadh<br/><span class="day-5-pressure">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-fog"></i> Faicsinneachd<br/><span class="day-5-visibility">--<span></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingSix">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            <div class="row daily-summary day-6">
+              <div class="col-md-12">
+                <h6><span class="day-6-day">--</span></h6>
+              </div>
+          </button>
+        </h5>
+      </div>
+      <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="day-6-summary"><strong>Ga luchdadh...</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p><i class="wi wi-thermometer"></i> Teòthachd<br/><span class="day-6-temp">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-thermometer-exterior"></i> Teòthachd a' faireachdainn mar<br/><span class="day-6-app-temp">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-strong-wind"></i> Astar na Gaoithe<br/><span class="day-6-wind">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-wind-direction"></i> Àird na Gaoithe<br/><span class="day-6-wind-bearing">--</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p><i class="wi wi-raindrops"></i> Sileadh<br/><span class="day-6-precip">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-humidity"></i> Taiseachd<br/><span class="day-6-humidityLevel">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-barometer"></i> Bruthadh<br/><span class="day-6-pressure">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-fog"></i> Faicsinneachd<br/><span class="day-6-visibility">--<span></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingSeven">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            <div class="row daily-summary day-7">
+              <div class="col-md-12">
+                <h6><span class="day-7-day">--</span></h6>
+              </div>
+          </button>
+        </h5>
+      </div>
+      <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="day-7-summary"><strong>Ga luchdadh...</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p><i class="wi wi-thermometer"></i> Teòthachd<br/><span class="day-7-temp">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-thermometer-exterior"></i> Teòthachd a' faireachdainn mar<br/><span class="day-7-app-temp">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-strong-wind"></i> Astar na Gaoithe<br/><span class="day-7-wind">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-wind-direction"></i> Àird na Gaoithe<br/><span class="day-7-wind-bearing">--</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <p><i class="wi wi-raindrops"></i> Sileadh<br/><span class="day-7-precip">--</span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-humidity"></i> Taiseachd<br/><span class="day-7-humidityLevel">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-barometer"></i> Bruthadh<br/><span class="day-7-pressure">--<span></p>
+              </div>
+              <div class="col-md-3">
+                <p><i class="wi wi-fog"></i> Faicsinneachd<br/><span class="day-7-visibility">--<span></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-header">Bailtean Mòra na h-Alba</h3>
+        </div>
+        <div class="col-md-12">
+          <p>Mas as trice bidh Aimsir.info a' sealltainn aimsir an àite far a bheil sibh an-dràsta, ach faodaidh sibh tuairmse fhaighinn air aimsir nan àiteachan na leanas le bhtih a' dèanamh brìog orra.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/an-gearasdan">An Gearasdan</a>
+        </div>
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/baile-na-h-eaglaise">Baile na h-Eaglaise</a>
+        </div>
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/dun-de">Dùn Dè</a>
+        </div>
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/dun-eideann">Dùn Èideann</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/eilginn">Eilginn</a>
+        </div>
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/glaschu">Glaschu</a>
+        </div>
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/inbhir-nis">Inbhir Nis</a>
+        </div>
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/inbhir-pheofharain">Inbhir Pheofharain</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/inbhir-theorsa">Inbhir Theòrsa</a>
+        </div>
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/inbhir-uige">Inbhir Ùige</a>
+        </div>
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/liurabhaig">Liùrabhaig</a>
+        </div>
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/obar-dheathain">Obar Dheathain</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/peairt">Peairt</a>
+        </div>
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/port-righ">Port Righ</a>
+        </div>
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/sruighlea">Sruighlea</a>
+        </div>
+        <div class="col-md-3">
+          <a href="{{ site.baseurl }}/baile/steornabhagh">Steòrnabhagh</a>
+        </div>
+      </div>
+    </div>
+
+<script src="{{ site.baseurl }}/pw.js"></script>
