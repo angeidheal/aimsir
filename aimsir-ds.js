@@ -94,7 +94,7 @@ window.addEventListener('load', ()=> {
             long = position.coords.longitude;
             lat = position.coords.latitude;
             const proxy = 'https://api.allorigins.win/raw?url=';
-            const api = `${proxy}https://api.pirateweather.net/forecast/dxAP8tvYIh5MS5YtPL0yp9z6SHaMWEcr2GlRV5qm/${lat},${long}?lang=ga&units=uk2`;
+            const api = `${proxy}https://api.darksky.net/forecast/9e00d522da20f32ddb9cc5f341b5338a/${lat},${long}?lang=gd&units=uk2`;
             fetch(api)
                 .then(response =>{
                     return response.json();
@@ -106,45 +106,46 @@ window.addEventListener('load', ()=> {
 
                     let unix_timestamp1 = data.daily.data[1].time
                     var date = new Date(unix_timestamp1 * 1000);
-                    var days = ["Dé Domhnaigh", "Dé Luain", "Dé Máirt", "Dé Céadaoin", "Déardaoin", "Dé hAoine", "Dé Sathairn"];
+                    var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
                     var formattedDate1 = days[date.getDay()];
                     console.log(formattedDate1)
 
                     let unix_timestamp2 = data.daily.data[2].time
                     var date = new Date(unix_timestamp2 * 1000);
-                    var days = ["Dé Domhnaigh", "Dé Luain", "Dé Máirt", "Dé Céadaoin", "Déardaoin", "Dé hAoine", "Dé Sathairn"];
+                    var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
                     var formattedDate2 = days[date.getDay()];
                     console.log(formattedDate2)
 
                     let unix_timestamp3 = data.daily.data[3].time
                     var date = new Date(unix_timestamp3 * 1000);
-                    var days = ["Dé Domhnaigh", "Dé Luain", "Dé Máirt", "Dé Céadaoin", "Déardaoin", "Dé hAoine", "Dé Sathairn"];
+                    var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
                     var formattedDate3 = days[date.getDay()];
                     console.log(formattedDate3)
 
                     let unix_timestamp4 = data.daily.data[4].time
                     var date = new Date(unix_timestamp4 * 1000);
-                    var days = ["Dé Domhnaigh", "Dé Luain", "Dé Máirt", "Dé Céadaoin", "Déardaoin", "Dé hAoine", "Dé Sathairn"];
+                    var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
                     var formattedDate4 = days[date.getDay()];
                     console.log(formattedDate4)
 
                     let unix_timestamp5 = data.daily.data[5].time
                     var date = new Date(unix_timestamp5 * 1000);
-                    var days = ["Dé Domhnaigh", "Dé Luain", "Dé Máirt", "Dé Céadaoin", "Déardaoin", "Dé hAoine", "Dé Sathairn"];
+                    var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
                     var formattedDate5 = days[date.getDay()];
                     console.log(formattedDate5)
 
                     let unix_timestamp6 = data.daily.data[6].time
                     var date = new Date(unix_timestamp6 * 1000);
-                    var days = ["Dé Domhnaigh", "Dé Luain", "Dé Máirt", "Dé Céadaoin", "Déardaoin", "Dé hAoine", "Dé Sathairn"];
+                    var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
                     var formattedDate6 = days[date.getDay()];
                     console.log(formattedDate6)
 
                     let unix_timestamp7 = data.daily.data[7].time
                     var date = new Date(unix_timestamp7 * 1000);
-                    var days = ["Dé Domhnaigh", "Dé Luain", "Dé Máirt", "Dé Céadaoin", "Déardaoin", "Dé hAoine", "Dé Sathairn"];
+                    var days = ["Dìdomhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disaithairne"];
                     var formattedDate7 = days[date.getDay()];
                     console.log(formattedDate7)
+
 
                     // Set DOM Elements from the API
 
@@ -156,21 +157,21 @@ window.addEventListener('load', ()=> {
                     appTemp.textContent = ((data.currently.apparentTemperature - 32) / 1.8).toFixed(2)  + " °C";
                     windSpeed.textContent = data.currently.windSpeed + " m.s.u.";
                     if (data.currently.windBearing < 22.5 || data.currently.windBearing > 337.5) {
-                    windBearing.textContent = "Tuaisceart";
+                    windBearing.textContent = "Tuath";
                     } else if (data.currently.windBearing > 22.5 && data.currently.windBearing < 67.5){
-                      windBearing.textContent = "Oirthuaisceart";
+                      windBearing.textContent = "Ear-thuath";
                     } else if (data.currently.windBearing > 67.5 && data.currently.windBearing < 112.5) {
-                      windBearing.textContent = "Oirthear";
+                      windBearing.textContent = "Ear";
                     } else if (data.currently.windBearing > 112.5 && data.currently.windBearing < 157.5){
-                      windBearing.textContent = "Oirdheisceart";
+                      windBearing.textContent = "Ear-dheas";
                     } else if (data.currently.windBearing > 157.5 && data.currently.windBearing < 202.5){
-                      windBearing.textContent = "Deisceart";
+                      windBearing.textContent = "Deas";
                     } else if (data.currently.windBearing > 202.5 && data.currently.windBearing < 247.5){
-                      windBearing.textContent = "Iardheisceart";
+                      windBearing.textContent = "Iar-dheas";
                     } else if (data.currently.windBearing > 247.5 && data.currently.windBearing < 292.5){
-                      windBearing.textContent = "Iarthar";
+                      windBearing.textContent = "Iar";
                     } else if (data.currently.windBearing > 292.5 && data.currently.windBearing < 337.5){
-                      windBearing.textContent = "Iarthuaisceart";
+                      windBearing.textContent = "Iar-thuath";
                     };
                     precip.textContent = data.currently.precipIntensity + " mm.s.u.";
                     humidityLevel.textContent = (data.currently.humidity * 100) + "%";
@@ -184,21 +185,21 @@ window.addEventListener('load', ()=> {
                     dailyAppTemp1.textContent = ((data.daily.data[1].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind1.textContent = data.daily.data[1].windSpeed + " m.s.u.";
                     if (data.daily.data[1].windBearing < 22.5 || data.daily.data[1].windBearing > 337.5) {
-                    dailyWindBearing1.textContent = "Tuaisceart";
+                    dailyWindBearing1.textContent = "Tuath";
                     } else if (data.daily.data[1].windBearing > 22.5 && data.daily.data[1].windBearing < 67.5){
-                      dailyWindBearing1.textContent = "Oirthuaisceart";
+                      dailyWindBearing1.textContent = "Ear-thuath";
                     } else if (data.daily.data[1].windBearing > 67.5 && data.daily.data[1].windBearing < 112.5) {
-                      dailyWindBearing1.textContent = "Oirthear";
+                      dailyWindBearing1.textContent = "Ear";
                     } else if (data.daily.data[1].windBearing > 112.5 && data.daily.data[1].windBearing < 157.5){
-                      dailyWindBearing1.textContent = "Oirdheisceart";
+                      dailyWindBearing1.textContent = "Ear-dheas";
                     } else if (data.daily.data[1].windBearing > 157.5 && data.daily.data[1].windBearing < 202.5){
-                      dailyWindBearing1.textContent = "Deisceart";
+                      dailyWindBearing1.textContent = "Deas";
                     } else if (data.daily.data[1].windBearing > 202.5 && data.daily.data[1].windBearing < 247.5){
-                      dailyWindBearing1.textContent = "Iardheisceart";
+                      dailyWindBearing1.textContent = "Iar-dheas";
                     } else if (data.daily.data[1].windBearing > 247.5 && data.daily.data[1].windBearing < 292.5){
-                      dailyWindBearing1.textContent = "Iarthar";
+                      dailyWindBearing1.textContent = "Iar";
                     } else if (data.daily.data[1].windBearing > 292.5 && data.daily.data[1].windBearing < 337.5){
-                      dailyWindBearing1.textContent = "Iarthuaisceart";
+                      dailyWindBearing1.textContent = "Iar-thuath";
                     };
                     dailyPrecip1.textContent = data.daily.data[1].precipIntensity + " mm.s.u.";
                     dailyHumidtyLevel1.textContent = (data.daily.data[1].humidity * 100) + "%";
@@ -212,21 +213,21 @@ window.addEventListener('load', ()=> {
                     dailyAppTemp2.textContent = ((data.daily.data[2].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind2.textContent = data.daily.data[2].windSpeed + " m.s.u.";
                     if (data.daily.data[2].windBearing < 22.5 || data.daily.data[2].windBearing > 337.5) {
-                    dailyWindBearing2.textContent = "Tuaisceart";
+                    dailyWindBearing2.textContent = "Tuath";
                     } else if (data.daily.data[2].windBearing > 22.5 && data.daily.data[2].windBearing < 67.5){
-                      dailyWindBearing2.textContent = "Oirthuaisceart";
+                      dailyWindBearing2.textContent = "Ear-thuath";
                     } else if (data.daily.data[2].windBearing > 67.5 && data.daily.data[2].windBearing < 112.5) {
-                      dailyWindBearing2.textContent = "Oirthear";
+                      dailyWindBearing2.textContent = "Ear";
                     } else if (data.daily.data[2].windBearing > 112.5 && data.daily.data[2].windBearing < 157.5){
-                      dailyWindBearing2.textContent = "Oirdheisceart";
+                      dailyWindBearing2.textContent = "Ear-dheas";
                     } else if (data.daily.data[2].windBearing > 157.5 && data.daily.data[2].windBearing < 202.5){
-                      dailyWindBearing2.textContent = "Deisceart";
+                      dailyWindBearing2.textContent = "Deas";
                     } else if (data.daily.data[2].windBearing > 202.5 && data.daily.data[2].windBearing < 247.5){
-                      dailyWindBearing2.textContent = "Iardheisceart";
+                      dailyWindBearing2.textContent = "Iar-dheas";
                     } else if (data.daily.data[2].windBearing > 247.5 && data.daily.data[2].windBearing < 292.5){
-                      dailyWindBearing2.textContent = "Iarthar";
+                      dailyWindBearing2.textContent = "Iar";
                     } else if (data.daily.data[2].windBearing > 292.5 && data.daily.data[2].windBearing < 337.5){
-                      dailyWindBearing2.textContent = "Iarthuaisceart";
+                      dailyWindBearing2.textContent = "Iar-thuath";
                     };
                     dailyPrecip2.textContent = data.daily.data[2].precipIntensity + " mm.s.u.";
                     dailyHumidtyLevel2.textContent = (data.daily.data[2].humidity * 100) + "%";
@@ -240,21 +241,21 @@ window.addEventListener('load', ()=> {
                     dailyAppTemp3.textContent = ((data.daily.data[3].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind3.textContent = data.daily.data[3].windSpeed + " m.s.u.";
                     if (data.daily.data[3].windBearing < 22.5 || data.daily.data[3].windBearing > 337.5) {
-                    dailyWindBearing3.textContent = "Tuaisceart";
+                    dailyWindBearing3.textContent = "Tuath";
                     } else if (data.daily.data[3].windBearing > 22.5 && data.daily.data[3].windBearing < 67.5){
-                      dailyWindBearing3.textContent = "Oirthuaisceart";
+                      dailyWindBearing3.textContent = "Ear-thuath";
                     } else if (data.daily.data[3].windBearing > 67.5 && data.daily.data[3].windBearing < 112.5) {
-                      dailyWindBearing3.textContent = "Oirthear";
+                      dailyWindBearing3.textContent = "Ear";
                     } else if (data.daily.data[3].windBearing > 112.5 && data.daily.data[3].windBearing < 157.5){
-                      dailyWindBearing3.textContent = "Oirdheisceart";
+                      dailyWindBearing3.textContent = "Ear-dheas";
                     } else if (data.daily.data[3].windBearing > 157.5 && data.daily.data[3].windBearing < 202.5){
-                      dailyWindBearing3.textContent = "Deisceart";
+                      dailyWindBearing3.textContent = "Deas";
                     } else if (data.daily.data[3].windBearing > 202.5 && data.daily.data[3].windBearing < 247.5){
-                      dailyWindBearing3.textContent = "Iardheisceart";
+                      dailyWindBearing3.textContent = "Iar-dheas";
                     } else if (data.daily.data[3].windBearing > 247.5 && data.daily.data[3].windBearing < 292.5){
-                      dailyWindBearing3.textContent = "Iarthar";
+                      dailyWindBearing3.textContent = "Iar";
                     } else if (data.daily.data[3].windBearing > 292.5 && data.daily.data[3].windBearing < 337.5){
-                      dailyWindBearing3.textContent = "Iarthuaisceart";
+                      dailyWindBearing3.textContent = "Iar-thuath";
                     };
                     dailyPrecip3.textContent = data.daily.data[3].precipIntensity + " mm.s.u.";
                     dailyHumidtyLevel3.textContent = (data.daily.data[3].humidity * 100) + "%";
@@ -268,21 +269,21 @@ window.addEventListener('load', ()=> {
                     dailyAppTemp4.textContent = ((data.daily.data[4].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind4.textContent = data.daily.data[4].windSpeed + " m.s.u.";
                     if (data.daily.data[4].windBearing < 22.5 || data.daily.data[4].windBearing > 337.5) {
-                    dailyWindBearing4.textContent = "Tuaisceart";
+                    dailyWindBearing4.textContent = "Tuath";
                     } else if (data.daily.data[4].windBearing > 22.5 && data.daily.data[4].windBearing < 67.5){
-                      dailyWindBearing4.textContent = "Oirthuaisceart";
+                      dailyWindBearing4.textContent = "Ear-thuath";
                     } else if (data.daily.data[4].windBearing > 67.5 && data.daily.data[4].windBearing < 112.5) {
-                      dailyWindBearing4.textContent = "Oirthear";
+                      dailyWindBearing4.textContent = "Ear";
                     } else if (data.daily.data[4].windBearing > 112.5 && data.daily.data[4].windBearing < 157.5){
-                      dailyWindBearing4.textContent = "Oirdheisceart";
+                      dailyWindBearing4.textContent = "Ear-dheas";
                     } else if (data.daily.data[4].windBearing > 157.5 && data.daily.data[4].windBearing < 202.5){
-                      dailyWindBearing4.textContent = "Deisceart";
+                      dailyWindBearing4.textContent = "Deas";
                     } else if (data.daily.data[4].windBearing > 202.5 && data.daily.data[4].windBearing < 247.5){
-                      dailyWindBearing4.textContent = "Iardheisceart";
+                      dailyWindBearing4.textContent = "Iar-dheas";
                     } else if (data.daily.data[4].windBearing > 247.5 && data.daily.data[4].windBearing < 292.5){
-                      dailyWindBearing4.textContent = "Iarthar";
+                      dailyWindBearing4.textContent = "Iar";
                     } else if (data.daily.data[4].windBearing > 292.5 && data.daily.data[4].windBearing < 337.5){
-                      dailyWindBearing4.textContent = "Iarthuaisceart";
+                      dailyWindBearing4.textContent = "Iar-thuath";
                     };
                     dailyPrecip4.textContent = data.daily.data[4].precipIntensity + " mm.s.u.";
                     dailyHumidtyLevel4.textContent = (data.daily.data[4].humidity * 100) + "%";
@@ -296,21 +297,21 @@ window.addEventListener('load', ()=> {
                     dailyAppTemp5.textContent = ((data.daily.data[5].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind5.textContent = data.daily.data[5].windSpeed + " m.s.u.";
                     if (data.daily.data[5].windBearing < 22.5 || data.daily.data[5].windBearing > 337.5) {
-                    dailyWindBearing5.textContent = "Tuaisceart";
+                    dailyWindBearing5.textContent = "Tuath";
                     } else if (data.daily.data[5].windBearing > 22.5 && data.daily.data[5].windBearing < 67.5){
-                      dailyWindBearing5.textContent = "Oirthuaisceart";
+                      dailyWindBearing5.textContent = "Ear-thuath";
                     } else if (data.daily.data[5].windBearing > 67.5 && data.daily.data[5].windBearing < 112.5) {
-                      dailyWindBearing5.textContent = "Oirthear";
+                      dailyWindBearing5.textContent = "Ear";
                     } else if (data.daily.data[5].windBearing > 112.5 && data.daily.data[5].windBearing < 157.5){
-                      dailyWindBearing5.textContent = "Oirdheisceart";
+                      dailyWindBearing5.textContent = "Ear-dheas";
                     } else if (data.daily.data[5].windBearing > 157.5 && data.daily.data[5].windBearing < 202.5){
-                      dailyWindBearing5.textContent = "Deisceart";
+                      dailyWindBearing5.textContent = "Deas";
                     } else if (data.daily.data[5].windBearing > 202.5 && data.daily.data[5].windBearing < 247.5){
-                      dailyWindBearing5.textContent = "Iardheisceart";
+                      dailyWindBearing5.textContent = "Iar-dheas";
                     } else if (data.daily.data[5].windBearing > 247.5 && data.daily.data[5].windBearing < 292.5){
-                      dailyWindBearing5.textContent = "Iarthar";
+                      dailyWindBearing5.textContent = "Iar";
                     } else if (data.daily.data[5].windBearing > 292.5 && data.daily.data[5].windBearing < 337.5){
-                      dailyWindBearing5.textContent = "Iarthuaisceart";
+                      dailyWindBearing5.textContent = "Iar-thuath";
                     };
                     dailyPrecip5.textContent = data.daily.data[5].precipIntensity + " mm.s.u.";
                     dailyHumidtyLevel5.textContent = (data.daily.data[5].humidity * 100) + "%";
@@ -324,21 +325,21 @@ window.addEventListener('load', ()=> {
                     dailyAppTemp6.textContent = ((data.daily.data[6].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind6.textContent = data.daily.data[6].windSpeed + " m.s.u.";
                     if (data.daily.data[6].windBearing < 22.5 || data.daily.data[6].windBearing > 337.5) {
-                    dailyWindBearing6.textContent = "Tuaisceart";
+                    dailyWindBearing6.textContent = "Tuath";
                     } else if (data.daily.data[6].windBearing > 22.5 && data.daily.data[6].windBearing < 67.5){
-                      dailyWindBearing6.textContent = "Oirthuaisceart";
+                      dailyWindBearing6.textContent = "Ear-thuath";
                     } else if (data.daily.data[6].windBearing > 67.5 && data.daily.data[6].windBearing < 112.5) {
-                      dailyWindBearing6.textContent = "Oirthear";
+                      dailyWindBearing6.textContent = "Ear";
                     } else if (data.daily.data[6].windBearing > 112.5 && data.daily.data[6].windBearing < 157.5){
-                      dailyWindBearing6.textContent = "Oirdheisceart";
+                      dailyWindBearing6.textContent = "Ear-dheas";
                     } else if (data.daily.data[6].windBearing > 157.5 && data.daily.data[6].windBearing < 202.5){
-                      dailyWindBearing6.textContent = "Deisceart";
+                      dailyWindBearing6.textContent = "Deas";
                     } else if (data.daily.data[6].windBearing > 202.5 && data.daily.data[6].windBearing < 247.5){
-                      dailyWindBearing6.textContent = "Iardheisceart";
+                      dailyWindBearing6.textContent = "Iar-dheas";
                     } else if (data.daily.data[6].windBearing > 247.5 && data.daily.data[6].windBearing < 292.5){
-                      dailyWindBearing6.textContent = "Iarthar";
+                      dailyWindBearing6.textContent = "Iar";
                     } else if (data.daily.data[6].windBearing > 292.5 && data.daily.data[6].windBearing < 337.5){
-                      dailyWindBearing6.textContent = "Iarthuaisceart";
+                      dailyWindBearing6.textContent = "Iar-thuath";
                     };
                     dailyPrecip6.textContent = data.daily.data[6].precipIntensity + " mm.s.u.";
                     dailyHumidtyLevel6.textContent = (data.daily.data[6].humidity * 100) + "%";
@@ -352,21 +353,21 @@ window.addEventListener('load', ()=> {
                     dailyAppTemp7.textContent = ((data.daily.data[7].apparentTemperatureHigh - 32) / 1.8).toFixed(2)  + " °C";
                     dailyWind7.textContent = data.daily.data[7].windSpeed + " m.s.u.";
                     if (data.daily.data[7].windBearing < 22.5 || data.daily.data[7].windBearing > 337.5) {
-                    dailyWindBearing7.textContent = "Tuaisceart";
+                    dailyWindBearing7.textContent = "Tuath";
                     } else if (data.daily.data[7].windBearing > 22.5 && data.daily.data[7].windBearing < 67.5){
-                      dailyWindBearing7.textContent = "Oirthuaisceart";
+                      dailyWindBearing7.textContent = "Ear-thuath";
                     } else if (data.daily.data[7].windBearing > 67.5 && data.daily.data[7].windBearing < 112.5) {
-                      dailyWindBearing7.textContent = "Oirthear";
+                      dailyWindBearing7.textContent = "Ear";
                     } else if (data.daily.data[7].windBearing > 112.5 && data.daily.data[7].windBearing < 157.5){
-                      dailyWindBearing7.textContent = "Oirdheisceart";
+                      dailyWindBearing7.textContent = "Ear-dheas";
                     } else if (data.daily.data[7].windBearing > 157.5 && data.daily.data[7].windBearing < 202.5){
-                      dailyWindBearing7.textContent = "Deisceart";
+                      dailyWindBearing7.textContent = "Deas";
                     } else if (data.daily.data[7].windBearing > 202.5 && data.daily.data[7].windBearing < 247.5){
-                      dailyWindBearing7.textContent = "Iardheisceart";
+                      dailyWindBearing7.textContent = "Iar-dheas";
                     } else if (data.daily.data[7].windBearing > 247.5 && data.daily.data[7].windBearing < 292.5){
-                      dailyWindBearing7.textContent = "Iarthar";
+                      dailyWindBearing7.textContent = "Iar";
                     } else if (data.daily.data[7].windBearing > 292.5 && data.daily.data[7].windBearing < 337.5){
-                      dailyWindBearing7.textContent = "Iarthuaisceart";
+                      dailyWindBearing7.textContent = "Iar-thuath";
                     };
                     dailyPrecip7.textContent = data.daily.data[7].precipIntensity + " mm.s.u.";
                     dailyHumidtyLevel7.textContent = (data.daily.data[7].humidity * 100) + "%";
@@ -375,6 +376,8 @@ window.addEventListener('load', ()=> {
 
                 });
         });
+    } else {
+      window.alert("Cha b' urrainnear d' àite a lorg! Dèan cinnteach gu bheil thu air Location Services an inneil agad a chur air agus gu bheil thu air cead a thoirt dhuinn gus d' àite fhaicinn.");
     }
 
     function setIcons(icon, iconID) {

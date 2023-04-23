@@ -65,7 +65,7 @@ window.addEventListener('load', ()=> {
             long = position.coords.longitude;
             lat = position.coords.latitude;
             const proxy = 'https://api.allorigins.win/raw?url=';
-            const api = `${proxy}https://api.pirateweather.net/forecast/dxAP8tvYIh5MS5YtPL0yp9z6SHaMWEcr2GlRV5qm/${lat},${long}?lang=gv&units=uk2`;
+            const api = `${proxy}https://api.darksky.net/forecast/9e00d522da20f32ddb9cc5f341b5338a/${lat},${long}?lang=gv&units=uk2`;
             fetch(api)
                 .then(response =>{
                     return response.json();
