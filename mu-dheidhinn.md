@@ -8,7 +8,7 @@ Bidh Aimsir.scot a' toirt thugaibh am fiosrachadh as √πire mun aimsir ge bith c√
 
 ### Taing
 
-[Dark Sky](https://darksky.net/) airson an API air a bheil Aimsir.scot steidheachadh.
+[Dark Sky](https://darksky.net/) airson an API air a bheil Aimsir.scot st√®idhichte.
 
 [Skycons](https://darkskyapp.github.io/skycons/) airson na h-iomhaighean.
 
@@ -16,4 +16,4 @@ Bidh Aimsir.scot a' toirt thugaibh am fiosrachadh as √πire mun aimsir ge bith c√
 
 ### Cuir Fios
 
-Ma tha sibh airson fios a chur thugam 's urrainn dhuibh gam lorg air <a rel="me" href="https://mastodon.scot/@angeidheal">Mastodon</a>.
+Ma tha sibh airson fios a chur thugam 's urrainn dhuibh gam lorg air <a rel="me" href="https://mastodon.social/@angeidheal">Mastodon</a>.
