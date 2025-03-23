@@ -16,8 +16,8 @@
 title: Aimsir.info
 email: chris@macmhicheil.uk
 description: A' toirt thugaibh am fiosrachadh as ùire mun aimsir
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://aimsir.info" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/aimsir" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:year/:month/:day/:title/
 
 # Build settings
